@@ -1,7 +1,7 @@
 ---
 id: liste01-dsa
-title: DSA Fragen
-sidebar_label: Checkliste DSA 01
+title: DSA 34 Fragen
+sidebar_label: Checkliste DSA [34]
 ---
 
 <table id="dsaListe"><!--Hier wird alles reingepackt-->  

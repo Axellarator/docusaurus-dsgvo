@@ -1,3 +1,8 @@
+---
+id: readme-2
+title: Docusaurus
+sidebar_label: Docusaurus Vorstellung
+---
 <h1 align="center">
   <p align="center">Docusaurus</p>
   <a href="https://docusaurus.io"><img src="https://docusaurus.io/img/slash-introducing.svg" alt="Docusaurus"></a>
@@ -8,7 +13,7 @@
   <a href="#sponsors" alt="Sponsors on Open Collective"><img src="https://opencollective.com/Docusaurus/sponsors/badge.svg" /></a>
   <a href="https://www.npmjs.com/package/docusaurus"><img src="https://img.shields.io/npm/v/docusaurus.svg?style=flat" alt="npm version"></a>
   <a href="https://circleci.com/gh/facebook/Docusaurus"><img src="https://circleci.com/gh/facebook/Docusaurus.svg?style=shield" alt="CircleCI Status"></a>
-  <a href="CONTRIBUTING.md#pull-requests"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+  <a href="https://github.com/facebook/Docusaurus/blob/master/CONTRIBUTING.md#pull-requests"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
   <a href="https://discord.gg/docusaurus"><img src="https://img.shields.io/badge/chat-on%20discord-7289da.svg" alt="Chat"></a>
   <a href="https://github.com/prettier/prettier"><img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"></a>
   <a href="https://github.com/facebook/jest"><img src="https://img.shields.io/badge/tested_with-jest-99424f.svg" alt="Tested with Jest"></a>
@@ -57,7 +62,7 @@ We have a few channels for contact:
 
 ## Contributors
 
-This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)]. <a href="https://github.com/facebook/Docusaurus/graphs/contributors"><img src="https://opencollective.com/Docusaurus/contributors.svg?width=890&button=false" /></a>
+This project exists thanks to all the people who contribute. [[Contribute](https://github.com/facebook/Docusaurus/blob/master/CONTRIBUTING.md)]. <a href="https://github.com/facebook/Docusaurus/graphs/contributors"><img src="https://opencollective.com/Docusaurus/contributors.svg?width=890&button=false" /></a>
 
 ## Backers
 

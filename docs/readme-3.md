@@ -1,3 +1,8 @@
+---
+id: readme-3
+title: Docusaurus Know How
+sidebar_label: Docusaurus Know How
+---
 This website was created with [Docusaurus](https://docusaurus.io/).
 
 # What's In This Document

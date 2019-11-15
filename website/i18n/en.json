@@ -11,11 +11,11 @@
       },
       "avv": {
         "title": "Auftragsverarbeitungsverträge (AVV)",
-        "sidebar_label": "Auftragsverarbeitung"
+        "sidebar_label": "Auftragsverarbeitung (AVV)"
       },
       "bdsg": {
         "title": "Bundesdatenschutzgesetz",
-        "sidebar_label": "BDSG"
+        "sidebar_label": "Bundesdatenschutzgesetz BDSG"
       },
       "con2": {
         "title": "CON.2 Datenschutz",
@@ -45,21 +45,13 @@
         "title": "Datenschutz im Internet",
         "sidebar_label": "Datenschutz im Internet"
       },
-      "doc6": {
-        "title": "Präsentation DSGVO",
-        "sidebar_label": "Präsentation DSGVO"
-      },
-      "doc7": {
-        "title": "Präsentation Datenschutzbeauftragter",
-        "sidebar_label": "Präsentation DSB"
-      },
       "doc9": {
         "title": "DSA-Marketing",
         "sidebar_label": "DSA-Marketing Abteilung"
       },
       "dsgvo": {
         "title": "Datenschutzgrundverordnung",
-        "sidebar_label": "DSGVO"
+        "sidebar_label": "Datenschutzgrundverordnung DSGVO"
       },
       "ewg": {
         "title": "Erwägungsgründe",
@@ -67,11 +59,15 @@
       },
       "flash01-dsa": {
         "title": "flash01-dsa",
-        "sidebar_label": "Lernkarten DSA 01"
+        "sidebar_label": "Lernkarten DSA [34]"
       },
       "flash01-dsb": {
         "title": "flash01-dsb",
-        "sidebar_label": "Lernkarten DSB 01"
+        "sidebar_label": "Lernkarten DSB [10]"
+      },
+      "flash02-dsa": {
+        "title": "flash02-dsa",
+        "sidebar_label": "Lernkarten DSA [123]"
       },
       "flashcards": {
         "title": "Lernkarten",
@@ -83,7 +79,7 @@
       },
       "geheim": {
         "title": "Gesetz zum Schutz von Geschäftsgeheimnissen",
-        "sidebar_label": "GeschGehG"
+        "sidebar_label": "Geschäftsgeheimnisse GeschGehG"
       },
       "gesetze": {
         "title": "Datenschutz basiert auf Gesetzen",
@@ -99,15 +95,19 @@
       },
       "kunsturhg": {
         "title": "kunsturhg",
-        "sidebar_label": "KunstUrhG"
+        "sidebar_label": "Kunst-Urheberrecht KunstUrhG"
       },
       "liste01-dsa": {
-        "title": "DSA Fragen",
-        "sidebar_label": "Checkliste DSA 01"
+        "title": "DSA 34 Fragen",
+        "sidebar_label": "Checkliste DSA [34]"
       },
       "liste01-dsb": {
-        "title": "DSB Fragen",
-        "sidebar_label": "Checkliste DSB 01"
+        "title": "DSB 10 Fragen",
+        "sidebar_label": "Checkliste DSB [10]"
+      },
+      "liste02-dsa": {
+        "title": "DSA 123 Fragen",
+        "sidebar_label": "Checkliste DSA [123]"
       },
       "material": {
         "title": "Gesammelte Werke",
@@ -117,9 +117,17 @@
         "title": "Playground",
         "sidebar_label": "Playground"
       },
+      "praesentation-dsb": {
+        "title": "Datenschutzbeauftragter",
+        "sidebar_label": "Präsentation DSB"
+      },
+      "praesentation-dsgvo": {
+        "title": "Datenschutzgrundverordnung",
+        "sidebar_label": "Präsentation DSGVO"
+      },
       "projekt": {
-        "title": "Projekt Vorbereitung",
-        "sidebar_label": "Projekt Vorbereitung"
+        "title": "projekt",
+        "sidebar_label": "Projekt-Vorbereitung"
       },
       "projekt01": {
         "title": "Dokumente und Zeitplan",
@@ -129,40 +137,54 @@
         "title": "Dokumente prüfen",
         "sidebar_label": "Dokumente prüfen"
       },
-      "projekt03": {
-        "title": "Präsentation",
-        "sidebar_label": "Präsentation"
-      },
       "projekt04": {
         "title": "Bewertung Audit",
         "sidebar_label": "Bewertung Audit"
       },
       "readme-2": {
-        "title": "readme-2"
+        "title": "Docusaurus",
+        "sidebar_label": "Docusaurus Vorstellung"
       },
       "readme-3": {
-        "title": "readme-3"
+        "title": "Docusaurus Know How",
+        "sidebar_label": "Docusaurus Know How"
       },
       "readme": {
         "title": "Installation",
         "sidebar_label": "Installation und Dokumentation"
       },
       "reveal": {
-        "title": "Mitarbeitersensibilisierung Datenschutz (DSGVO)",
+        "title": "Reveal",
+        "sidebar_label": "Reveal"
+      },
+      "richtlinien-ma": {
+        "title": "richtlinien-ma",
+        "sidebar_label": "Bewertung Arbeitnehmer-Leistungen"
+      },
+      "schulung-ds-1": {
+        "title": "Schulung Datenschutz (DSGVO)",
+        "sidebar_label": "Schulung DS Übersicht"
+      },
+      "schulung-ma-1": {
+        "title": "Schulung Datenschutz (DSGVO)",
         "sidebar_label": "Schulung MA Datenschutz"
       },
       "sdm": {
         "title": "SDM Standard-Datenschutz-Modell",
         "sidebar_label": "SDM Modell"
+      },
+      "tmg": {
+        "title": "Telemediengesetz (TMG)",
+        "sidebar_label": "Telemediengesetz (TMG)"
       }
     },
     "links": {
+      "Blog": "Blog",
       "Gesetze": "Gesetze",
       "Lernen": "Lernen",
       "Förderung": "Förderung",
       "AUDIT": "AUDIT",
-      "Projekte": "Projekte",
-      "Blog": "Blog"
+      "Projekte": "Projekte"
     },
     "categories": {
       "Gesetze": "Gesetze",

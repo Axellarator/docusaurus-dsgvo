@@ -1,7 +1,7 @@
 ---
 id:kunsturhg
 hide_title: Gesetz betreffend das Urheberrecht an Werken der bildenden Künste und der Photographie
-sidebar_label: KunstUrhG
+sidebar_label: Kunst-Urheberrecht KunstUrhG
 ---
 <div class="dsa" id="ds-oben"></div>
 

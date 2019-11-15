@@ -12,12 +12,6 @@ einer minimalistischen Textsprache. Hintergrund ist, dass Docusaurus Markdown ve
 
 ## Markdown-Textverarbeitungen (anklicken)
 <!--DOCUSAURUS_CODE_TABS-->
-<!--Zettlr-->
-
-### Zettlr ist sehr leistungsfähig und kann in vielen Bereichen Word ersetzen.
-* [WWW Home](https://npp-user-manual.org/)
-* [Dokumentation](https://docs.zettlr.com/de/)
-* [Download](<https://www.zettlr.com/download/win32>)
 
 <!--Notepad++-->
 
@@ -26,6 +20,13 @@ einer minimalistischen Textsprache. Hintergrund ist, dass Docusaurus Markdown ve
 * [Dokumentation](https://npp-user-manual.org/)
 * [Download](https://notepad-plus-plus.org/downloads/)
 
+<!--Zettlr-->
+
+### Zettlr ist sehr leistungsfähig und kann in vielen Bereichen Word ersetzen.
+* [WWW Home](https://npp-user-manual.org/)
+* [Dokumentation](https://docs.zettlr.com/de/)
+* [Download](<https://www.zettlr.com/download/win32>)
+
 
 <!--Brackets-->
 
@@ -33,6 +34,14 @@ einer minimalistischen Textsprache. Hintergrund ist, dass Docusaurus Markdown ve
 * [WWW Home](http://brackets.io/)
 * [Dokumentation](https://github.com/adobe/brackets/wiki)
 * [Download](https://github.com/adobe/brackets/releases/download/release-1.14/Brackets.Release.1.14.msi)
+
+<!--Word-->
+
+### Word geht auch, aber ... 
+* Word benötigt das [WRITAGE add-in](http://www.writage.com/#download). Also Link anklicken, Herunterladen und installieren >>  writage.msi im Download-Ordner
+
+Writage verwandelt Word in einen Markdown WYSIWYG Editor, so dass Markdown Dateien geöffnet und editiert werden können. Danach werden die Dateien als Markdown-Dateien abgespeichert. Das Ergebnis und die Wege dahin sind nicht prickelnd. Beim Öffnen via Datei öffnen, muss Word mitgeteilt werden, dass alle Dateien zu öffnen sind ``` *.* ```.
+Dann möchte Word beim ersten Mal Editor für das Web werden, dieses tunlichst ablehnen. Dann versucht Word eventuelle Links oder CSS Dateien aufzulösen; ignorieren! Dann sollte es losgehen. Beim Speichern ```Speichern unter``` findet sich der Eintrag für Markdown. Darauf achten, dass die Dateien mit **md** enden. 
 
 <!--END_DOCUSAURUS_CODE_TABS-->
 
@@ -51,77 +60,100 @@ ___
 
 # Get Started in 5 Minutes
 
-1. Schritt: **NODE** und **YARN** in den richtigen Versionen laden und installieren
+## Zwei Wege ins Glück
 
-	* [Node herunterladen](https://nodejs.org/en/download/) 
-	* Auf der Webseite Current - Latest Features anklicken
-	* Windows **MSI 32-bit** installer auswählen und herunterladen; landet normalerweise in dem Download-Verzeichnis des Benutzers.
-	* [Yarn herunterladen](https://yarnpkg.com/lang/en/docs/install/#windows-stable)
-	* Version ist Windows und Stable; landet normalerweise auch im Download-Verzeichnis des Benutzers.
+> 1. Schritt: **NODE** und **YARN** in den richtigen Versionen laden und installieren
+<!--DOCUSAURUS_CODE_TABS-->
+
+<!--Node Download-->
+
+[Node herunterladen](https://nodejs.org/en/) 
 	
-2. Installation der Dateien
-
-	* Im Download-Verzeichnis Node (zB. node-v12.10.0-x86.msi) anklicken; es erscheint der Node Setup Wizard; Next anklicken; Lizenz akzeptieren; Next anklicken, Ziellaufwerk übernehmen und Next anklicken. **Und nicht die Tools anklicken** (Sonst dauert die Installation ewig); Next und Fertig anklicken. 
-	* Im Download-Verzeichnis Yarn (zB. yarn-1.17.3.msi) anklicken; es erscheint die normale Sicherheitswarnung; Ausführen anklicken; 
-	* Verzeichnisse beibehalten und bis Fertig durchklicken
-	* Sowohl Node als auch Yarn sind jetzt im Windows-Suchpfad eingetragen.
+* Auf der Webseite Current - Latest Features anklicken und herunterladen; landet normalerweise im Download-Verzeichnis des Benutzers. 
 	
-3. Dokusaurus installieren
+* Im Download-Verzeichnis Node (node-vxx.xx.x-x86.msi) anklicken; es erscheint der Node Setup Wizard; Next anklicken; Lizenz akzeptieren; Next anklicken, Ziellaufwerk übernehmen und Next anklicken. **Und nicht die Tools anklicken** (Sonst dauert die Installation ewig); Next und Fertig anklicken. 
+	
+<!--Yarn Download-->	
+	
+[Yarn herunterladen](https://yarnpkg.com/lang/en/docs/install/#windows-stable) 
+	
+* Version ist Windows und Stable; landet normalerweise im Download-Verzeichnis des Benutzers.
+	
+* Im Download-Verzeichnis Yarn (zB. yarn-1.xx.x.msi) anklicken; es erscheint die normale Sicherheitswarnung; Ausführen anklicken; Verzeichnisse beibehalten und bis Fertig durchklicken.
+	
+<!--END_DOCUSAURUS_CODE_TABS-->
 
-	Jetzt kommt etwas **Neues** für durchtrainierte Rumklicker, es kommt die Kommandozeile, wird zu jedem Windows 10 kostenfrei mitgeliefert. Die Kommandozeile wird, wie folgt, gestartet: Dieser spezielle Modus kann aus Windows heraus, über mehrere Arten aufgerufen werden.
+> 2. Schritt: Docusaurus Installation via GitHub oder von Hand
+	
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Installation mit GitHub-->
+
+### Dokusaurus via GitHub installieren
+
+* Die GitHub Download Seite findet sich hier: https://desktop.github.com/. Der GitHub Desktop vereinfacht die Update Prozesse wesentlich. Das ganze Gefrickel mit Zip-Dateien, Hochladen von Präsentationen und Informationstexte fällt weg und erfolgt automatisch.
+* Download für Windows oder MacOS anklicken, runterladen und installieren
+* GitHub Benutzer anlegen und mit der eigenen Email bestätigen
+* GitHub Desktop starten
+
+<!--Installation von Hand-->
+	
+### Dokusaurus von Hand installieren
+
+Jetzt kommt etwas **Neues** für durchtrainierte Rumklicker, es kommt die Kommandozeile, wird zu jedem Windows 10 kostenfrei mitgeliefert. Die Kommandozeile wird, wie folgt, gestartet: Dieser spezielle Modus kann aus Windows heraus, über mehrere Arten aufgerufen werden.
 	   
-* Durch rechten Mausklick auf den Windows Startknopf und die Wahl der Option **Eingabeaufforderung** als **Admin** (Rechte Maustaste) ausführen
-* Oder nur per Tastatur: **[Win + X]** und danach **[A]** > Powershell als **Admin** ausführen
-* Oder im Startmenü von Windows den Punkt **Windows-System** öffnen und darin **Eingabeaufforderung** anklicken und mit der Maus auf **Mehr** fahren und als **Administrator ausführen** anklicken
-* Oder die Windows Fahne unten links anklicken; es erscheint das Inhaltsverzeichnis mit den Kacheln. Runterrollen, schieben, ziehen, was auch immer, bis Nodejs im Verzeichnis erscheint. Nodejs anklicken. **Nodejs Command prompt** mit der **rechten** Maustaste anklicken. Mit der Maus auf **Mehr** fahren und als **Admin** ausführen, anklicken.
+* Durch rechten Mausklick auf den Windows Startknopf und die Wahl der Option **Eingabeaufforderung** ausführen; Alternativ per Tastatur: `[Win] + [X]` und danach `[A]` > Powershell ausführen
+* Wir haben jetzt unser Arbeitsfenster und turnen auf der Kommandozeile herum.  
 
-* Oder was immer euch persönlich gefällt. Wir haben jetzt unser Arbeitsfenster und turnen auf der Kommandozeile herum.  
-
-> 1. Schritt:  Das Docusaurus - Verzeichnis erstellen  - Nicht in Programme, Program Files o.ä. installieren - Unter Windows 10 kann hier nur der Administrator arbeiten und der Benutzer muss jeden Schritt seiner Untaten abnicken. Zum Arbeiten mit dieser Dokumentation, nehmt **%homepath%\\Docusaurus**. Der Docusaurus Ordner kann mit dem Explorer erstellt werden, ansonsten auf der Kommandozeile, wie folgt: 
-	
+1. Schritt:  Das Docusaurus - Verzeichnis erstellen  - Nicht in Programme, Program Files o.ä. installieren - Unter Windows 10 kann hier nur der Administrator arbeiten und der Benutzer muss jeden Schritt seiner Untaten abnicken. Zum Arbeiten mit dieser Dokumentation, nehmt **%homepath%\\Docusaurus**. Der Docusaurus Ordner kann mit dem Explorer erstellt werden, ansonsten auf der Kommandozeile, wie folgt: 
 	
 	a) cd %homepath%  b) md Docusaurus  c) cd Docusaurus
-
 		
-> 2. Schritt: **npm update** eingeben und \<Enter\>; wenn alles richtig installiert wurde, lädt der PC die neueste Version oder sagt "Alles OK".
+2. Schritt: **npm update** eingeben und \<Enter\>; wenn alles richtig installiert wurde, lädt der PC die neueste Version oder sagt "Alles OK".
 	
-> 3. Schritt: Dann Im Docusaurus Verzeichnis **npx docusaurus-init** eingeben und \<Enter\>; docusaurus wird installiert; Anzeige von Fehlern etc. ignorieren.
+3. Schritt: Dann Im Docusaurus Verzeichnis **npx docusaurus-init** eingeben und \<Enter\>; docusaurus wird installiert; Anzeige von Fehlern etc. ignorieren.
 	
-> 4. Schritt: **cd website** eingeben und \<Enter\>
+4. Schritt: **cd website** eingeben und \<Enter\>
 
-> 5. Schritt: **npm start** eingeben und \<Enter\>; jetzt wird die Docusaurus-basierende Webseite/Installation aufgerufen. In dem Arbeitsfenster erscheint: LiveReload server 35729 und Docusaurus Server 3000; kann alles ein bisschen dauern aber dann: startet der Browser und es erscheint Docusaurus Web **TaDa**
+5. Schritt: **npm start** eingeben und \<Enter\>; jetzt wird die Docusaurus-basierende Webseite/Installation aufgerufen. In dem Arbeitsfenster erscheint: LiveReload server 35729 und Docusaurus Server 3000; kann alles ein bisschen dauern aber dann: startet der Browser und es erscheint Docusaurus Web **TaDa**
 
 	
-4. Digital Audit installieren
+### Digital Audit installieren
 
-	* die Digital Audit Zip Datei entpacken; geht bestens mit 7-Zip; mit rechter Maustaste anklicken und zu 7-Zip den Zeiger verschieben und weiter nach entpacken nach "Digital Audit" und selbiges anklicken.
-	* In diesem Verzeichnis ist jetzt eine Verzeichnisstruktur.
-	* Bevor kopiert wird, im Arbeitsfenster den Docusaurus  Webserver stoppen: zweimal \<Strg\>\<C\> hintereinander reicht.
-	* Jetzt die Dateien aus Digital Audit docs **in das Docusaurus-Unterverzeichnis \\docs kopieren.**
-	* Dann alle Daten und Verzeichnisse aus **static** nach "...Docusaurus\\website\\static\\" kopieren.
-	* Analog blog und core Dateien kopieren
-	* Analog sitebars.json und siteConfig.js nach Website kopieren und vorhandene Dateien überschreiben.
-	* webs.bat nach website kopieren: In webs.bat steht cd %homepath%\Docusaurus\website und npm start. Diese Datei kann zum Starten des Webservers auch mit dem Explorer angeklickt werden.
-	* Webserver wieder starten: Ins Arbeitsfenster zurück und webs und \<Enter\> eingeben. Es erscheint Digital Audit im Browser; funktioniert in Edge, Chrome, Firefox und diversen anderen.
+* die Digital Audit Zip Datei entpacken; geht bestens mit 7-Zip; mit rechter Maustaste anklicken und zu 7-Zip den Zeiger verschieben und weiter nach entpacken nach "Digital Audit" und selbiges anklicken.
+* In diesem Verzeichnis ist jetzt eine Verzeichnisstruktur.
+* Bevor kopiert wird, im Arbeitsfenster den Docusaurus  Webserver stoppen: zweimal \<Strg\>\<C\> hintereinander reicht.
+* Jetzt die Dateien aus Digital Audit docs **in das Docusaurus-Unterverzeichnis \\docs kopieren.**
+* Dann alle Daten und Verzeichnisse aus **static** nach "...Docusaurus\\website\\static\\" kopieren.
+* Analog blog und core Dateien kopieren
+* Analog sitebars.json und siteConfig.js nach Website kopieren und vorhandene Dateien überschreiben.
+* webs.bat nach website kopieren: In webs.bat steht cd %homepath%\Docusaurus\website und npm start. Diese Datei kann zum Starten des Webservers auch mit dem Explorer angeklickt werden.
+* Webserver wieder starten: Ins Arbeitsfenster zurück und webs und \<Enter\> eingeben. Es erscheint Digital Audit im Browser; funktioniert in Edge, Chrome, Firefox und diversen anderen.
 
-## Schnellstart Webserver
+<!--END_DOCUSAURUS_CODE_TABS-->
 
-1. Rechner aus und wieder an
-2. Kaffee oder Tee bereitstellen
-3. Ein Arbeitsfenster als Administrator öffnen > Beispiele weiter oben
-4. **cd %homepath%\\Documents\\Docusaurus\\website** **npm start**
-5. Oder mit dem Explorer **webs.bat** anklicken
+___
+___
+> 3. Schritt: **Docusaurus starten**
 
+Wenn die Installation einmal durch ist, dann werden nur noch die nachfolgenden Schritte ausgeführt
+
+1. Kaffee oder Tee bereitstellen
+2. Ein Arbeitsfenster öffnen > Beispiele weiter oben
+3. **cd %homepath%\\Documents\\Docusaurus\\website** **npm start**
+4. Oder mit dem Explorer **webs.bat** anklicken
+
+___
+___
 ## Directory Structure
 
 Die Projektstruktur sieht ungefähr wie nachfolgend aus: 
 
-> * Wichtig ist: **docs**, hier finden sich alle wesentlichen Dateien.
-> * in **blog** kann der Benutzer einfach eine Datei kopieren und per Datum im Dateinamen neu abspeichern und sofort ist die Datei unter **Blog**zu sehen.
-> * in **core** findet sich **Footer.js**, damit lassen sich die dortigen Einträge anpassen, bzw. erweitern.
-> * **i18n** und **node_modules** werden erstmal ignoriert, da sollte man nur herumfrickeln mit Javascript Kenntnissen.
-> * im Verzeichnis **pages** gibt es das Unterverzeichnis \"en\" dort liegen die Javascript Dateien, die ebenfalls leicht angepasst werden können.
-> * Und in **static** finden sich etliche Unterverzeichnisse mit weiteren Unterverzeichnissen und Dateien, die allesamt statisch sind und nicht verändert werden sollen; z.B. Bilder in \\img\\.
+* Wichtig ist: **docs**, hier finden sich alle wesentlichen Dateien.
+* in **blog** kann der Benutzer einfach eine Datei kopieren und per Datum im Dateinamen neu abspeichern und sofort ist die Datei unter **Blog**zu sehen.
+* in **core** findet sich **Footer.js**, damit lassen sich die dortigen Einträge anpassen, bzw. erweitern.
+* **i18n** und **node_modules** werden erstmal ignoriert, da sollte man nur herumfrickeln mit Javascript Kenntnissen.
+* im Verzeichnis **pages** gibt es das Unterverzeichnis \"en\" dort liegen die Javascript Dateien, die ebenfalls leicht angepasst werden können.
+* Und in **static** finden sich etliche Unterverzeichnisse mit weiteren Unterverzeichnissen und Dateien, die allesamt statisch sind und nicht verändert werden sollen; z.B. Bilder in \\img\\.
 	
 ```
 nodejs/
@@ -163,7 +195,7 @@ nodejs/
 
 # Editing Content
 
-Notepad++ ist hier nur Platzhalter. Es kann jeder der obenaufgeführten Editoren verwendet werden. 
+Notepad++ ist hier nur Platzhalter. Es kann jeder der obenaufgeführten Editoren verwendet werden. Bei der Nutzung von GitHub steht der Zugriff via Visual Studio zur Verfügung, 
 
 ## Eine existierende **docs** Seite anpassen
 

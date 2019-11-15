@@ -1,7 +1,7 @@
 ---
 id: geheim
 title:  Gesetz zum Schutz von Geschäftsgeheimnissen
-sidebar_label: GeschGehG
+sidebar_label: Geschäftsgeheimnisse GeschGehG
 ---
 <!-- "Gesetz zum Schutz von Geschäftsgeheimnissen vom 18. April 2019 (BGBl. I S. 466)" --> 
 

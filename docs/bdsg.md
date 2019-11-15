@@ -1,7 +1,7 @@
 ---
 id: bdsg
 title: Bundesdatenschutzgesetz
-sidebar_label: BDSG
+sidebar_label: Bundesdatenschutzgesetz BDSG
 ---
 
 <div class="dsa" id="ds-oben"></div>

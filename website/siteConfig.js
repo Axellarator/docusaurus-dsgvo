@@ -1,4 +1,4 @@
-/**
+/** SITECONFIG.JS
  * Copyright (c) 2017-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -38,6 +38,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
+    {blog: true, label: 'Blog'},
     {doc: 'gesetze', label: 'Gesetze'},
 	{doc: 'flashcards', label: 'Lernen'},
     {doc: 'foerderung', label: 'Förderung'},
@@ -46,7 +47,6 @@ const siteConfig = {
 //	{doc: 'reveal', label: 'Reveal'},
 //  {page: 'help', label: 'Hilfe'},
 //	{page: 'users', label: 'User'},
-    {blog: true, label: 'Blog'},
   ],
  // Pfad zum editieren - Klappt noch nicht
  
@@ -64,13 +64,16 @@ const siteConfig = {
   favicon: 'img/favicon.ico',
 
   /* Colors for website */
+  /* colors: {
+    primaryColor: '#422c49',
+    secondaryColor: '#2e1e33',
+  } */
   colors: {
     primaryColor: '#209c2f',
     secondaryColor: '#166d20',
   },
 
   /* Custom fonts for website */
-  /*
   fonts: {
     myFont: [
       "Times New Roman",
@@ -81,10 +84,9 @@ const siteConfig = {
       "system-ui"
     ]
   },
-  */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Value Grid`,
+  copyright: `Copyright © ${new Date().getFullYear()} Value Grid Engineering Group`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
@@ -94,7 +96,6 @@ const siteConfig = {
   // Add custom scripts here that would be placed in <script> tags.
   scripts: [
 	'https://buttons.github.io/buttons.js',
-	{src: '/js/flash01-dsb.js', type: 'text/javascript',}, 
 	{src: '/js/flash01-dsa.js', type: 'text/javascript',},
 	{src: '/js/flash01-dsa-data.js', type: 'text/javascript',},
     {src: '/js/liste01-dsa.js', type: 'text/javascript',},
@@ -123,6 +124,8 @@ const siteConfig = {
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.
   docsSideNavCollapsible: true,
+  
+  blogSidebarCount: 'ALL',
 
   // Show documentation's last contributor's name.
   enableUpdateBy: true,

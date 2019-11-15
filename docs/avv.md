@@ -1,7 +1,7 @@
 ---
 id: avv
 title: Auftragsverarbeitungsverträge (AVV)
-sidebar_label: Auftragsverarbeitung
+sidebar_label: Auftragsverarbeitung (AVV)
 ---
 <div class="dsa" id="ds-oben"></div>
 
@@ -178,7 +178,7 @@ ___
 * Mindestangaben nach § 47 Abs. 2 DSGVO.
 * Genehmigung der verbindlichen internen Datenschutzvorschriften durch die zuständige Aufsichtsbehörde im Kohärenzverfahren (Art. 63 ff. DSGVO).
 
-#### GEEIGNETE GARANTIEN DURCH GENEHMIGTE VERHALTENSREGELN UND ZERTIFIZIERUNGSMECHANISMEN
+#### GEEIGNETE GARANTIEN DURCH GENEHMIGTE VERHALTENSREGELN UND ZERTIFIZIERUNGS-MECHANISMEN
 * Soweit ersichtlich sind bislang nur Verhaltensregeln (Art. 40, 41 DSGVO) von der Versicherungswirtschaft (GDV) existent. Zertifizierungsmechanismen (Art. 42, 43 DSGVO) soweit ersichtlich bislang noch nicht genehmigt.
 * Idee: Selbstregulierungsinstrumente stellen sicher, dass ein bestimmtes Datenschutzniveau besteht und können daher als Garantie dienen.
 * Problem: Unternehmen müssen mittels vertraglicher oder sonstiger rechtlich bindender Instrumente zur Anwendung verpflichtet werden.
@@ -207,16 +207,59 @@ Wenn keine der vorgenannten Garantien gegeben ist, ist eine Übermittlung person
 * Betroffener muss vorweg über die möglichen Risiken einer Datenübermittlung bei Fehlen eines Angemessenheitsbeschlusses und anderweitiger geeigneter Garantien unterrichtet werden.
 
 ___
-### FAZIT FÜR DEN DATENSCHUTZBEAUFTRAGTEN
-> * Datenverarbeitungsvorgängen bei denen personenbezogene Daten ins Ausland übertragen werden, ist besondere Aufmerksamkeit zu schenken.
+### FAZIT FÜR DEN DATENSCHUTZBEAUFTRAGTEN 
+* Datenverarbeitungsvorgängen bei denen personenbezogene Daten ins Ausland übertragen werden, ist besondere Aufmerksamkeit zu schenken.
 
-> * Eine Übertragung von personenbezogen Daten in ein Drittland ist nur zulässig, wenn ein Angemessenheitsbeschluss existiert, geeignete Garantien vorliegen oder eine sonstige Ausnahme vorliegt.
+* Eine Übertragung von personenbezogen Daten in ein Drittland ist nur zulässig, wenn ein Angemessenheitsbeschluss existiert, geeignete Garantien vorliegen oder eine sonstige Ausnahme vorliegt.
 
-> * Ggf. ist eine doppelte Absicherung zu erwägen, z.B. Vereinbarung von Standartvertragsklauseln mit Geschäftspartnern in Großbritannien (Brexit).
+* Ggf. ist eine doppelte Absicherung zu erwägen, z.B. Vereinbarung von Standartvertragsklauseln mit Geschäftspartnern in Großbritannien (Brexit).
 
 ___
 ### Verzeichnis von Verarbeitungstätigkeiten Artikel 30 DSGVO
 `Jeder Verantwortliche und gegebenenfalls sein Vertreter führen ein Verzeichnis aller Verarbeitungstätigkeiten, die ihrer Zuständigkeit unterliegen.`
+
+___
+### Checkliste nach Art. 28 und 29 DSGVO
+
+#### müssen im AV-Vertrag aufgenommen werden
+
+    Wer ist der Verantwortliche für die Datenverarbeitung?
+
+    Was ist der Gegenstand und die Dauer der Verarbeitung?
+
+    Welcher Art ist die Verarbeitung und zu welchem Zweck findet sie statt?
+
+    Welcher Art sind die personenbezogenen Daten und Kategorien betroffener Personen?
+
+    Welchen Umfang haben die Weisungsbefugnisse?
+
+    Inwieweit hat der Auftragsverarbeiter eine Informationspflicht,   
+    falls eine Weisung gegen Datenschutzrecht verstößt?
+
+    Welche Pflichten und Rechte hat der Verantwortliche?
+
+#### Außerdem müssen folgende Informationen enthalten sein
+
+    eine Verpflichtung der zur Verarbeitung befugten Personen auf Vertraulichkeit
+
+    ein Nachweis über die Durchführung technischer und organisatorischer Maßnahmen (TOM)   
+    durch den Auftragsverarbeiter
+
+    eine Regelung bezüglich ausdrücklicher Zustimmung, allgemeiner Genehmigung   
+    oder Verbot zu dem Hinzuziehen von Subunternehmern
+
+    ein Hinweis, dass Subunternehmern dieselben vertraglichen Pflichten auferlegt werden
+
+    Unterstützung des Verantwortlichen durch den Auftragsverarbeiter bei der Beantwortung   
+    von Betroffenenanträgen nach Art. 12-22 DSGVO sowie dessen Pflichten aus Art. 32-36 DSGVO
+
+    Löschung oder Herausgabe der Daten nach Wahl des Verantwortlichen nach Beendigung des Auftrags
+
+    Informationen zum Nachweis der Einhaltung des Art. 28 DSGVO durch den Auftragsverarbeiter,   
+    sowie Unterstützungspflicht bei Überprüfungen oder Vor-Ort-Kontrollen durch den Verantwortlichen
+
+___
+___
 
 </div>
  

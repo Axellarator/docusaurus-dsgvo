@@ -1,7 +1,7 @@
 ---
 id: liste01-dsb
-title: DSB Fragen
-sidebar_label: Checkliste DSB 01
+title: DSB 10 Fragen
+sidebar_label: Checkliste DSB [10]
 ---
 
 <table id="dsaListe"><!--Hier wird alles reingepackt-->  

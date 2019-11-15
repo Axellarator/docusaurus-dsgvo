@@ -4,7 +4,7 @@ title: Dokumente und Zeitplan
 sidebar_label: Dokumente und Zeitplan
 ---
 
-## Anforderung Dokumente zum Audit: __Fey Lamellenringe GmbH & Co KG__
+## Anforderung Dokumente zum Audit: _____________________________________________
 
 ### Datenschutz-Vorlagen anfordern
 
@@ -17,15 +17,16 @@ sidebar_label: Dokumente und Zeitplan
 5. **DSB:** Die Dokumentation Bestellung Datenschutzbeauftragter, Tätigkeitsbericht
 6. Erstellung eines **Datenschutzkonzeptes***
 7. Unterlagen Mitarbeiterschulung
-8. __Falls vorhanden: QM Handbuch__
-9. __Handelsregisterauszug__
-__
+8. **Falls vorhanden: QM Handbuch**
+9. **Handelsregisterauszug**
 
-### Anschreiben an: __Fey Lamellenringe GmbH & Co KG__
+___
 
->“Sehr geehrterHerr Fey, sehr geehrter Herr Holzheu,
->
-> zur Vorbereitung des Audits Ihres Unternehmens benötigen wir noch Unterlagen. WIR möchten wir Sie höflich bitten uns die entsprechenden Vereinbarungen, Verträge, siehe nachfolgende Liste, vorab zukommen zu lassen.
+### Anschreiben an: 
+
+**Sehr geehrter Herr/Frau_________, sehr geehrter Herr/Frau_________,**
+
+zur Vorbereitung des Audits Ihres Unternehmens benötigen wir noch Unterlagen. WIR möchten wir Sie höflich bitten uns die entsprechenden Vereinbarungen, Verträge, siehe nachfolgende Liste, vorab zukommen zu lassen.
 
 1. Verzeichnis von Verarbeitungstätigkeiten
 2. Die Dokumentation der Sicherheit der Verarbeitung (Technische und organisatorische Maßnahmen)
@@ -37,12 +38,13 @@ __
 8. QM Handbuch
 9. Handelsregisterauszug
 
-> Wir werden diese Unterlagen vorab auf Inhalt und rechtliche Rahmenbedingungen prüfen, so dass wir einen soliden Einstieg ins Unternehmen bekommen und dieverse Dinge schon klären können.
->
-> Sollten Sie uns Teile nicht zukommen lassen können, informieren Sie uns bitte frühzeitig, damit wir uns zum Audit entsprechend vorbereiten können.
->
-> Mit freundlichen Grüßen
-> Dieter Au, Chef-Auditor
+Wir werden diese Unterlagen vorab auf Inhalt und rechtliche Rahmenbedingungen prüfen, so dass wir einen soliden Einstieg ins Unternehmen bekommen und dieverse Dinge schon klären können.
+
+Sollten Sie uns Teile nicht zukommen lassen können, informieren Sie uns bitte frühzeitig, damit wir uns zum Audit entsprechend vorbereiten können.
+
+Mit freundlichen Grüßen
+Dieter Audieter, Chef-Auditor
+
 ___
 
 ## Festlegung/Abstimmung Zeitplan
@@ -78,4 +80,5 @@ ___
 		19:00 Uhr erste Übersicht für GL
 		Ende ca. 21:00 Uhr
 #### 4. Woche: Informationen/Dokumente auswerten
+
 #### 5. Woche: Audit Dokumente erstellen und versenden bzw. persönlich übergeben

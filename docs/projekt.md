@@ -1,55 +1,55 @@
 ---
 id: projekt
-title: Projekt Vorbereitung
-sidebar_label: Projekt Vorbereitung
+hide_title: Projekt-Vorbereitung
+sidebar_label: Projekt-Vorbereitung
 ---
-> Projektaufgabe Datenschutzauditor
-> * Aufgabe 1: Leitfaden findet sich hier
-> * Aufgabe 2: Zu finden unter Dokumente und Zeitplan
-> * Aufgabe 3: Zu finden unter Dokumente prüfen
-> * Aufgabe 4: Zu finden unter Projektaufgabe>>Präsentation
-> * Aufgabe 5: Die Checklisten finden sich unter Audit Fragenkataloge für IT und Marketing
-> * Aufgabe 6: Bewertungsschema findet sich unter Bewertung Audit
-> * Aufgabe 7: Abschlussbericht findet sich unter Bewertung Audit
+
+
+
+## Audit Vorbereitung
+
 ___
 
-> **Regel Nr. 1: Keine ungestellten Fragen beantworten**
+**Regel Nr. 1: Keine ungestellten Fragen beantworten**
 
-> **Regel Nr. 2: Fasse dich persönlich sinnvoll kurz**
+**Regel Nr. 2: Fasse dich persönlich sinnvoll kurz**
 
-> **Regel Nr. 3: Gib dem Kunden eine Chance aus seinem Arbeitsleben zu plaudern**
+**Regel Nr. 3: Gib dem Kunden eine Chance aus seinem Arbeitsleben zu erzählen und finde heraus, wo der Schuh tatsächlich drückt**
 
-> **Regeln aller Regel: Schreib alles auf!**
+**Regeln aller Regel: Schreib alles auf!**
+
 ___
 
-# Gesprächsleitfaden zum Audit: __Fey Lamellenringe GmbH & Co KG__
-
-## Audit Prinzipien
-
-> **Unabdingbare Vorraussetzungen klarstellen und erklären**
-
-### Integrität - Sachlich - Sorgfältig - Vertraulich - Unabhängig - Faktengestützter Ansatz - Risikobasierter Ansatz
-
-## Operative Planung und Ablauf
-
-> **Erstkontakt vorbereiten** - **Nimm dir Zeit für die Vorbereitung**
-
-### Generischer Ablauf eines Audits 
+### Ablauf des Audits 
 
 1. Einleitender Kontakt
-2. Auftakt-Besprechung
+2. Auftaktbesprechung >> Kick-off
 3. Datenerfassung vor Ort
 4. Analyse
 5. Bericht
 6. Abschlussbesprechung
 
+___
+
+## Leitfaden zur Kommunikation mit den Mitarbeitern und den Führungskräften
+
+### Audit Ziel erklären
+
+### Audit Prinzipien erklären
+
+#### Integrität - Sachlich - Sorgfältig - Vertraulich - Unabhängig - Faktengestützter Ansatz - Risikobasierter Ansatz
+
+### Operative Planung und Ablauf
+
+** Vorbereitung Erstkontakt** - **Nimm dir Zeit für die Vorbereitung**
+
 ### Audit Vorplanung
 
-* Auditleiter und Auditteam bestimmen
-* Persönliches Verhalten
-* Erfahrung Teamleitung
+* Auditleiter und Auditteam vorstellen
+	* Persönliches Verhalten/Vorbild
+* Erfahrung Teamleitung 
 * Wissen und Fertigkeiten, Methodik
-* Bisherige Leistungen des Auditleiters
+* Bisherige Leistungen des Auditleiters, des Teams
 * Referenzen
  
 ### Operative Vorplanung
@@ -82,7 +82,7 @@ ___
 
 ## Zusätzliche Stichpunkte für Erstgespräch und Kick-off
 
-> * Sowohl beim Auftritt als auch beim Abschlussbericht: Immer positiv formulieren und auf Augenhöhe kommunizieren
+* Sowohl beim Auftritt als auch beim Abschlussbericht: Immer positiv formulieren und auf Augenhöhe kommunizieren
 
 ### Auditmethoden
 

@@ -18,6 +18,7 @@
 nav ul {
     list-style: none; 	  
   }
+  
 nav a {
     text-decoration: none; 
 }
@@ -83,7 +84,7 @@ label, input {
 }
 
 .jtt {
-	 position: relative;
+	position: relative;
     top: -4em;
 }
 
@@ -98,6 +99,7 @@ label, input {
 	color: white;
 	font-weight: bold;
  }
+ 
  .knopfpos{
 	position: relative;
 	margin: auto;
@@ -135,7 +137,6 @@ label, input {
     overflow: hidden;
 	color: black;
 	font-weight: bold;
-/*	background: linear-gradient(to bottom, white, grey); */
 }
 
 .knopf:hover,

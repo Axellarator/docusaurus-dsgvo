@@ -48,7 +48,7 @@ ___
 
 ## Auditbericht zum Datenschutz-Audit: Firma Fey Lamellenringe GmbH & Co. KG
 
-> -- Dieser Bericht wird normalerweise automatisch aus den aktuellen Unterlagen heraus generiert --
+** -- Dieser Bericht wird normalerweise automatisch aus den aktuellen Unterlagen heraus generiert -- **
 
 * Das Datenschutz-Audit bezieht sich auf die Inhalte der DSGVO und des BDSG (neu)
 
@@ -58,16 +58,16 @@ ___
 
 ## Auftraggeber ist die 
 
-> Firma Fey Lamellenringe GmbH & Co. KG, 
-	Josef-Fey-Straße 2, 
-	86343 Königsbrunn
+**Firma _____________________________________________**
+**Straße_____________________________________________**
+**PLZ / Ort__________________________________________**
 
 vertreten durch die Geschäftsführer
 
->	Frau Elke Fey 
-	und
-	Herr Peter Holzheu
-> als gleichberechtigte und auch allein vertretungsberechtigte Geschäftsführer.
+**Herr/Frau ________________________________**
+**Herr/Frau ________________________________** 
+
+als gleichberechtigte und auch allein vertretungsberechtigte Geschäftsführer.
 
 Beide sind damit gleichzeitig, aber auch jeweils für sich allein VERANTWORTLICHE gem. DSGVO Art. 4 Abs. 7 i.V.m. DSGVO Art. 24 und Art. 26.
 
@@ -119,9 +119,9 @@ Als Auditoren nahmen teil:
 
 | Name und Rolle | Qualifikation|
 | :---| :---|
-| Herr Dieter Au - leitender Auditor| DSB / DSA (TÜV gepr.), DSG (DEKRA gepr.)|
-| Herr Klaus Bonn - Auditor | DSB / DSA (TÜV gepr.) | 
-| Herr Dieter Kühner - Beobachter | DSB / DSA (TÜV gepr.) |
+| Herr D.Au - leitender Auditor| DSB / DSA (TÜV gepr.), DSG (DEKRA gepr.)|
+| Herr K.Bo - Auditor | DSB / DSA (TÜV gepr.) | 
+| Herr D.Kü - Beobachter | DSB / DSA (TÜV gepr.) |
 | Herr Hans J. Hassknecht - Fachexperte | IT-Sicherheitsbeauftragter (DEKRA gepr.) |
 
 von Seiten der auditierten Firma nehmen teil:
@@ -239,7 +239,7 @@ Dieser Auditbericht wurde dem Auftraggeber am 26.09.2019 um 19:00 Uhr den Gesch�
 
 Königsbrunn, den 26.09.2019
 
-Dieter Au		
+Dieter Audieter		
 Audit-Teamleiter
 
 ___

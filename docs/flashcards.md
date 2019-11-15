@@ -10,9 +10,9 @@ Die zu erzielenden Punkte/Prozente sind wie folgt aufgebaut: Richtige Antworten 
 
 Die Struktur der Karten kann angepasst werden: z.B. gegen die Uhr ausfüllen, nur vorwärts ausfüllen, 33 Zufallskarten aus 120 möglichen, usw. 
 
-**HJinweis** Drucken ruft normalerweise die Druckvorschau auf. Im Firefox wird nur das Druckmenue aufgerufen. Sinnvoll ist das FF-Add On `Print Edit WE`, das einen Knopf im FF einrichtet, der den Druckjob mit Vorschau dann erledigt.
+___
+___
 
- 
 ## Lernkarten für Datenschutzbeauftragte
 
 [Lernkarten DSB 01](flash01-dsb)
@@ -21,12 +21,24 @@ Die Struktur der Karten kann angepasst werden: z.B. gegen die Uhr ausfüllen, nu
 
 [Lernkarten DSA 01](flash01-dsa)
 
-## Auflistung der DSA Fragen als Liste
+___
+___
+**Hinweis: ** Drucken ``` <STRG> <P> ``` ruft normalerweise die Druckvorschau auf. Im Firefox wird nur das Druckmenue aufgerufen. Sinnvoll ist das FF-Add On `Print Edit WE`, das einen Knopf im FF einrichtet, der den Druckjob mit Vorschau dann erledigt. Unter FF kann dan explizit der Druckjob eingerichtet werden, d.h. Überflüssiges kann versteckt werden. Die Seiten werden als HTML oder PDF abgespeichert.
+
+## Auflistung der 10 DSB Fragen 
+
+[Checkliste DSB 01](liste01-dsb)
+
+## Auflistung 34 DSA Fragen 
 
 [Checkliste DSA 01](liste01-dsa)
 
+## Auflistung 123 DSA Fragen
 
+[Checkliste DSA 02](liste02-dsa)
 
+___
+___
 
 
 

@@ -1,4 +1,4 @@
-/**
+/** FOOTER
  * Copyright (c) 2017-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -46,10 +46,10 @@ class Footer extends React.Component {
 			<a href={this.docUrl('readme.html', this.props.language)}>
               Liesmich
             </a>
-            <a href={this.docUrl('readme-1.html', this.props.language)}>
+            <a href={this.docUrl('readme-2.html', this.props.language)}>
               Liesmich auch
             </a>
-			<a href={this.docUrl('readme-2.html', this.props.language)}>
+			<a href={this.docUrl('readme-3.html', this.props.language)}>
               Liesmich erst recht
             </a>
 		  </div>

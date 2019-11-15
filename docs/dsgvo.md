@@ -1,7 +1,7 @@
 ---
 id: dsgvo
 title: Datenschutzgrundverordnung
-sidebar_label: DSGVO
+sidebar_label: Datenschutzgrundverordnung DSGVO
 ---
 <div class="dsa" id="ds-oben"></div>
 
@@ -605,7 +605,7 @@ ___
 
 Die betroffene Person hat das Recht, von dem Verantwortlichen unverzüglich die Berichtigung sie betreffender unrichtiger personenbezogener Daten zu verlangen. Unter Berücksichtigung der Zwecke der Verarbeitung hat die betroffene Person das Recht, die Vervollständigung unvollständiger personenbezogener Daten — auch mittels einer ergänzenden Erklärung — zu verlangen.
  
-<div id="art-10" class="jtt" ></div>
+<div id="art-17" class="jtt" ></div>
  
 > #### Artikel 17 - Recht auf Löschung („Recht auf Vergessenwerden“)  &nbsp;&nbsp;<a href="javascript:history.back()"><img src="/img/zur.png" width="20" >&nbsp;</a><a href="javascript:scroll(0,0)"><img src="/img/oben.png" width="20" ></a>
 
@@ -2009,14 +2009,14 @@ ___
 </ol>
 </li>
 <li>Verstößt ein Verantwortlicher oder ein Auftragsverarbeiter bei gleichen oder miteinander verbundenen Verarbeitungsvorgängen vorsätzlich oder fahrlässig gegen mehrere Bestimmungen dieser Verordnung, so übersteigt der Gesamtbetrag der Geldbuße nicht den Betrag für den schwerwiegendsten Verstoß.</li>
-<li>Bei Verstößen gegen die folgenden Bestimmungen werden im Einklang mit Absatz 2 Geldbußen von bis zu 10 000 000 EUR oder im Fall eines Unternehmens von bis zu 2 % seines gesamten weltweit erzielten Jahresumsatzes des vorangegangenen Geschäftsjahrs verhängt, je nachdem, welcher der Beträge höher ist:
+<li>Bei Verstößen gegen die folgenden Bestimmungen werden im Einklang mit Absatz 2 Geldbußen von bis zu 10 000 000 EUR oder im Fall eines Unternehmens von bis zu 2% seines gesamten weltweit erzielten Jahresumsatzes des vorangegangenen Geschäftsjahrs verhängt, je nachdem, welcher der Beträge höher ist:
 <ol style="list-style-type: lower-alpha;">
 <li>die Pflichten der Verantwortlichen und der Auftragsverarbeiter gemäß den Artikeln 8, 11, 25 bis 39, 42 und 43;</li>
 <li>die Pflichten der Zertifizierungsstelle gemäß den Artikeln 42 und 43;</li>
 <li>die Pflichten der Überwachungsstelle gemäß Artikel 41 Absatz 4.</li>
 </ol>
 </li>
-<li>Bei Verstößen gegen die folgenden Bestimmungen werden im Einklang mit Absatz 2 Geldbußen von bis zu 20 000 000 EUR oder im Fall eines Unternehmens von bis zu 4 % seines gesamten weltweit erzielten Jahresumsatzes des vorangegangenen Geschäftsjahrs verhängt, je nachdem, welcher der Beträge höher ist:
+<li>Bei Verstößen gegen die folgenden Bestimmungen werden im Einklang mit Absatz 2 Geldbußen von bis zu 20 000 000 EUR oder im Fall eines Unternehmens von bis zu 4% seines gesamten weltweit erzielten Jahresumsatzes des vorangegangenen Geschäftsjahrs verhängt, je nachdem, welcher der Beträge höher ist:
 <ol style="list-style-type: lower-alpha;">
 <li>die Grundsätze für die Verarbeitung, einschließlich der Bedingungen für die Einwilligung, gemäß den Artikeln 5, 6, 7 und 9;</li>
 <li>die Rechte der betroffenen Person gemäß den Artikeln 12 bis 22;</li>

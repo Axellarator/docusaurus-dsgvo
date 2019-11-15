@@ -3,7 +3,9 @@ id: material
 title: Gesammelte Werke 
 sidebar_label: Material
 ---
-## PDF
+___
+> ## PDF
+___
 
 ### BSI
 
@@ -31,18 +33,20 @@ sidebar_label: Material
 
 * [Auditor Info: Neufassung Wirtschaftsprüfer Prüfungsstandards](/pdf/idw-eps-970nf-data.pdf)  
 
-### TKMmed!a, einem Unternehmensbereich des VNR Verlag für die Deutsche Wirtschaft AG
+### TKMmed!a, einem Unternehmensbereich des VNR Verlag für die Deut. Wirtschaft AG
 
 * [Datenschutzbeauftragter Arbeitsorganisation 1](/pdf/TKMed-Arbeitsorganisation-DSB1.pdf)  
 * [Datenschutzbeauftragter Arbeitsorganisation 2](/pdf/TKMed-Arbeitsorganisation-DSB2.pdf)  
 * [DSGVO-konformes Löschen](/pdf/TKMed-Broschüre_DAT_04.pdf)  
 
 [Kurzinfo DIN EN ISO 19011:2018 - Norm „Leitfaden zur Auditierung von Managementsystemen“](/pdf/Kurzinfo_ISO-19011-Stand_2018-09-25.pdf)
+
 ___
-## Excel
+> ## Excel
+___
 
 [Kalender](/xls/kalender.xlsx)   
-[Bewertungtungstabelle Datenschutzprozesse](/xls/Bewertungstabelle-Datenschutzprozesse.xlsx)
+[Bewertungstabelle Datenschutzprozesse](/xls/Bewertungstabelle-Datenschutzprozesse.xlsx)
 
 ### [GDD-Ratgeber Checklisten Datenschutz-Pruefung von Rechenzentren](/xls/GDD-Ratgeber_Datenschutz-Pruefung_von_Rechenzentren.pdf)
 
@@ -57,22 +61,22 @@ ___
 * [GDD-Ratgeber Checkliste Trennungskontrolle](/xls/8_Checkliste_Trennungskontrolle.xlsx)  
 
 ___
-## Word
+> ## Word
+___
 
-[Datenschutz-Guru: Auftragsverarbeitungsvertrag](/txt/Auftragsverarbeitungsvertrag_V1_10.docx)
-[Datenschutz-Guru: Datenschutzvereinbarung IT](/txt/Datenschutzvereinbarung_Wartung_und_Pflege_von_IT-Systemen_V2_4.docx
+* [Datenschutz-Guru: Auftragsverarbeitungsvertrag](/txt/Auftragsverarbeitungsvertrag_V1_10.docx)   
+* [Datenschutz-Guru: Datenschutzvereinbarung IT](/txt/Datenschutzvereinbarung_Wartung_und_Pflege_von_IT-Systemen_V2_4.docx)
 
 ___
-## Powerpoint
+> ## Powerpoint
+___
 
 [Basis-Schulung-DSGVO](/ppt/2018-06-Basis-Schulung-DSGVO-kurz_0.pptx)
 
 [Auftragsverarbeitung und Drittländer](/ppt/avv.pptm)
 ___
-## HTML
-
+> ## HTML
+___
 [VeraCrypt Beginner's Guide](/htm/vc/BeginnerTutorial.html)
-
-[DocPad](/test.html)
 
 ___
