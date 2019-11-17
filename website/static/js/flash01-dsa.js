@@ -12,6 +12,7 @@
 let Frage			= "text"; // Frage
 let Antwort			= [];	// Antwort 
 let Loesung			= [];	// Lösung False, true, Wert!
+let Eingabe			= [[],[]];	// Eingabespeicher [aktKarte][Ergebnis, Ergebnis, Ergebnis,...]
 let Checkbox		= [];	// Checkbox angekreuzt!
 let Versteck		= [];	// Felder verstecken
 let refListe		= [];	// refListe für alle Fragen
@@ -254,13 +255,15 @@ function dsa01(jump) {
 	let prozKarte   = 0;
 		aktProzent  = 0;
 		aktPruefung = true;
-	let anzAnt = "";
-	let anzVer = "";
+	let anzAnt 		= "";
+	let anzVer 		= "";
 
 		const iterator = Loesung.values(); //https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array/values
 
 		for(const value of iterator) {
 			anzAnt = "antwort"+y;
+			
+//			Eingabe[aktKarte][y] = Checkbox[y].checked;
 			
 			if((Checkbox[y].checked && value) || (!Checkbox[y].checked && !value)){ // Alles richtig: Richtig angekreuzt und nicht-Richtig nicht angekreuzt
 				document.getElementById(anzAnt).style.color = "green";
@@ -269,7 +272,7 @@ function dsa01(jump) {
 			
 			if((!Checkbox[y].checked && value) || (Checkbox[y].checked && !value)){ // Falsch: Richtig nicht angekreuzt und Falsch angekreuzt
 				document.getElementById(anzAnt).style.color = "blue";
-				Checkbox[y].checked = false;    // Angekreuztes löschen
+//				Checkbox[y].checked = false;    // Angekreuztes löschen
 				prozZaehler--
 		}
 			y++	

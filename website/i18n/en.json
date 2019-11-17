@@ -85,6 +85,10 @@
         "title": "Datenschutz basiert auf Gesetzen",
         "sidebar_label": "Gesetze und Datenschutz"
       },
+      "ifg": {
+        "title": "Informationsfreiheitsgesetz",
+        "sidebar_label": "Informationsfreiheitsgesetz IFG"
+      },
       "impressum": {
         "title": "Impressum",
         "sidebar_label": "Impressum"
@@ -92,6 +96,10 @@
       "it-itil": {
         "title": "IT Service Management",
         "sidebar_label": "IT Service Management"
+      },
+      "iwg": {
+        "title": "Informationsweiterverwendungsgesetz",
+        "sidebar_label": "Informationsweiterverw.gesetz IWG"
       },
       "kunsturhg": {
         "title": "kunsturhg",
@@ -184,7 +192,8 @@
       "Lernen": "Lernen",
       "Förderung": "Förderung",
       "AUDIT": "AUDIT",
-      "Projekte": "Projekte"
+      "Projekte": "Projekte",
+      "Hilfe": "Hilfe"
     },
     "categories": {
       "Gesetze": "Gesetze",

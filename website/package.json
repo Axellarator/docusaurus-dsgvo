@@ -12,6 +12,6 @@
     "docusaurus": "^1.13.0"
   },
   "dependencies": {
-    "now": "^16.2.0"
+    "now": "^16.5.2"
   }
 }

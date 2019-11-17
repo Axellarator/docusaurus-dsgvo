@@ -23,15 +23,17 @@ const users = [
 const siteConfig = {
   title: 'Digital Audit', // Title for your website.
   tagline: 'Die Webseite für den Auditor',
-  url: 'https://valuegrid.info', // Your website URL https://your-docusaurus-test-site.com
-  baseUrl: '/', // Base URL for your project */
+  url: 'https://axellarator.github.io', // Your website URL https://your-docusaurus-test-site.com
+  baseUrl: '/docusaurus-dsgvo', // Base URL for your project */
+  projectName: 'docusaurus-dsgvo',
+  organizationName: 'axellarator', 
+
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
-
   // Used for publishing and more
-  projectName: 'Digital Audit',
-  organizationName: 'Value Grid Engineering Group',
+  // projectName: 'Digital Audit',
+  // organizationName: 'Value Grid Engineering Group',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
@@ -45,7 +47,7 @@ const siteConfig = {
 	{doc: 'doc1', label: 'AUDIT'},
 	{doc: 'projekt', label: 'Projekte'},
 //	{doc: 'reveal', label: 'Reveal'},
-//  {page: 'help', label: 'Hilfe'},
+    {page: 'help', label: 'Hilfe'},
 //	{page: 'users', label: 'User'},
   ],
  // Pfad zum editieren - Klappt noch nicht

@@ -9,6 +9,109 @@
 
 var oLastUrl = null;
 
+function DSBFragen(intKarte){
+	
+switch (intKarte) {
+	case 0:
+		Frage = 'Die DSGVO ist für die Verantwortlichen zwingend ab wann zu beachten?';
+		Antwort[0] = ['Verstöße gegen die DSGVO können von den Behörden auch vor dem 25.05.2018 sanktioniert werden.'];
+		Antwort[1] = ['Am 24.05.2016 und unmittelbar anwendbar'];
+		Antwort[2] = ['Die DSGVO ist am 24.05.2016 in Kraft getreten, verbindlich anzuwenden erst ab dem 25.05.2018'];
+		Loesung = [false, false, true]; 
+	break; 
+	case 1:
+		Frage = 'Die Datenschutzgrundverordnung ...';
+		Antwort[0] = ['... gilt unmittelbar in allen Mitgliedstaaten.'];
+		Antwort[1] = ['... enthält Öffnungsklauseln, welche es den Mitgliedstaaten ermöglichen, im Rahmen der DSGVO ergänzend eigene Datenschutzvorschriften zu erlassen.'];
+		Antwort[2] = ['... muss erst in eigenes Recht (BDSG) umgesetzt werden und gilt dann unmittelbar.'];
+		Loesung = [true, true, false]; 
+	break; 
+	case 2:
+		Frage = 'Anonymisierte Daten ...';
+		Antwort[0] = ['fallen in den Schutzbereich der DSGVO.'];
+		Antwort[1] = ['fallen nicht in den Schutzbereich der DSGVO.'];
+		Antwort[2] = ['werden in Art. 5 DSGVO definiert.'];
+		Loesung = [false, true, false]; 
+	break; 
+	case 3:
+		Frage = 'Das neue Bundesdatenschutzgesetz (BDSG neu) ...';
+		Antwort[0] = ['... ist mit Wirkung zum 25.05.2018 angepasst worden und ist Teil des Datenschutz-Anpassungs- u. Umsetzungsgesetzes (DSAnpUG-EU).'];
+		Antwort[1] = ['... setzt die DSGVO um.'];
+		Antwort[2] = ['... spezifiziert in Teil 1 und 2 datenschutzrechtliche Regelungen entsprechend der Öffnungsklauseln der DSGVO.'];
+		Loesung = [true, false, false]; 
+	break; 
+	case 4:
+		Frage = 'In welchem Zeitraum sind die Betroffenenrechte vom Verantwortlichen zu erfüllen?';
+		Antwort[0] = ['innerhalb von 42 Tagen ab Geltendmachung der Betroffenenrechte.'];
+		Antwort[1] = ['innerhalb von 24 Stunden nach Eingang des Antrags des Betroffenen mit der Option, diese Frist auf 72 Stunden zu verlängern.'];
+		Antwort[2] = ['unverzüglich bzw. grundsätzlich innerhalb von einem Monat'];
+		Loesung = [false, false, true]; 
+	break; 
+	case 5:
+		Frage = 'Welche Grundsätze benennt die DSGVO?';
+		Antwort[0] = ['Rechtmäßigkeit, Verarbeitung nach Treu und Glauben, Transparenz.'];
+		Antwort[1] = ['Zweckbindung, Datenminimierung, Richtigkeit.'];
+		Antwort[2] = ['Speicherbegrenzung, Integrität und Vertraulichkeit, Rechenschaftspflicht.'];
+		Loesung = [true, true, true]; 
+	break; 
+	case 6:
+		Frage = 'Welche wesentlichen Voraussetzungen müssen entsprechend der DSGVO vorliegen, damit eine Person zum Datenschutzbeauftragten (DSB) benannt werden kann?';
+		Antwort[0] = ['Der DSB erfüllt die Mindestanforderungen für den Datenschutz an Fachkunde und Unabhängigkeit nach § 7 BDSG.'];
+		Antwort[1] = ['Insbesondere wird der DSB aufgrund seines IT-Fachwissens, das er zur Erfüllung seiner Aufgaben benötigt, benannt'];
+		Antwort[2] = ['Der DSB besitzt die Fähigkeiten zur Erfüllung der in Artikel 39 genannten Aufgaben.'];
+		Loesung = [true, false, true]; 
+	break; 
+	case 7:
+		Frage = 'Sie prüfen eine schriftliche Einwilligung gem. Art. 7 DSGVO des Betroffenen zur Datenerhebung. Worauf müssen Sie achten, damit diese Einwilligung formal-juristisch korrekt ist?';
+		Antwort[0] = ['Der Verantwortliche sollte nachweisen können, dass die betroffene Person ihre Einwilligung zu dem Verarbeitungsvorgang gegeben hat.'];
+		Antwort[1] = ['Die Einwilligung erfolgte <strong>freiwillig</strong>, <strong>zwanglos</strong> und <strong>nachweislich</strong>.'];
+		Antwort[2] = ['Die Einwilligung kann jederzeit, durch die betroffene Person, widerrufen werden.'];
+		Loesung = [true, true, true]; 
+	break; 
+	case 8:
+		Frage = 'Muss der Verantwortliche im Falle einer Datenerhebung beim Betroffenen seinen Informationspflichten nachkommen? Und wenn, wann?';
+		Antwort[0] = ['Ja'];
+		Antwort[1] = ['Nein'];
+		Antwort[2] = ['Innerhalb von 72 Stunden bzw. innerhalb eines Monats'];
+		Loesung = [true, false, false];  
+	break; 
+	case 9:
+		Frage = 'Erläutern Sie den Begriff <strong>Pseudonymisieren</strong>.';
+		Antwort[0] = ['Austausch der personenbezogenen Daten, so dass eine Nachvollziehbarkeit für Dritte ausgeschlossen ist und nicht mehr spezifisch betroffenen Personen zugeordnet werden kann.'];
+		Antwort[1] = ['Bei der Pseudonymisierung wird der Name durch ein Pseudonym, zum Beispiel eine Chiffre oder Hash-Code, ersetzt. Diese zusätzlichen Informationen werden gesondert aufbewahrt und unterliegen technischen und organisatorischen Maßnahmen, die gewährleisten, dass eine Re-Pseudonymisierung nur noch eingeschränkt möglich ist.'];
+		Antwort[2] = ['Die pseudonymisierten Daten unterliegen nicht mehr der DSGVO, da diese Daten nicht einer identifizierten oder identifizierbaren natürlichen Person zugewiesen werden können.'];
+		Loesung = [true, true, false];  
+	break; 	
+	
+} // Switch Ende
+
+
+	anzAntworten = Loesung.length; // Wird benötigt für Liste und Maske
+	
+	if (flagListe) return;
+
+let y = 0;
+let anzAnt = "";
+let anzVer = "";
+
+	document.getElementById("dsaFrage").innerHTML = Frage;     
+	
+	for (y = 0; y < anzAntworten; y++){
+		anzAnt = "antwort"+y;
+		document.getElementById(anzAnt).innerHTML = Antwort[y]; 
+
+	}	
+	for (y = anzAntworten; y < maxAntworten; y++){
+		anzAnt = "antwort"+y;
+		anzVer = "versteck"+y;
+		document.getElementById(anzVer).style.visibility = "hidden"; 
+		document.getElementById(anzVer).style.borderBottom  = "solid white";
+		document.getElementById(anzAnt).style.visibility = "hidden"; 
+		document.getElementById(anzAnt).style.borderBottom  = "solid white";
+	}	
+	scroll(0,0); // Experiment
+
+} // Funktion Ende
 function alleFragen(intKarte){
 	
 switch (intKarte) {
@@ -306,109 +409,6 @@ let anzVer = "";
 
 } // Funktion Ende
 
-function DSBFragen(intKarte){
-	
-switch (intKarte) {
-	case 0:
-		Frage = 'Die DSGVO ist für die Verantwortlichen zwingend ab wann zu beachten?';
-		Antwort[0] = ['Verstöße gegen die DSGVO können von den Behörden auch vor dem 25.05.2018 sanktioniert werden.'];
-		Antwort[1] = ['Am 24.05.2016 und unmittelbar anwendbar'];
-		Antwort[2] = ['Die DSGVO ist am 24.05.2016 in Kraft getreten, verbindlich anzuwenden erst ab dem 25.05.2018'];
-		Loesung = [false, false, true]; 
-	break; 
-	case 1:
-		Frage = 'Die Datenschutzgrundverordnung ...';
-		Antwort[0] = ['... gilt unmittelbar in allen Mitgliedstaaten.'];
-		Antwort[1] = ['... enthält Öffnungsklauseln, welche es den Mitgliedstaaten ermöglichen, im Rahmen der DSGVO ergänzend eigene Datenschutzvorschriften zu erlassen.'];
-		Antwort[2] = ['... muss erst in eigenes Recht (BDSG) umgesetzt werden und gilt dann unmittelbar.'];
-		Loesung = [true, true, false]; 
-	break; 
-	case 2:
-		Frage = 'Anonymisierte Daten ...';
-		Antwort[0] = ['fallen in den Schutzbereich der DSGVO.'];
-		Antwort[1] = ['fallen nicht in den Schutzbereich der DSGVO.'];
-		Antwort[2] = ['werden in Art. 5 DSGVO definiert.'];
-		Loesung = [false, true, false]; 
-	break; 
-	case 3:
-		Frage = 'Das neue Bundesdatenschutzgesetz (BDSG neu) ...';
-		Antwort[0] = ['... ist mit Wirkung zum 25.05.2018 angepasst worden und ist Teil des Datenschutz-Anpassungs- u. Umsetzungsgesetzes (DSAnpUG-EU).'];
-		Antwort[1] = ['... setzt die DSGVO um.'];
-		Antwort[2] = ['... spezifiziert in Teil 1 und 2 datenschutzrechtliche Regelungen entsprechend der Öffnungsklauseln der DSGVO.'];
-		Loesung = [true, false, false]; 
-	break; 
-	case 4:
-		Frage = 'In welchem Zeitraum sind die Betroffenenrechte vom Verantwortlichen zu erfüllen?';
-		Antwort[0] = ['innerhalb von 42 Tagen ab Geltendmachung der Betroffenenrechte.'];
-		Antwort[1] = ['innerhalb von 24 Stunden nach Eingang des Antrags des Betroffenen mit der Option, diese Frist auf 72 Stunden zu verlängern.'];
-		Antwort[2] = ['unverzüglich bzw. grundsätzlich innerhalb von einem Monat'];
-		Loesung = [false, false, true]; 
-	break; 
-	case 5:
-		Frage = 'Welche Grundsätze benennt die DSGVO?';
-		Antwort[0] = ['Rechtmäßigkeit, Verarbeitung nach Treu und Glauben, Transparenz.'];
-		Antwort[1] = ['Zweckbindung, Datenminimierung, Richtigkeit.'];
-		Antwort[2] = ['Speicherbegrenzung, Integrität und Vertraulichkeit, Rechenschaftspflicht.'];
-		Loesung = [true, true, true]; 
-	break; 
-	case 6:
-		Frage = 'Welche wesentlichen Voraussetzungen müssen entsprechend der DSGVO vorliegen, damit eine Person zum Datenschutzbeauftragten (DSB) benannt werden kann?';
-		Antwort[0] = ['Der DSB erfüllt die Mindestanforderungen für den Datenschutz an Fachkunde und Unabhängigkeit nach § 7 BDSG.'];
-		Antwort[1] = ['Insbesondere wird der DSB aufgrund seines IT-Fachwissens, das er zur Erfüllung seiner Aufgaben benötigt, benannt'];
-		Antwort[2] = ['Der DSB besitzt die Fähigkeiten zur Erfüllung der in Artikel 39 genannten Aufgaben.'];
-		Loesung = [true, false, true]; 
-	break; 
-	case 7:
-		Frage = 'Sie prüfen eine schriftliche Einwilligung gem. Art. 7 DSGVO des Betroffenen zur Datenerhebung. Worauf müssen Sie achten, damit diese Einwilligung formal-juristisch korrekt ist?';
-		Antwort[0] = ['Der Verantwortliche sollte nachweisen können, dass die betroffene Person ihre Einwilligung zu dem Verarbeitungsvorgang gegeben hat.'];
-		Antwort[1] = ['Die Einwilligung erfolgte <strong>freiwillig</strong>, <strong>zwanglos</strong> und <strong>nachweislich</strong>.'];
-		Antwort[2] = ['Die Einwilligung kann jederzeit, durch die betroffene Person, widerrufen werden.'];
-		Loesung = [true, true, true]; 
-	break; 
-	case 8:
-		Frage = 'Muss der Verantwortliche im Falle einer Datenerhebung beim Betroffenen seinen Informationspflichten nachkommen? Und wenn, wann?';
-		Antwort[0] = ['Ja'];
-		Antwort[1] = ['Nein'];
-		Antwort[2] = ['Innerhalb von 72 Stunden bzw. innerhalb eines Monats'];
-		Loesung = [true, false, false];  
-	break; 
-	case 9:
-		Frage = 'Erläutern Sie den Begriff <strong>Pseudonymisieren</strong>.';
-		Antwort[0] = ['Austausch der personenbezogenen Daten, so dass eine Nachvollziehbarkeit für Dritte ausgeschlossen ist und nicht mehr spezifisch betroffenen Personen zugeordnet werden kann.'];
-		Antwort[1] = ['Bei der Pseudonymisierung wird der Name durch ein Pseudonym, zum Beispiel eine Chiffre oder Hash-Code, ersetzt. Diese zusätzlichen Informationen werden gesondert aufbewahrt und unterliegen technischen und organisatorischen Maßnahmen, die gewährleisten, dass eine Re-Pseudonymisierung nur noch eingeschränkt möglich ist.'];
-		Antwort[2] = ['Die pseudonymisierten Daten unterliegen nicht mehr der DSGVO, da diese Daten nicht einer identifizierten oder identifizierbaren natürlichen Person zugewiesen werden können.'];
-		Loesung = [true, true, false];  
-	break; 	
-	
-} // Switch Ende
-
-
-	anzAntworten = Loesung.length; // Wird benötigt für Liste und Maske
-	
-	if (flagListe) return;
-
-let y = 0;
-let anzAnt = "";
-let anzVer = "";
-
-	document.getElementById("dsaFrage").innerHTML = Frage;     
-	
-	for (y = 0; y < anzAntworten; y++){
-		anzAnt = "antwort"+y;
-		document.getElementById(anzAnt).innerHTML = Antwort[y]; 
-
-	}	
-	for (y = anzAntworten; y < maxAntworten; y++){
-		anzAnt = "antwort"+y;
-		anzVer = "versteck"+y;
-		document.getElementById(anzVer).style.visibility = "hidden"; 
-		document.getElementById(anzVer).style.borderBottom  = "solid white";
-		document.getElementById(anzAnt).style.visibility = "hidden"; 
-		document.getElementById(anzAnt).style.borderBottom  = "solid white";
-	}	
-	scroll(0,0); // Experiment
-
-} // Funktion Ende
 
 function alleFragen2(aktKarte){
 	
