@@ -1,4 +1,4 @@
-/** SITECONFIG.JS
+/** SITECONFIG.JS C:\Users\Klaus\GitHub\dsgvo\website
  * Copyright (c) 2017-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -7,11 +7,13 @@
 
 // See https://docusaurus.io/docs/site-config for all the possible
 // site configuration options.
+// Input von Zeit-now
+const path = require('path');
 
 // List of projects/orgs using your project for the users page.
 const users = [
   {
-    caption: 'Wikipedia',
+    caption: 'User1',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
     image: '/img/undraw_open_source.svg',
@@ -21,61 +23,64 @@ const users = [
 ];
 
 const siteConfig = {
+  customDocsPath: path.basename(__dirname) + '/docs', // Input von Zeit-now
   title: 'Digital Audit', // Title for your website.
   tagline: 'Die Webseite für den Auditor',
-  url: 'https://axellarator.github.io', // Your website URL https://your-docusaurus-test-site.com
-  baseUrl: '/docusaurus-dsgvo', // Base URL for your project */
-  projectName: 'docusaurus-dsgvo',
-  organizationName: 'axellarator', 
-
+  url: 'https://axellarator.github.io', // Your website URL
+  baseUrl: '/', // Base URL for your project
+  
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
+
   // Used for publishing and more
-  // projectName: 'Digital Audit',
-  // organizationName: 'Value Grid Engineering Group',
+  projectName: 'docusaurus-dsgvo',
+  organizationName: 'axellarator', 
+  
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
-  headerLinks: [
+ headerLinks: [
     {blog: true, label: 'Blog'},
     {doc: 'gesetze', label: 'Gesetze'},
 	{doc: 'flashcards', label: 'Lernen'},
     {doc: 'foerderung', label: 'Förderung'},
 	{doc: 'doc1', label: 'AUDIT'},
 	{doc: 'projekt', label: 'Projekte'},
-//	{doc: 'reveal', label: 'Reveal'},
     {page: 'help', label: 'Hilfe'},
 //	{page: 'users', label: 'User'},
   ],
- // Pfad zum editieren - Klappt noch nicht
- 
+// Pfad zum editieren - Klappt noch nicht
 // editUrl: 'file://%homepath%/Docusaurus/docs/',
  
-  // If you have users set above, you add it here:
+// If you have users set above, you add it here:
   users,
+
 //	algolia: {
 //		apiKey: 'b380d374e37dbd64cb6ba52314274089',
 //		indexName: 'github',
 //	  },
-  /* path to images for header/footer */
+
+// path to images for header/footer 
   headerIcon: 'img/favicon.ico',
   footerIcon: 'img/favicon.ico',
   favicon: 'img/favicon.ico',
 
-  /* Colors for website */
-  /* colors: {
-    primaryColor: '#422c49',
-    secondaryColor: '#2e1e33',
-  } */
+// Colors for website
+
+
+
+
+
+
   colors: {
-    primaryColor: '#209c2f',
-    secondaryColor: '#166d20',
+    primaryColor: '#3928d1',
+    secondaryColor: '#5100ff',
   },
 
-  /* Custom fonts for website */
+// Custom fonts for website
   fonts: {
     myFont: [
       "Times New Roman",
@@ -87,17 +92,17 @@ const siteConfig = {
     ]
   },
 
-  // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
+// This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Value Grid Engineering Group`,
 
+// Highlight.js theme to use for syntax highlighting in code blocks.
   highlight: {
-    // Highlight.js theme to use for syntax highlighting in code blocks.
     theme: 'default',
   },
 
   // Add custom scripts here that would be placed in <script> tags.
   scripts: [
-	'https://buttons.github.io/buttons.js',
+    'https://buttons.github.io/buttons.js',
 	{src: '/js/flash01-dsa.js', type: 'text/javascript',},
 	{src: '/js/flash01-dsa-data.js', type: 'text/javascript',},
     {src: '/js/liste01-dsa.js', type: 'text/javascript',},
@@ -108,45 +113,52 @@ const siteConfig = {
     {href: '/css/flash01-dsa.css', type: 'text/css',
     },
   ],	
-  // On page navigation for the current documentation page.
+
+// On page navigation for the current documentation page.
   onPageNav: 'separate',
-  // No .html extensions for paths.
+  
+// No .html extensions for paths.
   cleanUrl: true,
-	// Markdown Sub und Sup
+
+// Markdown Sub und Sup
   markdownPlugins: [
     function foo(md) {
       md.inline.ruler.enable(['sub', 'sup']);
     },
   ],
-  // Open Graph and Twitter card images.
+ 
+// Open Graph and Twitter card images.
   ogImage: 'img/undraw_online.svg',
   twitterImage: 'img/undraw_tweetstorm.svg',
-  // Set this to true if you want to enable the scroll to top button at the bottom of your site.
-	scrollToTop: true,
-  // For sites with a sizable amount of content, set collapsible to true.
-  // Expand/collapse the links and subcategories under categories.
+
+// Set this to true if you want to enable the scroll to top button at the bottom of your site.
+  scrollToTop: true,
+
+// For sites with a sizable amount of content, set collapsible to true.
+// Expand/collapse the links and subcategories under categories.
   docsSideNavCollapsible: true,
-  
+
   blogSidebarCount: 'ALL',
 
-  // Show documentation's last contributor's name.
+// Show documentation's last contributor's name.
   enableUpdateBy: true,
 
-  // Show documentation's last update time.
+// Show documentation's last update time.
   enableUpdateTime: true,
-  // Boolean flag to indicate whether HTML files in /pages should be wrapped with Docusaurus site styles, header and footer. This feature is experimental and relies on the files 
-  // being HTML fragments instead of complete pages. It inserts the contents of your HTML file with no extra processing. Defaults to false.
+
+/* Boolean flag to indicate whether HTML files in /pages should be wrapped with Docusaurus site styles, header and footer. This feature is experimental and relies on the files being HTML fragments instead of complete pages. It inserts the contents of your HTML file with no extra processing. Defaults to false. */ 
   
   wrapPagesHTML: true,
   
-  // Übernommen aus Example Siteconfigjs
-	scrollToTop: true,
-	scrollToTopOptions: {
-		zIndex: 100,
+// Übernommen aus Example Siteconfigjs
+  scrollToTop: true,
+  scrollToTopOptions: {
+	zIndex: 100,
   },
-  // You may provide arbitrary config keys to be used as needed by your
-  // template. For example, if you need your repo's URL...
-  //   repoUrl: 'https://github.com/facebook/test-site',
+  
+// You may provide arbitrary config keys to be used as needed by your
+// template. For example, if you need your repo's URL...
+//   repoUrl: 'https://github.com/facebook/test-site',
 };
 
 module.exports = siteConfig;
