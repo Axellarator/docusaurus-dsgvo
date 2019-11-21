@@ -9,6 +9,14 @@
         "title": "Historische Werke",
         "sidebar_label": "Archiv"
       },
+      "aufbewahrungsfristen": {
+        "title": "Aufbewahrung",
+        "sidebar_label": "Aufbewahrungsfristen"
+      },
+      "aufgaben-dsb": {
+        "title": "Aufgaben-DSB",
+        "sidebar_label": "Aufgaben des DSB"
+      },
       "avv": {
         "title": "Auftragsverarbeitungsverträge (AVV)",
         "sidebar_label": "Auftragsverarbeitung (AVV)"
@@ -22,8 +30,8 @@
         "sidebar_label": "CON.2 Datenschutz"
       },
       "datenschutz": {
-        "title": "Datenschutzerklärung",
-        "sidebar_label": "Datenschutz"
+        "title": "Datenschutzinformation",
+        "sidebar_label": "Datenschutz-Info"
       },
       "doc1": {
         "title": "DSA-Audit",
@@ -187,13 +195,14 @@
       }
     },
     "links": {
-      "Blog": "Blog",
+      "News": "News",
       "Gesetze": "Gesetze",
       "Lernen": "Lernen",
       "Förderung": "Förderung",
       "AUDIT": "AUDIT",
       "Projekte": "Projekte",
-      "Hilfe": "Hilfe"
+      "Hilfe": "Hilfe",
+      "Github": "Github"
     },
     "categories": {
       "Datenschutz": "Datenschutz",

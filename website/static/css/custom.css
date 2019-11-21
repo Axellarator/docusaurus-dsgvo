@@ -30,6 +30,24 @@ nav a:active {
     text-decoration:underline;
 }
 
+.fixedHeaderContainer header .headerTitleWithLogo {
+  color : white;
+  display: block !important;
+}
+.navigationSlider .slidingNav ul a {
+  color : white !important;
+  font-weight: 400 !important;
+}
+.navigationSlider .slidingNav ul a[href*="github"] {
+  font-size: 0;
+}
+.navigationSlider .slidingNav ul a[href*="github"]::before {
+  content : "";
+  width : 32px;
+  height : 32px;
+  background: url("github-brands.svg");
+}
+
 /* Tabelle 1 aus NEXUS */
 
 table#Tabelle1 {

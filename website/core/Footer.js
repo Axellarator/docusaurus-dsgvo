@@ -40,9 +40,6 @@ class Footer extends React.Component {
             <a href={this.docUrl('doc1.html', this.props.language)}>
               Dokumente
             </a>
-            <a href={this.docUrl('dsgvo.html', this.props.language)}>
-              Datenschutz-Grundverordnung
-            </a>
             <a href={this.docUrl('readme.html', this.props.language)}>
               Liesmich
             </a>
@@ -56,7 +53,7 @@ class Footer extends React.Component {
 		  <div>
             <h5>Wichtiges</h5>
 			<a href={this.docUrl('datenschutz.html', this.props.language)}>
-              Datenschutzerklärung
+              Unsere Datenschutz-Hinweise
             </a>
 			<a href={this.docUrl('impressum.html', this.props.language)}>
               Impressum
@@ -76,8 +73,8 @@ class Footer extends React.Component {
            <a href="https://discordapp.com/">Project Chat</a>
          </div>
          <div>
-            <h5>More</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
+            <h5>Mehr</h5>
+            <a href={`${this.props.config.baseUrl}blog`}>News</a>
             <a href="https://github.com/">GitHub</a>
             <a
               className="github-button"
