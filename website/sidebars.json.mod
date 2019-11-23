@@ -1,36 +1,26 @@
 {
   "docs": {
-  "Datenschutz": [
+    "Datenschutz": [
       "Gesetze",
        {
         "type": "subcategory",
         "label": "Datenschutz",
-        "ids": [
-          "gesetze","dsgvo","ewg","bdsg"
-        ]
+        "ids": [ "gesetze","dsgvo","ewg","bdsg" ]
       },
       {
         "type": "subcategory",
         "label": "Gesetzestexte",
-        "ids": [
-          "tmg","geheim","ifg","iwg","kunsturhg"
-        ]
+        "ids": [ "tmg","geheim","ifg","iwg","kunsturhg" ]
       },
-      {
-        "type": "subcategory",
-        "label": "Ergänzungen",
-        "ids": [
-          "links","con2","sdm"
-        ]
-      },
-      "aufgaben-dsb"
     ],
+  "Datenschutzbeauftragter": ["dsb","aufgaben-dsb"],
+  "Datenschutz-Auditor": ["dsa"],
   "Lernkarten": ["flashcards","flash01-dsb","liste01-dsb","flash01-dsa","liste01-dsa","flash02-dsa","liste02-dsa"],
 	"Fördermittel": ["foerderung"],
 	"Präsentationen": ["praesentation-dsgvo","praesentation-dsb","avv","schulung-ma-1","schulung-ds-1","it-itil"],
 	"Audit Fragenkataloge": ["doc1","doc9","doc10","doc11"],
 	"Projekte": ["projekt","projekt01","projekt02","projekt04"],
-	"Material": ["material","archiv"],
+	"Material": [ "aufbewahrungsfristen", "material","archiv"],
 	"Playground": ["doc12","richtlinien-ma","reveal","playground"]
   },
   "docs-other": {

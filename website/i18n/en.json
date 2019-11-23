@@ -9,10 +9,6 @@
         "title": "Historische Werke",
         "sidebar_label": "Archiv"
       },
-      "aufbewahrungsfristen": {
-        "title": "Aufbewahrung",
-        "sidebar_label": "Aufbewahrungsfristen"
-      },
       "aufgaben-dsb": {
         "title": "Aufgaben-DSB",
         "sidebar_label": "Aufgaben des DSB"
@@ -57,6 +53,14 @@
         "title": "DSA-Marketing",
         "sidebar_label": "DSA-Marketing Abteilung"
       },
+      "dsa": {
+        "title": "Datenschutz-Auditor",
+        "sidebar_label": "Datenschutz-Auditor (DSA)"
+      },
+      "dsb": {
+        "title": "Datenschutzbeauftragter",
+        "sidebar_label": "Datenschutzbeauftragter (DSB)"
+      },
       "dsgvo": {
         "title": "Datenschutzgrundverordnung",
         "sidebar_label": "Datenschutzgrundverordnung DSGVO"
@@ -84,6 +88,14 @@
       "foerderung": {
         "title": "Bundesmittel zur Förderung des Datenschutzes",
         "sidebar_label": "Fördermittel"
+      },
+      "fristen-erlaeuterungen": {
+        "title": "Erläuterungen zu den wichtigsten Aufbewahrungsfristen",
+        "sidebar_label": "Erläuterungen Fristen"
+      },
+      "fristen": {
+        "title": "Aufbewahrung",
+        "sidebar_label": "Aufbewahrungsfristen"
       },
       "geheim": {
         "title": "Gesetz zum Schutz von Geschäftsgeheimnissen",
@@ -208,10 +220,12 @@
       "Datenschutz": "Datenschutz",
       "Lernkarten": "Lernkarten",
       "Fördermittel": "Fördermittel",
+      "Datenschutz-Beauftragte": "Datenschutz-Beauftragte",
+      "Datenschutz-Auditor": "Datenschutz-Auditor",
       "Präsentationen": "Präsentationen",
       "Audit Fragenkataloge": "Audit Fragenkataloge",
       "Projekte": "Projekte",
-      "Material": "Material",
+      "Lokales Material": "Lokales Material",
       "Playground": "Playground",
       "Wichtiges": "Wichtiges"
     }
