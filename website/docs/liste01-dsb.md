@@ -1,15 +1,14 @@
 ---
 id: liste01-dsb
-title: DSB 10 Fragen
-sidebar_label: Checkliste DSB [10]
+title: DSB Fragen
+sidebar_label: Checkliste DSB 
 ---
 
-<table id="dsaListe"><!--Hier wird alles reingepackt-->  
+<table id="dsaListe"> </table> <!-- Hier wird alles reingepackt -->  
 	
-</table>
-
 <!-- Hier nur Drucken --->
-<div id="listeTab2">
+
+<div id="listeTab"> 
 	<input type="button" class="knopf trans" id="listeBlau" value="Drucken" onclick="window.print();" />
 </div>
 

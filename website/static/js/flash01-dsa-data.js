@@ -366,7 +366,7 @@ switch (intKarte) {
 		Loesung = [true, true, true];
 	break;
 	case 32 :
-		Frage = 'Nennen Sie drei Forderungen, die an eine rechtskonforme Einwilligung zu stellen sind.';
+		Frage = 'Nennen Sie die Anforderungen, die an eine rechtskonforme Einwilligung zu stellen sind.';
 		Antwort[0] = ['Freiwilligkeit'];
 		Antwort[1] = ['Zweckbindung'];
 		Antwort[2] = ['Widerspruchsmöglichkeit'];

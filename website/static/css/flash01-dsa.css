@@ -1,18 +1,6 @@
 /* flash01-dsa */
 
-/* Erste Tabelle mit der Frage in einer Zeile */
 
-#dsaFrage {
-	position: relative;
-	display: table-cell;
-	vertical-align: middle;
-	top: -2.0em; 
-    left: 0.5em;
-    height: 6em;
-	width:100%;
-	font-size: 20px;
-	color: green;
-}
 
 /* Zweite Zeile der Tabelle mit den Antworten */
 
@@ -39,14 +27,7 @@ table#dsaTab1 td {
 
 /* Für Listenerstellung */
 
-table#dsaListe {
-	position: relative;
-	width: 100%;
-	color: black;
-	font-size: 14px;
-	font-weight: bold;
-	border: none;
-}
+
 
 .cboxListe {
 	position:		relative;
@@ -72,42 +53,13 @@ table#dsaListe {
 	font-size:		16px;
 }
 
-#listeTab2 {
-	position:	sticky;
-	display:	flex;
-	bottom:		10em;
-}
 
-/* Ausdruck für Liste */
-
-#listeBlau { 
-	position:		sticky;
-	display:		flex;
-	bottom:			0em;
-	margin-left:	auto;
-}
 
 /* Positionierung der Buttons */
 
-#dsaTab2 {
-	position:	sticky;
-	display:	flex;
-	bottom:		8em;
-}
-
-#rot {
-	margin-left:	auto;
-	margin-right:	auto;
-}
 
 /* Positionierung Hinweisfelder */
 
-#dsaTab3 {
-	position:	sticky;
-	display:	flex;
-	font-size:	18px;
-	bottom:		6em;
-}
 
 #dsaTab3out {
 	margin-left:	auto;
@@ -115,14 +67,6 @@ table#dsaListe {
 }
 
 /* Positionierung Hinweisfelder */
-
-#dsaTab4 {
-	position:	relative;
-	display:	flex;
-	font-size:	18px;
-	bottom: 	2em;
-	border:		1px dashed blue;
-}
 
 #dsaTab4out {
 	margin-left:	auto;

@@ -71,15 +71,15 @@
       },
       "flash01-dsa": {
         "title": "flash01-dsa",
-        "sidebar_label": "Lernkarten DSA [34]"
+        "sidebar_label": "Lernkarten DSA"
       },
       "flash01-dsb": {
         "title": "flash01-dsb",
-        "sidebar_label": "Lernkarten DSB [10]"
+        "sidebar_label": "Lernkarten DSB"
       },
       "flash02-dsa": {
         "title": "flash02-dsa",
-        "sidebar_label": "Lernkarten DSA [123]"
+        "sidebar_label": "Lernkarten DSA"
       },
       "flashcards": {
         "title": "Lernkarten",
@@ -121,6 +121,10 @@
         "title": "Informationsweiterverwendungsgesetz",
         "sidebar_label": "Informationsweiterverw.gesetz IWG"
       },
+      "kino": {
+        "title": "Kino",
+        "sidebar_label": "Kino"
+      },
       "kunsturhg": {
         "title": "kunsturhg",
         "sidebar_label": "Kunst-Urheberrecht KunstUrhG"
@@ -130,12 +134,12 @@
         "sidebar_label": "Checkliste DSA [34]"
       },
       "liste01-dsb": {
-        "title": "DSB 10 Fragen",
-        "sidebar_label": "Checkliste DSB [10]"
+        "title": "DSB Fragen",
+        "sidebar_label": "Checkliste DSB"
       },
       "liste02-dsa": {
-        "title": "DSA 123 Fragen",
-        "sidebar_label": "Checkliste DSA [123]"
+        "title": "DSA Fragen",
+        "sidebar_label": "Checkliste DSA"
       },
       "material": {
         "title": "Gesammelte Werke",
@@ -213,6 +217,7 @@
       "Förderung": "Förderung",
       "AUDIT": "AUDIT",
       "Projekte": "Projekte",
+      "Kino": "Kino",
       "Hilfe": "Hilfe",
       "Github": "Github"
     },

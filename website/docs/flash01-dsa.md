@@ -1,50 +1,43 @@
 ---
 id: flash01-dsa
-hide_title: Lernkarten für DSA 34
-sidebar_label: Lernkarten DSA [34]
+hide_title: Lernkarten für DSA
+sidebar_label: Lernkarten DSA
 ---
 
 <!-- Die Frage -->
 
 <p id="dsaFrage"></p>
 
-<form> 
-
 <!-- Die Antworten -->
 
-<table id="dsaTab1"><!-- CheckBox und dann die Antworten anzeigen-->
+<table id="dsaTab1"> </table><!-- CheckBox und dann die Antworten anzeigen-->
 	
-</table>
+<form> 
 
-<!-- Die Knöpfe -->
-
-<div id=dsaTab2><!--Dann die Knöpfe Start, Prüfen, Zurück und Weiter--->
-	<div id="rot">
-		<input type="button" class="knopf rot"    id="rotKnopf" value="NeuStart" onClick="initDB(1)"/>
-		<input type="button" class="knopf blau"   id="blaKnopf" value="Prüfen"   onClick="dsa01(7)"/>
-		<input type="button" class="knopf gruen"  id="gruKnopf" value="Zurück"   onClick="dsa01(8)"/>
-		<input type="button" class="knopf orange" id="oraKnopf" value="Weiter"   onClick="dsa01(9)"/>
-	</div>
-</div>
+<div id="dsaTab4"></div> <!-- Links zur jeweiligen Maske -->
 
 <!-- Die Ausgaben -->
 
-<div id=dsaTab3>
-	<div id="dsaTab3out">
-		<input type="button" id="Hinweis"  disabled readonly value="Hinweis"/>       <!--Hinweise aller Art ----------->
-		<input type="button" id="lfdKarte" disabled readonly value="Karte"/>         <!--Aktuelle Karte von x Karten--->
-		<input type="button" id="Prozent"  disabled readonly value="Prozent"/>       <!--Kartenauswertung in % -------->
-		<input type="button" id="Ergebnis" disabled readonly value="Gesamtergebnis"/><!--Gesamtergebnis alle Karten---->
-		<input type="button" id="dsaUhr1"  disabled readonly value="Uhrzeit"/>
-	</div>
+<div id="dsaTab3">
+	<input type="button" class="butknopf" id="Hinweis"  disabled readonly value="Hinweis"/>       <!--Hinweise aller Art ----------->
+	<input type="button" class="butknopf" id="lfdKarte" disabled readonly value="Karte"/>         <!--Aktuelle Karte von x Karten--->
+	<input type="button" class="butknopf" id="Prozent"  disabled readonly value="Prozent"/>       <!--Kartenauswertung in % -------->
+	<input type="button" class="butknopf" id="Ergebnis" disabled readonly value="Gesamtergebnis"/><!--Gesamtergebnis alle Karten---->
+	<input type="button" class="butknopf" id="dsaUhr1"  disabled readonly value="Uhrzeit"/>
 </div>
 
-<!-- Initialisiereung -->
+<!-- Die Knöpfe -->
 
-<p hidden><img src="/img/zur.png" width="20" onload="initDB(1)" /></p> 
+<div id="dsaTab2"><!-- Dann die Knöpfe Start, Prüfen, Zurück und Weiter -->
+	<input type="button" class="knopf trans" id="rotKnopf" value="Neustart" onClick="initDB(1)"/>
+	<input type="button" class="knopf trans" id="blaKnopf" value="Prüfen"   onClick="dsa01(7)"/>
+	<input type="button" class="knopf trans" id="gruKnopf" value="Zurück"   onClick="dsa01(8)"/>
+	<input type="button" class="knopf trans" id="oraKnopf" value="Weiter"   onClick="dsa01(9)"/>
+</div>
 
 </form>
 
-<div id=dsaTab4>
-	
-</div>
+<!-- Initialisierung -->
+
+<p hidden><img src="/img/zur.png" width="20" onload="initDB(1)" /></p> 
+

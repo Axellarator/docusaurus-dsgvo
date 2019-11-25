@@ -106,19 +106,101 @@ label, input {
     top: -4em;
 }
 
-.knopf {
-    width: 100px;
-    height: 40px; 
-    background: linear-gradient(to bottom, white, grey); 
-    box-shadow: inset 0px 0px 6px #fff,inset 0px -1px 6px #fff;
-    border: 1px solid #5ea617;
-    border-radius: 1em;
-    margin: 1em;
-	color: white;
-	font-weight: bold;
- }
+/* Position der jeweiligen Maske */
+/* Erste Tabelle mit der Frage in einer Zeile */
+
+#dsaFrage {
+	position:		relative;
+	display:		table-cell;
+	vertical-align:	middle;
+	top:			-2.0em; 
+    left:			0.5em;
+    height:			6em;
+	width:			100%;
+	font-size:		20px;
+	color:			dark green;
+}
  
- .knopfpos{
+#dsaTab4 {
+	position:		relative;
+	display:		flex;
+	bottom:			1em;
+	font-size:		16px;
+	border:			1px dashed blue;
+}
+
+#dsaTab3 {
+	position:		relative;
+	display:		flex;
+	bottom:			1em;
+}
+
+#dsaTab2 {
+	position:		relative;
+	display:		flex;
+	bottom:			1em;
+}
+
+.butknopf.trans {
+	background:		transparent no-repeat;
+    border:			1px solid green;
+    cursor:			pointer;
+    overflow:		hidden;
+	color:			black;
+	font-weight:	bold;
+}
+
+.knopf {
+	width:			100px;
+    height:			30px; 
+    background:		linear-gradient(to bottom, white, grey); 
+    box-shadow:		inset 0px 0px 6px #fff,inset 0px -1px 6px #fff;
+    border:			1px solid #5ea617;
+    border-radius:	1em;
+    margin:			0em;
+	color:			white;
+	font-weight:	bold;
+	margin-left:	auto;
+	margin-right:	auto;
+ }
+
+.butknopf {
+    width:			auto;
+    height:			20px; 
+    background:		transparent no-repeat;
+    box-shadow:		inset 0px 0px 2px #fff,inset 0px -1px 4px #fff;
+    border:			1px solid #5ea617;
+    border-radius:	0.25em;
+    margin:			1em;
+	color:			$primaryColor;
+	font-weight:	bold;
+	margin-left:	auto;
+	margin-right:	auto;
+ }
+
+/* Ausdruck für Liste */
+#listeBlau { 
+	position:		sticky;
+	margin-left:	100%;
+}
+
+#listeTab {
+	position:		sticky;
+	bottom:			10em;
+}
+
+table#dsaListe {
+	position: 		relative;
+	width: 			100%;
+	color: 			black;
+	font-size: 		14px;
+	font-weight: 	bold;
+	border: 		none;
+}
+
+/* sticky header */
+
+.knopfpos{
 	position: relative;
 	margin: auto;
 	top: -1.5em;
@@ -149,7 +231,7 @@ label, input {
 }
 
 .knopf.trans {
-	background: Transparent no-repeat;
+	background: transparent no-repeat;
     border: 1px solid green;
     cursor:pointer;
     overflow: hidden;

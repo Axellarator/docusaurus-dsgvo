@@ -49,6 +49,7 @@ headerLinks: [
   {doc: 'foerderung', label: 'Förderung'},
   {doc: 'doc1', label: 'AUDIT'},
   {doc: 'projekt', label: 'Projekte'},
+  {doc: 'kino', label: 'Kino'},
   {page: 'help', label: 'Hilfe'},
   { search: true },
   // {page: 'users', label: 'User'},
