@@ -71,19 +71,19 @@
       },
       "flash01-dsa": {
         "title": "flash01-dsa",
-        "sidebar_label": "Lernkarten DSA"
+        "sidebar_label": "Auditor 1"
       },
       "flash01-dsb": {
         "title": "flash01-dsb",
-        "sidebar_label": "Lernkarten DSB"
+        "sidebar_label": "Beauftragte 1"
       },
       "flash02-dsa": {
         "title": "flash02-dsa",
-        "sidebar_label": "Lernkarten DSA"
+        "sidebar_label": "Auditor 2"
       },
-      "flashcards": {
-        "title": "Lernkarten",
-        "sidebar_label": "Lernkarten"
+      "flash03-dsa": {
+        "title": "flash03-dsa",
+        "sidebar_label": "Auditor 3"
       },
       "foerderung": {
         "title": "Bundesmittel zur Förderung des Datenschutzes",
@@ -103,7 +103,7 @@
       },
       "gesetze": {
         "title": "Datenschutz basiert auf Gesetzen",
-        "sidebar_label": "Gesetze und Datenschutz"
+        "sidebar_label": "Einleitung Gesetze und Datenschutz"
       },
       "ifg": {
         "title": "Informationsfreiheitsgesetz",
@@ -129,21 +129,29 @@
         "title": "kunsturhg",
         "sidebar_label": "Kunst-Urheberrecht KunstUrhG"
       },
+      "lernkarten": {
+        "title": "Einleitung Lernkarten und Checklisten",
+        "sidebar_label": "Einleitung Lernkarten"
+      },
       "liste01-dsa": {
-        "title": "DSA 34 Fragen",
-        "sidebar_label": "Checkliste DSA [34]"
+        "title": "Auditor 1",
+        "sidebar_label": "Auditor 1"
       },
       "liste01-dsb": {
         "title": "DSB Fragen",
-        "sidebar_label": "Checkliste DSB"
+        "sidebar_label": "Beauftragter 1"
       },
       "liste02-dsa": {
         "title": "DSA Fragen",
-        "sidebar_label": "Checkliste DSA"
+        "sidebar_label": "Auditor 2"
+      },
+      "liste03-dsa": {
+        "title": "DSA Aufgaben",
+        "sidebar_label": "Auditor 3"
       },
       "material": {
         "title": "Gesammelte Werke",
-        "sidebar_label": "Material"
+        "sidebar_label": "Gesammelte Werke - LINKS"
       },
       "playground": {
         "title": "Playground",

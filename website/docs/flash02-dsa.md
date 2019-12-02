@@ -1,7 +1,7 @@
 ---
 id: flash02-dsa
-hide_title: Lernkarten für DSA
-sidebar_label: Lernkarten DSA
+hide_title: Auditor 2
+sidebar_label: Auditor 2
 ---
 
 <!-- Die Frage --> 
@@ -12,35 +12,31 @@ sidebar_label: Lernkarten DSA
 
 <table id="dsaTab1"></table> <!-- CheckBox und dann die Antworten anzeigen -->
 
-<form> 
-
 <div id="dsaTab4"></div> <!-- Links zur jeweiligen Maske -->
 
 <!-- Die Ausgaben -->
 
-<div id="dsaTab3">
-	<input type="button" class="butknopf" id="Hinweis"  disabled readonly value="Hinweis"/>       <!--Hinweise aller Art ----------->
-	<input type="button" class="butknopf" id="lfdKarte" disabled readonly value="Karte"/>         <!--Aktuelle Karte von x Karten--->
-	<input type="button" class="butknopf" id="Prozent"  disabled readonly value="Prozent"/>       <!--Kartenauswertung in % -------->
-	<input type="button" class="butknopf" id="Ergebnis" disabled readonly value="Gesamtergebnis"/><!--Gesamtergebnis alle Karten---->
-	<input type="button" class="butknopf" id="dsaUhr1"  disabled readonly value="Uhrzeit"/>
-</div>
+<div id="dsaTab3"></div> <!-- Die Ergebnisse anzeigen -->
+
+<!-- Initialisierung -->
+
+<p hidden><img src="/img/zur.png" width="20" onload="initDB(3)" /></p> 
 
 <!-- Die Knöpfe -->
 
 <div id="dsaTab2"><!-- Dann die Knöpfe Start, Prüfen, Zurück und Weiter -->
-	<input type="button" class="knopf trans" id="rotKnopf" value="NeuStart" onClick="initDB(3)"/>
-	<input type="button" class="knopf trans" id="blaKnopf" value="Prüfen"   onClick="dsa01(7)"/>
-	<input type="button" class="knopf trans" id="gruKnopf" value="Zurück"   onClick="dsa01(8)"/>
-	<input type="button" class="knopf trans" id="oraKnopf" value="Weiter"   onClick="dsa01(9)"/>
+	<div hidden>
+## LERNKARTEN Auditor 2 <br /><br />
+
+###	<input type="button" class="knopf trans" id="blaKnopf" value="Prüfen"   onClick="dsa01(7)"/>   
+
+###	<input type="button" class="knopf trans" id="oraKnopf" value="Weiter"   onClick="dsa01(9)"/>   
+
+###	<input type="button" class="knopf trans" id="gruKnopf" value="Zurück"   onClick="dsa01(8)"/>   
+
+###	<input type="button" class="knopf trans" id="rotKnopf" value="NeuStart" onClick="initDB(2)"/>   
+	</div>
 </div>
-
-</form>
-
-<!-- Initialisiereung -->
-
-<p hidden><img src="/img/zur.png" width="20" onload="initDB(3)" /></p> 
-
 
 
 

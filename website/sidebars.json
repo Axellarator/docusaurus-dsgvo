@@ -1,11 +1,11 @@
 {
   "docs": {
     "Datenschutz": [
-      "Gesetze",
+      "gesetze",
       {
         "type": "subcategory",
         "label": "Datenschutz",
-        "ids": [ "gesetze","dsgvo","ewg","bdsg" ]
+        "ids": [ "dsgvo","ewg","bdsg" ]
       },
       {
         "type": "subcategory",
@@ -20,7 +20,20 @@
       "platzhalter-1",
       "platzhalter-2"
     ],
-  "Lernkarten": [ "flashcards", "flash01-dsb", "liste01-dsb", "flash01-dsa", "liste01-dsa", "flash02-dsa", "liste02-dsa" ],
+    "Lernkarten": [
+      "lernkarten",
+      {
+        "type": "subcategory",
+        "label": "Lernkarten",
+        "ids": [ "flash01-dsb", "flash01-dsa", "flash02-dsa", "flash03-dsa" ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Checklisten",
+        "ids": [ "liste01-dsb", "liste01-dsa", "liste02-dsa", "liste03-dsa" ]
+      },
+      "platzhalter-4"
+    ],
   "Fördermittel": [ "foerderung" ],
   "Datenschutz-Beauftragte": [ "dsb", "aufgaben-dsb", "praesentation-dsb" ],
   "Datenschutz-Auditor": [ "dsa" ],

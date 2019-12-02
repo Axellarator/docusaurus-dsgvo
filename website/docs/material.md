@@ -1,7 +1,7 @@
 ---
 id: material
 title: Gesammelte Werke 
-sidebar_label: Material
+sidebar_label: Gesammelte Werke - LINKS
 ---
 ___
 > ## PDF

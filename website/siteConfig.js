@@ -45,7 +45,7 @@ organizationName: 'axellarator',
 headerLinks: [
   {blog: true, label: 'News'},
   {doc: 'gesetze', label: 'Gesetze'},
-  {doc: 'flashcards', label: 'Lernen'},
+  {doc: 'lernkarten', label: 'Lernen'},
   {doc: 'foerderung', label: 'Förderung'},
   {doc: 'doc1', label: 'AUDIT'},
   {doc: 'projekt', label: 'Projekte'},
@@ -66,10 +66,10 @@ algolia: {
   apiKey: 'a8381e4143dc1499f2a45c07148a2462',
   indexName: 'prod_VG',
   placeholder: 'Frag mich mal was',
-  algoliaOptions: {
-      autofocus: true,
-      showReset: false,
-    }
+//  algoliaOptions: {
+//      autofocus: true,
+//      showReset: false,
+//    }
 },
 
 // path to images for header/footer
@@ -135,14 +135,12 @@ cleanUrl: true,
 
 // Markdown Sub und Sup
 
-markdownPlugins: [
-  function foo(md) { md.inline.ruler.enable(['sub', 'sup']); },
-],
+markdownPlugins: [ function foo(md) { md.inline.ruler.enable(['sub', 'sup']); }, ],
  
 // Open Graph and Twitter card images.
-  ogImage: 'img/undraw_online.svg',
+  ogImage: 'img/undraw_gdpr_3xfb.svg',
   
-  twitterImage: 'img/undraw_tweetstorm.svg',
+  twitterImage: 'img/undraw_gdpr_3xfb.svg',
 
 // Set this to true if you want to enable the scroll to top button at the bottom of your site.
 

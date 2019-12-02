@@ -52,25 +52,32 @@ let refAnzahl		= null;
 let dsb01start;
 let dsa01start;
 
-function initDB(jtest) {
+
+function initDB(jtest) {		// In Liste und in Flash duplizieren
 	
 	switch (jtest) {
 		case 1:
 			jumpDB = 1;
-			anzKarten	= 33; // Anzahl Elemente im Array = 34
-			maxKarten	= 34; // Anzahl Elemente im Array = 34
+			anzKarten	= 33;	// Anzahl Elemente im Array = 34
+			maxKarten	= 34;	// Anzahl Elemente im Array = 34
 		break;
 		case 2:
 			jumpDB = 2;
-			anzKarten	= 9;   // Anzahl Elemente im Array = 9	(0=1)
-			maxKarten	= 10;  // Anzahl Elemente im Array = 9	(1=1)
+			anzKarten	= 9;	// Anzahl Elemente im Array = 9	(0=1)
+			maxKarten	= 10;	// Anzahl Elemente im Array = 9	(1=1)
 		break;
 		case 3:
 			jumpDB = 3;
-			anzKarten	= 122  // Anzahl Elemente im Array = 123 (0=1)
-			maxKarten	= 123; // Anzahl Elemente im Array = 123 (1=1)
+			anzKarten	= 144;	// Anzahl Elemente im Array = 144 (0=1)
+			maxKarten	= 145;	// Anzahl Elemente im Array = 145 (1=1)
 		break;
+		case 4:
+			jumpDB = 4;
+			anzKarten	= 24;	// Anzahl Elemente im Array = 24 (0=1)
+			maxKarten	= 25;	// Anzahl Elemente im Array = 25 (1=1)
+		break;		
 	}
+	
 	dsa01(jumpDB);
 }
 
@@ -81,10 +88,8 @@ function dsa01(jump) {
 		case 1:
 		case 2:
 		case 3:
-		break;
 		case 4:
-			
-		return;
+		break;			
 		case 5:
 
 		return;
@@ -101,7 +106,7 @@ function dsa01(jump) {
 			weiter();
 		return;
 	}
-	uhrzeit();
+	
 	dsa01Start = true; // Flag
 	findrefsdsa();     // Aufbereitung des Bildschirms
 	vorbereitung();    // Alles initialisieren
@@ -136,10 +141,20 @@ function dsa01(jump) {
 
 // -- Ereigniskarten initialisieren ----------------------------------------------		
 
+		ladeGesamt  = "";     // Leer und initialisiert
+		ladeGesamt  = '<input type="button" class="butknopf" id="Hinweis"  disabled readonly value="Hinweis"/>\r\n' 
+					+ '<input type="button" class="butknopf" id="lfdKarte" disabled readonly value="Karte"/>\r\n'   
+					+ '<input type="button" class="butknopf" id="Prozent"  disabled readonly value="Prozent"/>\r\n'   
+					+ '<input type="button" class="butknopf" id="Ergebnis" disabled readonly value="Gesamtergebnis"/>\r\n'    
+					+ '<input type="button" class="butknopf" id="dsaUhr1"  disabled readonly value="Uhrzeit"/>\r\n'
+		dsaTab3.innerHTML = ladeGesamt; // Ab in die Maske
+		
 		refErgebnis = document.getElementById("Ergebnis");
 		reflfdKarte = document.getElementById("lfdKarte");
 		refHinweis  = document.getElementById("Hinweis");
 		refProzent  = document.getElementById("Prozent");
+		uhrzeit();
+
 		
 // -- Masken-Sprungreferenzen von 0 bis anzKarten erstellen ----------------------
 // -- Original: <a href="javascript:dsaMaske(0)"  id="f0" >0</a>
@@ -192,10 +207,13 @@ function dsa01(jump) {
 				alleFragen(arrSort[aktKarte]);	
 			return;
 			case 2:
-				DSBFragen(arrSort[aktKarte]);
+				alleFragen1(arrSort[aktKarte]);
 			return;
 			case 3:
 				alleFragen2(arrSort[aktKarte]);	
+			return;
+			case 4:
+				alleFragen3(arrSort[aktKarte]);	
 			return;
 		}
 	}
@@ -242,6 +260,7 @@ function dsa01(jump) {
 		if(aktKarte > anzKarten){
 			aktKarte = anzKarten;
 			refHinweis.value  = 'Neustart anklicken zum Neubeginn';   // Hinweisfeld füttern
+
 		}
 		
 		shownext();
@@ -319,10 +338,13 @@ function dsaMaske(aktKarte){
 				alleFragen(aktKarte);	
 			return;
 			case 2:
-				DSBFragen(aktKarte);
+				alleFragen1(aktKarte);
 			return;
 			case 3:
 				alleFragen2(aktKarte);	
+			return;
+			case 4:
+				alleFragen3(aktKarte);	
 			return;
 		}
 	scroll(0,0);   // Position korrigieren
