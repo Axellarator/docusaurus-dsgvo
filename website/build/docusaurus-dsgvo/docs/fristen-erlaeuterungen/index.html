@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Erläuterungen zu den wichtigsten Aufbewahrungsfristen · Digital Audit</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;div class=&quot;dsa&quot; id=&quot;ds-oben&quot;&gt;&lt;/div&gt;"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Erläuterungen zu den wichtigsten Aufbewahrungsfristen · Digital Audit"/><meta property="og:type" content="website"/><meta property="og:url" content="https://website.axellarator.now.sh//"/><meta property="og:description" content="&lt;div class=&quot;dsa&quot; id=&quot;ds-oben&quot;&gt;&lt;/div&gt;"/><meta property="og:image" content="https://website.axellarator.now.sh/img/undraw_gdpr_3xfb.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://website.axellarator.now.sh/img/undraw_gdpr_3xfb.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://website.axellarator.now.sh/blog/atom.xml" title="Digital Audit Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://website.axellarator.now.sh/blog/feed.xml" title="Digital Audit Blog RSS Feed"/><link rel="stylesheet" href="https://docusaurus.io/style.css"/><link rel="stylesheet" href="/css/code-block-buttons.css"/><link rel="stylesheet" href="/css/flash01-dsb.css" type="text/css"/><link rel="stylesheet" href="/css/flash01-dsa.css" type="text/css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/js/code-block-buttons.js"></script><script type="text/javascript" src="/js/flash01-dsa.js"></script><script type="text/javascript" src="/js/flash01-dsa-data.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/favicon.ico" alt="Digital Audit"/><h2 class="headerTitleWithLogo">Digital Audit</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/blog/" target="_self">News</a></li><li class="siteNavGroupActive"><a href="/docs/gesetze" target="_self">Gesetze</a></li><li class="siteNavGroupActive"><a href="/docs/dsa" target="_self">DSA</a></li><li class="siteNavGroupActive"><a href="/docs/dsb" target="_self">DSB</a></li><li class="siteNavGroupActive"><a href="/docs/foerderung" target="_self">Förderung</a></li><li class="siteNavGroupActive"><a href="/docs/projekt" target="_self">Projekte</a></li><li class=""><a href="/docs/kino" target="_self">Kino</a></li><li class=""><a href="/docs/splan" target="_self">Stundenplan</a></li><li class=""><a href="/help" target="_self">Hilfe</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Frag mich mal was" title="Frag mich mal was"/></li><li class=""><a href="https://github.com/axellarator/docusaurus-dsgvo" target="_self">Github</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Lokales Material</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Erläuterungen zu den wichtigsten Aufbewahrungsfristen</h1></header><article><div><span><div class="dsa" id="ds-oben"></div>
+<h2><a class="anchor" aria-hidden="true" id="aufbewahrungsfristen-für-2019--das-sollten-sie-wissen"></a><a href="#aufbewahrungsfristen-für-2019--das-sollten-sie-wissen" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Aufbewahrungsfristen für 2019 – Das sollten Sie wissen</h2>
+<blockquote>
+<p>Nichtbeachtung der Aufbewahrungsfristen kann dazu führen, dass das Finanzamt die Besteuerungsgrundlagen einschätzt und dadurch sehr wahrscheinlich finanzielle Nachteile entstehen. Also die Aufbewahrungsfristen für wichtige Dokumente beachten! Welche Aufbewahrungsfristen für Steuerunterlagen, Lohnunterlagen und weitere Dokumente, erfahren Sie  [hier](/docs/fristen].</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="aufbewahrungsfristen-für-dokumente-grundsätzliches"></a><a href="#aufbewahrungsfristen-für-dokumente-grundsätzliches" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Aufbewahrungsfristen für Dokumente: Grundsätzliches</h3>
+<p>Die gesetzliche Aufbewahrungsfrist betrifft sowohl die Bilanz als auch den Jahresabschluss und Arbeitsverträge. Praktisch alle geschäftlichen Dokumente müssen für eine bestimmte Zeit aufbewahrt werden, um bei einer Betriebsprüfung zur Verfügung zu stehen.</p>
+<h3><a class="anchor" aria-hidden="true" id="verpflichtung-und-konsequenzen-bei-nichtbeachtung"></a><a href="#verpflichtung-und-konsequenzen-bei-nichtbeachtung" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Verpflichtung und Konsequenzen bei Nichtbeachtung</h3>
+<h4><a class="anchor" aria-hidden="true" id="aufbewahrungsfristen-für-wen-gelten-aufbewahrungsfristen"></a><a href="#aufbewahrungsfristen-für-wen-gelten-aufbewahrungsfristen" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Aufbewahrungsfristen: Für wen gelten Aufbewahrungsfristen?</h4>
+<p>Aufbewahrungsfristen betreffen Unternehmen, die mindestens einen Umsatz von 500.000 Euro und einen Gewinn von 50.000 Euro im Jahr erwirtschaften.</p>
+<h4><a class="anchor" aria-hidden="true" id="wann-beginnt-eine-aufbewahrungsfrist"></a><a href="#wann-beginnt-eine-aufbewahrungsfrist" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Wann beginnt eine Aufbewahrungsfrist?</h4>
+<p>Die Aufbewahrungsfrist beginnt zum Ende des Kalenderjahres und variiert je nach Dokument; geregelt im § 257 Handelsgesetzbuch (HGB), § 147 Abgabenordnung (AO) und § 14 Umsatzsteuergesetz (UStG); je nach Branche sind zudem spezielle Gesetze und Verordnungen relevant.</p>
+<p>Bei Handels- und Geschäftsbriefen gilt das Datum der Absendung oder des Empfangs, bei laufenden Aufzeichnungen das des letzten Eintrages</p>
+<p>Für sonstige Unterlagen gilt ihr jeweiliges Entstehungsdatum</p>
+<h4><a class="anchor" aria-hidden="true" id="praktisch-ist-mit-folgenden-konsequenzen-zu-rechnen"></a><a href="#praktisch-ist-mit-folgenden-konsequenzen-zu-rechnen" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Praktisch ist mit folgenden Konsequenzen zu rechnen</h4>
+<p>Beim Verdacht der Steuerhinterziehung werden Probleme auftreten, wenn Geschäftsunterlagen unvollständig sind oder gar nicht vorliegen.
+Die Strafverfolgungsfrist beginnt mit dem Erhalt des Steuerbescheids. In der Regel wird eine Steuerhinterziehung, die weniger als fünf Jahre zurückliegt, mit einer Geld- oder Freiheitsstrafe geahndet. Bei besonders schweren Fällen, beispielsweise als Mitglied einer Gruppe von Steuerhinterziehern, kann die Frist auch doppelt so lang sein. Auch nach der Verfolgungsfrist kann das Finanzamt eine Nachzahlung der Steuern inklusive Zinsen einfordern.</p>
+<p>Weiterhin besteht die Möglichkeit, dass die Verjährungsfristen unterbrochen werden, etwa durch ein Bußgeldverfahren oder gar einen Haftbefehl.</p>
+<p>Um die rechtlichen Probleme und Nachzahlungen zu vermeiden, ist die Archivierung der Dokumente besonders gewissenhaft zu betreiben.</p>
+<p>Natürlich können alle aufbewahrungspflichtigen Unterlagen (außer Jahresabschluss und Eröffnungsbilanz) auch in digitaler Form aufbewahrt werden. Dann muss sichergestellt werden, so dass die Daten auch nach einigen Jahren noch abgerufen werden können. Sinnvoll sind langlebige (und darauf getestet) Speichermedien (USB-Sticks; externe Festplatten (HDD); Vorsicht bei DVD und SSD).</p>
+<h4><a class="anchor" aria-hidden="true" id="aufbewahrungsfristen-für-geschäftsunterlagen-2018"></a><a href="#aufbewahrungsfristen-für-geschäftsunterlagen-2018" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Aufbewahrungsfristen für Geschäftsunterlagen 2018</h4>
+<p>Zur allgemeinen Orientierung bei den Aufbewahrungsfristen gilt, Dokumente, die der Buchungsgrundlage dienen, in der Regel zehn Jahre lang (Ausnahme: Kleinunternehmer und Selbstständige ohne Mitarbeiter), andere Dokumente sechs Jahre. Bei der zehnjährigen Aufbewahrungsfrist für Steuerbescheide gilt es zu beachten, dass sie nur dann gilt, wenn alle Steuerbescheide bestandskräftig sind.</p>
+<p>Die Standard-Aufbewahrungspflicht von zehn Jahren gilt für folgende Unterlagen:</p>
+<ul>
+<li>Lohnunterlagen, die für die betriebliche Gewinnermittlung benötigt werden: Lohnsteuerunterlagen, Jahresabschlüsse, Lohnlisten</li>
+<li>Buchungsbelege: z. B. Steuerbescheide, Aktennotizen, Kontoauszüge, Kassenberichte, Quittungen und Aufzeichnungen über Warenbestandsaufnahmen</li>
+<li>Buchhaltungsdaten der betrieblichen EDV</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="aufbewahrungsfrist-für-die-bilanz-2019"></a><a href="#aufbewahrungsfrist-für-die-bilanz-2019" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Aufbewahrungsfrist für die Bilanz 2019</h4>
+<p>Auch die Aufbewahrungsfrist für Bilanzen, im Speziellen Jahresbilanzen, beträgt zehn Jahre.</p>
+<ul>
+<li>Standard-Aufbewahrungsfrist für Unterlagen aus dem Jahr 2009: <strong>Ende 2019</strong></li>
+<li>Standard-Aufbewahrungsfrist für Unterlagen aus dem Jahr 2019: <strong>Ende 2029</strong></li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="aufbewahrungsfristen-für-steuerunterlagen-2019"></a><a href="#aufbewahrungsfristen-für-steuerunterlagen-2019" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Aufbewahrungsfristen für Steuerunterlagen 2019</h4>
+<p>Für Unterlagen, die die Lohnsteuer betreffen, gilt eine Aufbewahrungsfrist von sechs Jahren. <br />
+Dazu gehören nachfolgende Arten von Dokumenten</p>
+<ul>
+<li>Freistellungsbescheinigungen</li>
+<li>Abrechnungen für Reisekosten</li>
+<li>Arbeitszeitlisten</li>
+<li>Fahrtenbücher</li>
+</ul>
+<p>Das bedeutet:</p>
+<ul>
+<li>Ende der Aufbewahrungsfrist für Steuerunterlagen, die im Jahr 2013 erstellt wurden: Ende 2019</li>
+<li>Ende der Aufbewahrungsfrist für Unterlagen, die auf 2019 datiert sind: Ende 2025</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="aufbewahrungsfristen-für-lieferscheine-2019"></a><a href="#aufbewahrungsfristen-für-lieferscheine-2019" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Aufbewahrungsfristen für Lieferscheine 2019</h3>
+<p>Eine besondere Gesetzesänderung, die dieses Jahr beschlossen wurde, ergibt sich für Lieferscheine und deren Aufbewahrungsfrist.</p>
+<p>Bis 2017: Lieferscheine waren auch dann aufbewahrungspflichtig, wenn sich die Angaben aus den Rechnungen ergaben und mussten zehn Jahre aufbewahrt werden, wenn Sie als Buchungsbeleg dienten, ansonsten für sechs Jahre.</p>
+<p>Seit Mitte 2017 (laut dem Zweiten Bürokratieentlastungsgesetz” gilt: empfangene Lieferscheine können entsorgt werden, wenn die entsprechenden Rechnungen alle Informationen beinhalten, die auf dem Lieferschein stehen</p>
+<p>Aufbewahrungspflicht besteht dann, wenn die Datumsangabe auf der Rechnung der des Lieferscheines nicht entspricht
+Für diejenigen, die Bilanzen erstellen müssen: Lieferschein dient als Buchungsbeleg mit Aufbewahrungsfrist von zehn Jahren</p>
+<h3><a class="anchor" aria-hidden="true" id="aufbewahrungsfristen-für-rechtliche-unterlagen"></a><a href="#aufbewahrungsfristen-für-rechtliche-unterlagen" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Aufbewahrungsfristen für rechtliche Unterlagen</h3>
+<p>Für arbeitsrechtliche Unterlagen gilt folgendes: Für Unterlagen wie Arbeitszeugnisse beträgt die Aufbewahrungsfrist drei Jahre.</p>
+<ul>
+<li>Ende der Aufbewahrungsfrist für Zeugnisse aus dem Jahr 2016: Ende 2019</li>
+<li>Ende der Aufbewahrungsfrist für Zeugnisse aus dem Jahr 2019: Ende 2022</li>
+<li>Für Unterlagen, die gerichtliche und anwaltliche Verfahren betreffen, gilt die Aufbewahrungsfrist 30 Jahre lang, beispielsweise für:</li>
+<li>Mahnbescheide</li>
+<li>Prozessakten</li>
+<li>Urteile</li>
+</ul>
+<p>Das bedeutet:</p>
+<ul>
+<li>Ende der Aufbewahrungsfrist für rechtliche Unterlagen, die im Jahr 1989 erstellt wurden: Ende 2019</li>
+<li>Ende der Aufbewahrungsfrist für rechtliche Unterlagen, die im Jahr 2019 erstellt wurden: Ende 2049</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="aufbewahrungsfristen-für-dokumente-zur-rentenberechnung"></a><a href="#aufbewahrungsfristen-für-dokumente-zur-rentenberechnung" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Aufbewahrungsfristen für Dokumente zur Rentenberechnung</h3>
+<p>Dieselben Fristen wie für rechtliche Unterlagen gelten bei Dokumenten, in denen es um die Altersvorsorge über Pensionsklassen geht. <br />
+Das sind:</p>
+<ul>
+<li>Arbeitsverträge</li>
+<li>Gehaltsabrechnungen</li>
+<li>Sozialversicherungsunterlagen</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="aufbewahrungsfristen-für-weitere-dokumente"></a><a href="#aufbewahrungsfristen-für-weitere-dokumente" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Aufbewahrungsfristen für weitere Dokumente</h3>
+<p>Für die folgenden Dokumente gilt eine Aufbewahrungsfrist von sechs Jahren:</p>
+<ul>
+<li>Angebotsschreiben ohne Vertragsabschluss</li>
+<li>Preislisten</li>
+<li>unternehmensinterne Dokumente</li>
+<li>Businesspläne</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="lohnabrechnungen-besonders-beachten-und-aufheben"></a><a href="#lohnabrechnungen-besonders-beachten-und-aufheben" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Lohnabrechnungen besonders beachten und aufheben</h3>
+<p>Es gilt: <strong>Die Aufbewahrungsfrist beginnt mit dem Ende des jeweiligen Kalenderjahres, es gilt das auf der Lohnabrechnung vermerkte Erstellungsdatum.</strong></p>
+<p>So groß die Versuchung auch ist, bei der nächsten Aufräumaktion ungeliebten Papierkram einfach in den Reißwolf zu werfen: Wer wichtige Unterlagen zu früh entsorgt, stößt bei zukünftigen Kontrollen auf Probleme.</p>
+<p>Beispielsweise verlangt die Bundesversicherungsanstalt in regelmäßigen Abständen eine Einsicht in Unterlagen, die zur Entgeltabrechnung verwendet wurden, darunter alle Steuerunterlagen und Lohnlisten. Diese Kontrollen dienen dazu, Rentenansprüche zu prüfen oder zu klären, wie Beitragszahlungen für bestimmte Zeiträume zustande kommen.</p>
+<p>Des Weiteren sind Lohnabrechnungen bei Bonitätsprüfungen von Bedeutung. Anhand der Abrechnungen überprüfen Kreditinstitute, ob der Adressat der Abrechnung den von ihm beantragten Kredit fristgerecht und problemlos zurückzahlen kann. In einem solchen Fall wird insbesondere auf das Nettogehalt geachtet.</p>
+<p>Auch für Unterhaltsansprüche oder Verpflichtungen Ihrer Angestellten ist es wichtig, einen Einblick in Gehaltsabrechnungen zu erhalten. Dann dienen die Abrechnungen als Beweismaterial für das monatliche Gehalt, aus dem der maximale Unterhaltsbetrag berechnet wird. Bei einem Rechtsstreit sollte der betroffene Angestellte dann die Gehaltsabrechnungen der letzten Jahre mitnehmen.</p>
+<p>Besonders ärgerlich können nicht vorhandene Unterlagen im Fall eines Steuerhinterziehungsverdachts werden. Wenn in einer solchen Situation die Lohnabrechnungen verlegt oder verloren ging und die tatsächliche finanzielle Situation und die Abgaben für die Arbeitnehmer nicht rechtskräftig nachgewiesen werden können, muss nicht nur mit Nachzahlungen an das Finanzamt, sondern ist auch mit Geld- und sogar Haftstrafen zurechnen! Daher darauf achten, dass Kopien (Ausdrucke und digitale Kopien) innerhalb der Aufbewahrungsfristen im Archiv aufbewahrt werden.</p>
+<h3><a class="anchor" aria-hidden="true" id="zusammenfassung"></a><a href="#zusammenfassung" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Zusammenfassung</h3>
+<p>Diese Übersicht soll dabei helfen, Ordnung in den Dokumenten zu schaffen und bei Steuerprüfungen die richtigen Belege zum richtigen Zeitpunkt nachzuweisen zu können.</p>
+<p><strong>Aufpassen: Die Gesetzeslage kann/wird sich ständig ändern</strong></p>
+<p>Auch nicht Unternehmer (Privatleute) haben eine zweijährige Aufbewahrungspflicht nach § 14b Abs. 1 S. 5 i. V. m. § 14 Abs. 2 S. 1 Nr. 1 UStG zu beachten. Sie bezieht sich auf Rechnungen, Zahlungsbelege oder andere beweiskräftige Unterlagen, die Privatpersonen im Zusammenhang mit Leistungen an einem Grundstück erhalten haben. Zu solchen Leistungen gehören u. a. sämtliche Bauleistungen, planerische Leistungen, die Bauüberwachung, Renovierungsarbeiten, das Anlegen von Bepflanzungen, Gerüstbau. Auf diese Aufbewahrungspflicht der Privatperson hat der leistende Unternehmer nach dem UStG in der Rechnung hinzuweisen.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/fristen"><span class="arrow-prev">← </span><span>Aufbewahrungsfristen</span></a><a class="docs-next button" href="/docs/material"><span>Gesammelte Werke - LINKS</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#aufbewahrungsfristen-für-2019--das-sollten-sie-wissen">Aufbewahrungsfristen für 2019 – Das sollten Sie wissen</a><ul class="toc-headings"><li><a href="#aufbewahrungsfristen-für-dokumente-grundsätzliches">Aufbewahrungsfristen für Dokumente: Grundsätzliches</a></li><li><a href="#verpflichtung-und-konsequenzen-bei-nichtbeachtung">Verpflichtung und Konsequenzen bei Nichtbeachtung</a></li><li><a href="#aufbewahrungsfristen-für-lieferscheine-2019">Aufbewahrungsfristen für Lieferscheine 2019</a></li><li><a href="#aufbewahrungsfristen-für-rechtliche-unterlagen">Aufbewahrungsfristen für rechtliche Unterlagen</a></li><li><a href="#aufbewahrungsfristen-für-dokumente-zur-rentenberechnung">Aufbewahrungsfristen für Dokumente zur Rentenberechnung</a></li><li><a href="#aufbewahrungsfristen-für-weitere-dokumente">Aufbewahrungsfristen für weitere Dokumente</a></li><li><a href="#lohnabrechnungen-besonders-beachten-und-aufheben">Lohnabrechnungen besonders beachten und aufheben</a></li><li><a href="#zusammenfassung">Zusammenfassung</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/favicon.ico" alt="Digital Audit" width="66" height="58"/></a><div><h5>Wichtiges</h5><a href="/docs/en/datenschutz.html">Unsere Datenschutz-Hinweise</a><a href="/docs/en/impressum.html">Impressum</a></div><div><h5>Community</h5><a href="/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a></div><div><h5>Mehr</h5><a href="/blog">News</a><a href="https://github.com/">GitHub</a><a class="github-button" href="https://github.com/axellarator/docusaurus-dsgvo"></a></div></section><section class="copyright">Copyright © 2019 Value Grid Engineering Group</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: 'a8381e4143dc1499f2a45c07148a2462',
+                indexName: 'prod_VG',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>

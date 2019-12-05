@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Digital Audit Blog</title>
+        <link>https://website.axellarator.now.sh//blog</link>
+        <description>The best place to stay up-to-date with the latest Digital Audit news and events.</description>
+        <lastBuildDate>Thu, 31 Dec 2099 06:00:00 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>Digital Audit Blog</title>
+            <url>https://website.axellarator.now.sh//img/favicon.ico</url>
+            <link>https://website.axellarator.now.sh//blog</link>
+        </image>
+        <copyright>Copyright © 2019 Value Grid Engineering Group</copyright>
+        <item>
+            <title><![CDATA[LTO RSS]]></title>
+            <link>https://website.axellarator.now.sh//blog/2099/12/31/lto-rss.html</link>
+            <guid>https://website.axellarator.now.sh//blog/2099/12/31/lto-rss.html</guid>
+            <pubDate>Thu, 31 Dec 2099 06:00:00 GMT</pubDate>
+            <description><![CDATA[<table> <thead> <tr><th style="text-align:center">LTO Datenschutz</th><th style="text-align:center">LTO Aktuell</th></tr> </thead> <tbody> <tr><td style="text-align:center"></td><td style="text-align:center"></td></tr> </tbody> </table> <div hidden> <h2><a class="anchor" aria-hidden="true" id="legal-tribune-online"></a><a href="#legal-tribune-online" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Legal Tribune Online</h2> <h3><a class="anchor" aria-hidden="true" id="übersicht-datenschutz"></a><a href="#übersicht-datenschutz" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Übersicht Datenschutz</h3> <h3><a class="anchor" aria-hidden="true" id="presseschau"></a><a href="#presseschau" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Presseschau</h3> </div>]]></description>
+        </item>
+        <item>
+            <title><![CDATA[BSI RSS]]></title>
+            <link>https://website.axellarator.now.sh//blog/2098/12/31/bsi-rss.html</link>
+            <guid>https://website.axellarator.now.sh//blog/2098/12/31/bsi-rss.html</guid>
+            <pubDate>Wed, 31 Dec 2098 06:00:00 GMT</pubDate>
+            <description><![CDATA[<table> <thead> <tr><th style="text-align:center">BSI Sicherheitshinweise</th><th style="text-align:center">BSI Aktuell</th></tr> </thead> <tbody> <tr><td style="text-align:center"></td><td style="text-align:center"></td></tr> </tbody> </table> <div hidden> <h2><a class="anchor" aria-hidden="true" id="bundesamtbr-für-sicherheit-in-derbr-informationstechnik"></a><a href="#bundesamtbr-für-sicherheit-in-derbr-informationstechnik" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Bundesamt<br>für Sicherheit in der<br>Informationstechnik</h2> <h3><a class="anchor" aria-hidden="true" id="sicherheitshinweise"></a><a href="#sicherheitshinweise" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Sicherheitshinweise</h3> <h3><a class="anchor" aria-hidden="true" id="aktuelle-informationen"></a><a href="#aktuelle-informationen" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Aktuelle Informationen</h3> </div> ]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Datenschutz-Tipps 22/2019: Aufsichtsbehörden gegen Google Analytics & Co.]]></title>
+            <link>https://website.axellarator.now.sh//blog/2019/12/03/DS-Guru-post.html</link>
+            <guid>https://website.axellarator.now.sh//blog/2019/12/03/DS-Guru-post.html</guid>
+            <pubDate>Tue, 03 Dec 2019 06:00:00 GMT</pubDate>
+            <description><![CDATA[<hr> <p>In meinem Newsletter von heute hat sich leider ein Fehler eingeschlichen. Und wie viele schon bemerkt (und mir auch mitgeteilt haben – DANKE dafür!) muss der Absatz unter der Überschrift „Worum geht es?“ so lauten:</p> <p>Die Aufsichtsbehörden haben in ein...</p>]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Datenschutz-Tipps 22/2019: Aufsichtsbehörden gegen Google Analytics & Co.]]></title>
+            <link>https://website.axellarator.now.sh//blog/2019/11/25/DS-Guru-post.html</link>
+            <guid>https://website.axellarator.now.sh//blog/2019/11/25/DS-Guru-post.html</guid>
+            <pubDate>Mon, 25 Nov 2019 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>Hallo,</p> <p>in dieser Woche möchte ich dich gerne um deine Mithilfe für meine Schulungsplanung 2020 bitten. Dazu unten mehr. Wie du vielleicht auch…habe ich diese Woche wenig Zeit. Also machen wir es kurz.</p> <h2><a class="anchor" aria-hidden="true" id="ganz-kurz--eine-kleine-anmerkung-zur-eprivacy-verordnung"></a><a href="#ganz-kurz--eine-kleine-anmerkung-zur-eprivacy-verordnung" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Ganz kurz – eine kleine Anmerkung zur ePrivacy-Ve...</h2>]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Modal EDV und Forensik Termine 2020]]></title>
+            <link>https://website.axellarator.now.sh//blog/2019/11/21/modal-post.html</link>
+            <guid>https://website.axellarator.now.sh//blog/2019/11/21/modal-post.html</guid>
+            <pubDate>Thu, 21 Nov 2019 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="https://www.modal.de/site/assets/files/8054/kopfzeile-2.jpg" alt="modal"></p> <p>Sehr geehrter Herr Larator,</p> <p>heute möchten wir Sie über die neuen Termine im Bereich EDV und Forensik aufmerksam machen.</p> <ul> <li>EDV Sachverständiger</li> <li>IT Forensik in Theorie und Praxis</li> <li>Mobile Forensik ( Smartphoneforensiker )</li> <li>Browser- und Anwendungsforensik</li> ...</ul>]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Datenschutz-Tipps 24/2019: Aufsichtsbehörden gegen Google Analytics & Co.]]></title>
+            <link>https://website.axellarator.now.sh//blog/2019/11/18/DS-Guru-post.html</link>
+            <guid>https://website.axellarator.now.sh//blog/2019/11/18/DS-Guru-post.html</guid>
+            <pubDate>Mon, 18 Nov 2019 06:00:00 GMT</pubDate>
+            <description><![CDATA[<hr> <p>Hallo, ich melde mich heute nur ganz kurz, da der Schreibtisch (zu) voll ist. Aber diese Meldung hier ist sicher für viele von uns interessant:</p> <h2><a class="anchor" aria-hidden="true" id="tod-der-eprivacy-verordnung-vorläufig"></a><a href="#tod-der-eprivacy-verordnung-vorläufig" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Tod der ePrivacy-Verordnung (vorläufig)</h2> <p>Wie gerade vor einigen Minuten mitgeteilt wurde, ist die ePrivacy...</p>]]></description>
+        </item>
+        <item>
+            <title><![CDATA[DS-Info Rechtsanwälte]]></title>
+            <link>https://website.axellarator.now.sh//blog/2019/11/11/blog-post.html</link>
+            <guid>https://website.axellarator.now.sh//blog/2019/11/11/blog-post.html</guid>
+            <pubDate>Mon, 11 Nov 2019 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>Es ist ein Wunsch aller Prüflinge: Nach der Staatsprüfung möchte man gerne sehen, welches Korrekturschicksal die eigenen Klausuren erlitten haben. Wer sich diesen Wunsch erfüllen möchte, muss gegenwärtig noch einen bürokratischen Hürdenlauf absolvier...</p>]]></description>
+        </item>
+        <item>
+            <title><![CDATA[LTO: Deut­sche Wohnen soll Mil­lionen-Buß­geld zahlen]]></title>
+            <link>https://website.axellarator.now.sh//blog/2019/11/06/blog-post.html</link>
+            <guid>https://website.axellarator.now.sh//blog/2019/11/06/blog-post.html</guid>
+            <pubDate>Wed, 06 Nov 2019 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><a href="https://www.lto.de/recht/kanzleien-unternehmen/k/dsgvo-verstoss-deutsche-wohnen-bussgeld-datenschutz-berlin/">https://www.lto.de/recht/kanzleien-unternehmen/k/dsgvo-verstoss-deutsche-wohnen-bussgeld-datenschutz-berlin/</a></p> <p>Das bislang wohl höchste Bußgeld hierzulande wegen Datenschutzverstößen trifft die Deutsche Wohnen. Auch nach offizieller Rüge sollen über Ja...</p>]]></description>
+        </item>
+        <item>
+            <title><![CDATA[ILAC und IAF werden eins]]></title>
+            <link>https://website.axellarator.now.sh//blog/2019/11/01/blog-IAF.html</link>
+            <guid>https://website.axellarator.now.sh//blog/2019/11/01/blog-IAF.html</guid>
+            <pubDate>Fri, 01 Nov 2019 06:00:00 GMT</pubDate>
+            <description><![CDATA[<div hidden> ## [DAkkS](https://www.dakks.de) <h2><a class="anchor" aria-hidden="true" id="ilac---is-the-international-organisation-for-accreditation-bodieshttpsilacorg"></a><a href="#ilac---is-the-international-organisation-for-accreditation-bodieshttpsilacorg" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a><a href="https://ilac.org/">ILAC - is the international organisation for accreditation bodies</a></h2> <h2><a class="anchor" aria-hidden="true" id="iaf---is-the-world-association-of-conformity-assessment-accreditation-bodieshttpswwwiafnu"></a><a href="#iaf---is-the-world-association-of-conformity-assessment-accreditation-bodieshttpswwwiafnu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a><a href="https://www.iaf.nu/">IAF - is the world association of Conformity Assessment Accreditation Bodies</a></h2> </div> <h2><a class="anchor" aria-hidden="true" id="ilac-und-iaf-werden-eins"></a><a href="#ilac-und-iaf-werden-eins" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>ILAC und IAF werden eins</h2> <p>Die geplante Fusion der beiden wichtigsten inte...</p>]]></description>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,314 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Aufbewahrung · Digital Audit</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;div class=&quot;dsa&quot; id=&quot;ds-oben&quot;&gt;&lt;/div&gt;"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Aufbewahrung · Digital Audit"/><meta property="og:type" content="website"/><meta property="og:url" content="https://website.axellarator.now.sh//"/><meta property="og:description" content="&lt;div class=&quot;dsa&quot; id=&quot;ds-oben&quot;&gt;&lt;/div&gt;"/><meta property="og:image" content="https://website.axellarator.now.sh/img/undraw_gdpr_3xfb.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://website.axellarator.now.sh/img/undraw_gdpr_3xfb.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://website.axellarator.now.sh/blog/atom.xml" title="Digital Audit Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://website.axellarator.now.sh/blog/feed.xml" title="Digital Audit Blog RSS Feed"/><link rel="stylesheet" href="https://docusaurus.io/style.css"/><link rel="stylesheet" href="/css/code-block-buttons.css"/><link rel="stylesheet" href="/css/flash01-dsb.css" type="text/css"/><link rel="stylesheet" href="/css/flash01-dsa.css" type="text/css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/js/code-block-buttons.js"></script><script type="text/javascript" src="/js/flash01-dsa.js"></script><script type="text/javascript" src="/js/flash01-dsa-data.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/favicon.ico" alt="Digital Audit"/><h2 class="headerTitleWithLogo">Digital Audit</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/blog/" target="_self">News</a></li><li class="siteNavGroupActive"><a href="/docs/gesetze" target="_self">Gesetze</a></li><li class="siteNavGroupActive"><a href="/docs/dsa" target="_self">DSA</a></li><li class="siteNavGroupActive"><a href="/docs/dsb" target="_self">DSB</a></li><li class="siteNavGroupActive"><a href="/docs/foerderung" target="_self">Förderung</a></li><li class="siteNavGroupActive"><a href="/docs/projekt" target="_self">Projekte</a></li><li class=""><a href="/docs/kino" target="_self">Kino</a></li><li class=""><a href="/docs/splan" target="_self">Stundenplan</a></li><li class=""><a href="/help" target="_self">Hilfe</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Frag mich mal was" title="Frag mich mal was"/></li><li class=""><a href="https://github.com/axellarator/docusaurus-dsgvo" target="_self">Github</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Lokales Material</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Aufbewahrung</h1></header><article><div><span><div class="dsa" id="ds-oben"></div>
+<h2><a class="anchor" aria-hidden="true" id="übersicht-der-relevanten-aufbewahrungsfristen"></a><a href="#übersicht-der-relevanten-aufbewahrungsfristen" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Übersicht der relevanten Aufbewahrungsfristen</h2>
+<div hidden>
+## Direkt zum Buchstaben springen
+<h2><a class="anchor" aria-hidden="true" id="apara-a-bpara-b-cpara-c-dpara-d-epara-e-fpara-f-gpara-g-hpara-h-ipara-i-jpara-j-kpara-k-lpara-l-mpara-m-npara-n-opara-o-ppara-p-qpara-q-rpara-r-spara-s-tpara-t-upara-u-vpara-v-wpara-w"></a><a href="#apara-a-bpara-b-cpara-c-dpara-d-epara-e-fpara-f-gpara-g-hpara-h-ipara-i-jpara-j-kpara-k-lpara-l-mpara-m-npara-n-opara-o-ppara-p-qpara-q-rpara-r-spara-s-tpara-t-upara-u-vpara-v-wpara-w" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>[<a href="#para-a">A</a>] [<a href="#para-b">B</a>] [<a href="#para-c">C</a>] [<a href="#para-d">D</a>] [<a href="#para-e">E</a>] [<a href="#para-f">F</a>] [<a href="#para-g">G</a>] [<a href="#para-h">H</a>] [<a href="#para-i">I</a>] [<a href="#para-j">J</a>] [<a href="#para-k">K</a>] [<a href="#para-l">L</a>] [<a href="#para-m">M</a>] [<a href="#para-n">N</a>] [<a href="#para-o">O</a>] [<a href="#para-p">P</a>] [<a href="#para-q">Q</a>] [<a href="#para-r">R</a>] [<a href="#para-s">S</a>] [<a href="#para-t">T</a>] [<a href="#para-u">U</a>] [<a href="#para-v">V</a>] [<a href="#para-w">W</a>]</h2>
+<!-- [[X](#para-x)] [[Y](#para-y)] [[Z](#para-z)]  -->
+</div>
+<div hidden>
+<h3><a class="anchor" aria-hidden="true" id="geschäftsunterlagen-müssen-im-normalfall-sechs-oder-zehn-jahre-aufbewahrt-werden--in-ausnahmefällen-können-es-sogar-30-jahre-oder-mehr-sein"></a><a href="#geschäftsunterlagen-müssen-im-normalfall-sechs-oder-zehn-jahre-aufbewahrt-werden--in-ausnahmefällen-können-es-sogar-30-jahre-oder-mehr-sein" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Geschäftsunterlagen müssen im Normalfall sechs oder zehn Jahre aufbewahrt werden.  In Ausnahmefällen können es sogar 30 Jahre oder mehr sein.</h3>
+<h3><a class="anchor" aria-hidden="true" id="neben-den-im-handelsgesetzbuch-sowie-in-§-147-abgabenordnung-steuerrechtlich--definierten-regelungen-gibt-es-weitere-branchen--und-anwendungsspezifische-vorschriften"></a><a href="#neben-den-im-handelsgesetzbuch-sowie-in-§-147-abgabenordnung-steuerrechtlich--definierten-regelungen-gibt-es-weitere-branchen--und-anwendungsspezifische-vorschriften" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Neben den im Handelsgesetzbuch sowie in § 147 Abgabenordnung steuerrechtlich  definierten Regelungen gibt es weitere branchen- und anwendungsspezifische Vorschriften.</h3>
+<h3><a class="anchor" aria-hidden="true" id="bitte-beachten-die-aufbewahrungsfristen-beginnen-immer-erst-nach-ende-des-kalenderjahres-in-dem-im-betreffenden-dokument-die-letzte-eintragung-gemacht-worden-ist"></a><a href="#bitte-beachten-die-aufbewahrungsfristen-beginnen-immer-erst-nach-ende-des-kalenderjahres-in-dem-im-betreffenden-dokument-die-letzte-eintragung-gemacht-worden-ist" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Bitte beachten: Die Aufbewahrungsfristen beginnen immer erst nach Ende des Kalenderjahres, in dem im betreffenden Dokument die letzte Eintragung gemacht worden ist.</h3>
+<h3><a class="anchor" aria-hidden="true" id="dh-dass-für-alle-zum-jahresabschluss-gehörenden-unterlagen-ebenfalls-erst-mit-schluss-des-kalenderjahres-in-dem-dieser-erstellt-wurde-die-aufbewahrungsfrist-beginnt"></a><a href="#dh-dass-für-alle-zum-jahresabschluss-gehörenden-unterlagen-ebenfalls-erst-mit-schluss-des-kalenderjahres-in-dem-dieser-erstellt-wurde-die-aufbewahrungsfrist-beginnt" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>D.h., dass für alle zum Jahresabschluss gehörenden Unterlagen ebenfalls erst mit Schluss des Kalenderjahres, in dem dieser erstellt wurde, die Aufbewahrungsfrist beginnt.</h3>
+<h3><a class="anchor" aria-hidden="true" id="achtung-bitte-rücksprache-mit-ihrem-steuerberater-halten-ob-die-unterlagen-wirklich-datenschutzkonform-vernichtet-werden-können"></a><a href="#achtung-bitte-rücksprache-mit-ihrem-steuerberater-halten-ob-die-unterlagen-wirklich-datenschutzkonform-vernichtet-werden-können" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Achtung: Bitte Rücksprache mit Ihrem Steuerberater halten, ob die Unterlagen wirklich <code>datenschutzkonform</code> vernichtet werden können.</h3>
+<h3><a class="anchor" aria-hidden="true" id="aufzeichnungen-über-röntgenbehandlungen-sind-30-jahre-lang-nach-der-letzten-behandlung-aufzubewahren-röntgenbilder-und-die-aufzeichnungen-nach-absatz-1-satz-2-über-röntgenuntersuchungen-sind-zehn-jahre-lang-nach-der-letzten-untersuchung-aufzubewahren-röntgenbilder-und-die-aufzeichnungen-von-röntgenuntersuchungen-einer-person-die-das-18-lebensjahr-noch-nicht-vollendet-hat-sind-bis-zur-vollendung-des-28-lebensjahres-dieser-person-aufzubewahren"></a><a href="#aufzeichnungen-über-röntgenbehandlungen-sind-30-jahre-lang-nach-der-letzten-behandlung-aufzubewahren-röntgenbilder-und-die-aufzeichnungen-nach-absatz-1-satz-2-über-röntgenuntersuchungen-sind-zehn-jahre-lang-nach-der-letzten-untersuchung-aufzubewahren-röntgenbilder-und-die-aufzeichnungen-von-röntgenuntersuchungen-einer-person-die-das-18-lebensjahr-noch-nicht-vollendet-hat-sind-bis-zur-vollendung-des-28-lebensjahres-dieser-person-aufzubewahren" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Aufzeichnungen über Röntgenbehandlungen sind 30 Jahre lang nach der letzten Behandlung aufzubewahren. Röntgenbilder und die Aufzeichnungen nach Absatz 1 Satz 2 über Röntgenuntersuchungen sind zehn Jahre lang nach der letzten Untersuchung aufzubewahren. Röntgenbilder und die Aufzeichnungen von Röntgenuntersuchungen einer Person, die das 18. Lebensjahr noch nicht vollendet hat, sind bis zur Vollendung des 28. Lebensjahres dieser Person aufzubewahren.</h3>
+</div>
+<table>
+<thead>
+<tr><th style="text-align:left"></th><th style="text-align:center">Gesetzliche Aufbewahrungsfrist <br /> in Jahren</th><th style="text-align:center">Jahr aus dem die Unterlagen 2019 vernichtet werden können</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align:left">A <div id="para-a" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Abhängigkeitserklärungen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Abrechnungsbelege</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Abtretungserklärungen</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Akkordunterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Akkreditive</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Aktenvermerke (soweit steuerrechtlich relevant)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">An-, Ab- und Ummeldungen der Krankenkassen</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Angebotsunterlagen, die nicht zum Auftrag geführt haben</td><td style="text-align:center">0</td><td style="text-align:center">sofort</td></tr>
+<tr><td style="text-align:left">Angebotsunterlagen, die zum Auftrag geführt haben</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Angestelltenversicherung</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Anhang</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Anlageverzeichnisse</td><td style="text-align:center">6</td><td style="text-align:center">2013</td></tr>
+<tr><td style="text-align:left">Anleihebücher</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Anträge auf Arbeitnehmersparzulage</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Anwesenheitsliste soweit für Lohnbuchhaltung erforderlich</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Arbeitsanweisungen für EDV- Buchführung</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Arbeitsunfähigkeitsbescheinigungen (Krankmeldung)</td><td style="text-align:center">5</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Ausgangsrechnungen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Außendienstabrechnungen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">B <div id="para-b" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Bahnabrechnungen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Bahnfrachtbriefe</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Bankauszüge, Bankbelege</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Bankbürgschaften</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Bauakten</td><td style="text-align:center">Lebensdauer</td><td style="text-align:center">des Bauwerks</td></tr>
+<tr><td style="text-align:left">Bauantragskostennachweise</td><td style="text-align:center">Lebensdauer</td><td style="text-align:center">des Bauwerks</td></tr>
+<tr><td style="text-align:left">Baubeschreibungen</td><td style="text-align:center">Lebensdauer</td><td style="text-align:center">des Bauwerks</td></tr>
+<tr><td style="text-align:left">Baubücher</td><td style="text-align:center">Lebensdauer</td><td style="text-align:center">des Bauwerks</td></tr>
+<tr><td style="text-align:left">Baugenehmigungen</td><td style="text-align:center">Lebensdauer</td><td style="text-align:center">des Bauwerks</td></tr>
+<tr><td style="text-align:left">Beitragsabrechnungen zur Sozialversicherung</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Belastungsanzeigen (intern und extern)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Belege, Sammelbelege, Beleglisten soweit Buchungsunterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Bestell- und Auftragsunterlagen</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Beteiligungsunterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Betriebsabrechnungsbögen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Betriebskostenabrechnungen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Betriebsprüfungsberichte</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Bewertungsunterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Bewirtungsunterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Bilanzen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Bilanzanlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Buchungsanweisungen,</td></tr>
+<tr><td style="text-align:left">Buchungsbelege</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Bürgschaftsinformationen (nach Vertragsende)</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">C <div id="para-c" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Carnet-Zolldokumente</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Clearingauszüge</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Clearing-Belege</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">D <div id="para-d" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Darlehensunterlagen (nach Vertragsablauf)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Dateien (soweit Verfahrensdokumentationen) (§ 47 AO)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Datensicherungen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Dauerauftragsunterlagen</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Debitorenbuchhaltung, Debitorenlisten</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Depotbücher, Depotauszüge und Depotbestätigungen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Dokumentation für Programme und Systeme bei EDV, Fehlerprotokolle</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Doppelbesteuerungsunterlagen</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">E <div id="para-e" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Edelmetallbestände, Edelmetallumsätze</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">EDV-Unterlagen, soweit zum Verständnis der Buchführung erforderlich</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">EDV-Ablaufdiagramme. -Blockdiagramme und ähnliche -Organisationsbeschreibungen)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Effektenkassenquittungen, Effektenempfangsbescheinigungen, Effektenbuch</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Einfuhrunterlagen</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Eingangsrechnungen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Einheitswertunterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">E-Mails mit steuerrelevantem Inhalt</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Essensmarkenabrechnungen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Exportunterlagen</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">F <div id="para-f" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Fahrtkostenerstattungsunterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Feuerversicherungsunterlagen</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Frachtbriefe</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Freistempelabrechnungen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">G <div id="para-g" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Gebäude- und Grundstücksunterlagen (Bauakten, Pläne, Schätzungen, Genehmigungen, Abrechnungen über Anschaffungs- oder Herstellungskosten), soweit Inventar</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Gehaltslisten</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Geschäftsberichte</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Geschäftsbriefe</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Geschenknachweise</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Gesellschafterversammlung /-beschlüsse (Protokolle und sonstige Unterlagen)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Gewerbesteuerunterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Gewinn- und Verlustrechnungen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Grundbuch- und Journalblätter, wenn Inventare</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Gründungsakten der Gesellschaft</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Gutachten</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Gutschriften, Gutschriftsanzeigen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">H <div id="para-h" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Handelsbriefe</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Handelsbücher</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Handelsregisterauszüge</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Hauptabschlussübersicht</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Hauptbücher</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Hauptversammlungen (Beschlüsse, Protokolle, sonstige Unterlagen)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Hypothekenpfandbriefe</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">I <div id="para-i" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Inkassobücher, -karteien, -quittungen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Investitionszulage (Unterlagen)</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Inventare, Inventarnachweise</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Investitionszulagen Unterlagen</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">J <div id="para-j" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Jahresabschluss</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Jahreslohnnachweise für Berufsgenossenschaften</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Journale für Hauptbuch und Kontokorrent</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Jubiläumsunterlagen, Jubilarfeiern</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">K <div id="para-k" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Kalkulationsunterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Kassenberichte</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Kassenbücher und -blätter</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Kassenzettel</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Kontenpläne und -änderungen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Kontoauszüge, Kontenregister</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Konzernabschlüsse, Konzernlageberichte</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Kostenträgerrechnungen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Krankenhaus-Buchführungsunterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Kreditorenbuchhaltung</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Kreditunterlagen (soweit Buchungsbelege)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Kreditunterlagen (soweit Korrespondenz)</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Kurzarbeitergeldlisten und Anträge</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">L <div id="para-l" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Ladescheine</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Lagebericht</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Lagerbücher</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Lastschriftanzeigen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Leasingunterlagen (soweit Buchungsbelege)</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Leergutabrechnungen</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Lieferantenerklärungen (Präferenznachweise, Zoll, steuerlich ansonsten 6 Jahre)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Lieferscheine, wenn Buchungsunterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Lohnkontenarten, Lohnbelege</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Lohnlisten</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Lohnsteuer-Jahresausgleichsunterlagen (für Arb./Angest.)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Luftfrachtbriefe</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">M <div id="para-m" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Mahnvorgänge, Mahnbescheide</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Maschinenkarteikarten (Inventur)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Mietunterlagen, Mietverträge (nach Vertragsende)</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Mietunterlagen, Mietverträge (soweit Buchungsbelege)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Mutterschaftsgeldunterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">N <div id="para-n" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Nachnahmebelege (soweit Buchungsbelege)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Nebenbücher</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">O <div id="para-o" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Offenbarungseid, Anträge zur eidesstattlichen Versicherung</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Organisationsunterlagen und -pläne</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">P <div id="para-o" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Pachtunterlagen, Pachtverträge (soweit Buchungsbelege; nach Vertragsende)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Pachtunterlagen, Pachtverträge (soweit Handelsbriefe; nach Vertragsende)</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Patente und Patentunterlagen, nach Ablauf des Patents</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Patientenakten in Krankenhäusern (Krankengeschichte) ambulant und stationär</td><td style="text-align:center">30</td><td style="text-align:center">1988</td></tr>
+<tr><td style="text-align:left">Patientenakten in Arztpraxen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Pensionskassenunterlagen, Unterlagen zu Pensionsrückstellungen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Pfändungsunterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Postquittungsbücher</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Prämienunterlagen, z. B. über Versicherungsprämien, soweit Buchungsunterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Preislisten (soweit Bewertungsunterlagen)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Protokolle (soweit Buchungsbelege)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Provisionsabrechnungen mit Unterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Prozessakten (nach Abschluss des Prozesses)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Prüfungsberichte des Abschlussprüfers</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Q <div id="para-q" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Qualitätsmanagement-Unterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Quittungen, wenn Buchungsunterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">R <div id="para-r" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Rechnungen und Rechnungsunterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Rechtsstreitfälle mit allen Unterlagen, Klageakten - nach Verfahrensabschluss</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Reisekostenabrechnungen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Repräsentationsaufwendungen (Unterlagen)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">S <div id="para-s" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Saldenbilanzen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Saldenlisten</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Schadensunterlagen (soweit nicht Bilanzbelege)</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Scheck- und Wechselunterlagen (soweit Buchungsbelege)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Schriftwechsel</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Schriftwechsel (auch innerbetrieblich)</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Schuldtitel</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Spendenbescheinigungen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Steuerunterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Strahlenschutz-Anwendungen (Röntgenaufnahmen-RöV)*</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Strahlenschutz-Anwendungen (Röntgenbehandlung-RöV)*</td><td style="text-align:center">30</td><td style="text-align:center">1988</td></tr>
+<tr><td style="text-align:left">Strahlenschutzbelehrungen (RöV)*</td><td style="text-align:center">30</td><td style="text-align:center">1988</td></tr>
+<tr><td style="text-align:left">Strahlenschutzgesundheitsakte (RöV)*</td><td style="text-align:center">30</td><td style="text-align:center">1988</td></tr>
+<tr><td style="text-align:left">Strahlenschutzmessergebnisse (RöV)*</td><td style="text-align:center">30</td><td style="text-align:center">1988</td></tr>
+<tr><td style="text-align:left">T <div id="para-t" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Telefonkostennachweise</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Transportschadenunterlagen</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">U <div id="para-u" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Überstundenlisten</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Unfallversicherungsunterlagen</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Unterlagen über dubiose Forderungen, Dubiosenbücher</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">V <div id="para-v" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Verbindlichkeiten (Zusammenstellungen)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Verkaufsbücher</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Vermögensverzeichnis</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Versand- und Frachtunterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Versicherungspolicen (nach Ablauf der Versicherung)</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Versteigerungsunterlagen</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Verträge (nach Vertragsende, soweit kein Buchungsbeleg)</td><td style="text-align:center">6</td><td style="text-align:center">2012</td></tr>
+<tr><td style="text-align:left">Versorgungsunterlagen, soweit Buchungsunterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Viehregister</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">VwL-Unterlagen (soweit Buchungsbelege)</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">W <div id="para-w" class ="jtt"/></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Wareneingangs- und -ausgangsbücher</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Wechsel</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Weihnachtsgratifikation</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Werbegeschenkenachweise</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Werbekostenbelege</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Wertberichtigungsunterlagen</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left">Wildhandelsbücher</td><td style="text-align:center">10</td><td style="text-align:center">2008</td></tr>
+<tr><td style="text-align:left"><hr /></td><td style="text-align:center"><hr /></td><td style="text-align:center"><hr /></td></tr>
+</tbody>
+</table>
+<p>Auch nicht Unternehmer (Privatleute) haben eine zweijährige Aufbewahrungspflicht nach § 14b Abs. 1 S. 5 i. V. m. § 14 Abs. 2 S. 1 Nr. 1 UStG zu beachten. Sie bezieht sich auf Rechnungen, Zahlungsbelege oder andere beweiskräftige Unterlagen, die Privatpersonen im Zusammenhang mit Leistungen an einem Grundstück erhalten haben. Zu solchen Leistungen gehören u. a. sämtliche Bauleistungen, planerische Leistungen, die Bauüberwachung, Renovierungsarbeiten, das Anlegen von Bepflanzungen, Gerüstbau. Auf diese Aufbewahrungspflicht der Privatperson hat der leistende Unternehmer nach dem UStG in der Rechnung hinzuweisen.</p>
+<p>Trotz sorgfältiger Zusammenstellung können wir für die Richtigkeit der Angaben keine Gewähr übernehmen.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/doc11"><span class="arrow-prev">← </span><span>DSA IT Abteilung</span></a><a class="docs-next button" href="/docs/fristen-erlaeuterungen"><span>Erläuterungen Fristen</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#übersicht-der-relevanten-aufbewahrungsfristen">Übersicht der relevanten Aufbewahrungsfristen</a></li><li><a href="#direkt-zum-buchstaben-springen">Direkt zum Buchstaben springen</a></li><li><a href="#apara-a-bpara-b-cpara-c-dpara-d-epara-e-fpara-f-gpara-g-hpara-h-ipara-i-jpara-j-kpara-k-lpara-l-mpara-m-npara-n-opara-o-ppara-p-qpara-q-rpara-r-spara-s-tpara-t-upara-u-vpara-v-wpara-w">[<a href="#para-a">A</a>] [<a href="#para-b">B</a>] [<a href="#para-c">C</a>] [<a href="#para-d">D</a>] [<a href="#para-e">E</a>] [<a href="#para-f">F</a>] [<a href="#para-g">G</a>] [<a href="#para-h">H</a>] [<a href="#para-i">I</a>] [<a href="#para-j">J</a>] [<a href="#para-k">K</a>] [<a href="#para-l">L</a>] [<a href="#para-m">M</a>] [<a href="#para-n">N</a>] [<a href="#para-o">O</a>] [<a href="#para-p">P</a>] [<a href="#para-q">Q</a>] [<a href="#para-r">R</a>] [<a href="#para-s">S</a>] [<a href="#para-t">T</a>] [<a href="#para-u">U</a>] [<a href="#para-v">V</a>] [<a href="#para-w">W</a>]</a><ul class="toc-headings"><li><a href="#geschäftsunterlagen-müssen-im-normalfall-sechs-oder-zehn-jahre-aufbewahrt-werden--in-ausnahmefällen-können-es-sogar-30-jahre-oder-mehr-sein">Geschäftsunterlagen müssen im Normalfall sechs oder zehn Jahre aufbewahrt werden.  In Ausnahmefällen können es sogar 30 Jahre oder mehr sein.</a></li><li><a href="#neben-den-im-handelsgesetzbuch-sowie-in-§-147-abgabenordnung-steuerrechtlich--definierten-regelungen-gibt-es-weitere-branchen--und-anwendungsspezifische-vorschriften">Neben den im Handelsgesetzbuch sowie in § 147 Abgabenordnung steuerrechtlich  definierten Regelungen gibt es weitere branchen- und anwendungsspezifische Vorschriften.</a></li><li><a href="#bitte-beachten-die-aufbewahrungsfristen-beginnen-immer-erst-nach-ende-des-kalenderjahres-in-dem-im-betreffenden-dokument-die-letzte-eintragung-gemacht-worden-ist">Bitte beachten: Die Aufbewahrungsfristen beginnen immer erst nach Ende des Kalenderjahres, in dem im betreffenden Dokument die letzte Eintragung gemacht worden ist.</a></li><li><a href="#dh-dass-für-alle-zum-jahresabschluss-gehörenden-unterlagen-ebenfalls-erst-mit-schluss-des-kalenderjahres-in-dem-dieser-erstellt-wurde-die-aufbewahrungsfrist-beginnt">D.h., dass für alle zum Jahresabschluss gehörenden Unterlagen ebenfalls erst mit Schluss des Kalenderjahres, in dem dieser erstellt wurde, die Aufbewahrungsfrist beginnt.</a></li><li><a href="#achtung-bitte-rücksprache-mit-ihrem-steuerberater-halten-ob-die-unterlagen-wirklich-datenschutzkonform-vernichtet-werden-können">Achtung: Bitte Rücksprache mit Ihrem Steuerberater halten, ob die Unterlagen wirklich <code>datenschutzkonform</code> vernichtet werden können.</a></li><li><a href="#aufzeichnungen-über-röntgenbehandlungen-sind-30-jahre-lang-nach-der-letzten-behandlung-aufzubewahren-röntgenbilder-und-die-aufzeichnungen-nach-absatz-1-satz-2-über-röntgenuntersuchungen-sind-zehn-jahre-lang-nach-der-letzten-untersuchung-aufzubewahren-röntgenbilder-und-die-aufzeichnungen-von-röntgenuntersuchungen-einer-person-die-das-18-lebensjahr-noch-nicht-vollendet-hat-sind-bis-zur-vollendung-des-28-lebensjahres-dieser-person-aufzubewahren">Aufzeichnungen über Röntgenbehandlungen sind 30 Jahre lang nach der letzten Behandlung aufzubewahren. Röntgenbilder und die Aufzeichnungen nach Absatz 1 Satz 2 über Röntgenuntersuchungen sind zehn Jahre lang nach der letzten Untersuchung aufzubewahren. Röntgenbilder und die Aufzeichnungen von Röntgenuntersuchungen einer Person, die das 18. Lebensjahr noch nicht vollendet hat, sind bis zur Vollendung des 28. Lebensjahres dieser Person aufzubewahren.</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/favicon.ico" alt="Digital Audit" width="66" height="58"/></a><div><h5>Wichtiges</h5><a href="/docs/en/datenschutz.html">Unsere Datenschutz-Hinweise</a><a href="/docs/en/impressum.html">Impressum</a></div><div><h5>Community</h5><a href="/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a></div><div><h5>Mehr</h5><a href="/blog">News</a><a href="https://github.com/">GitHub</a><a class="github-button" href="https://github.com/axellarator/docusaurus-dsgvo"></a></div></section><section class="copyright">Copyright © 2019 Value Grid Engineering Group</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: 'a8381e4143dc1499f2a45c07148a2462',
+                indexName: 'prod_VG',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>

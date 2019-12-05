@@ -1,0 +1,402 @@
+/** FLASH01-DSA.JS
+ * Copyright (c) 2019-present, Value Grid
+ * C:\Users\Klaus\Docusaurus\website\node_modules\docusaurus\lib\static\js
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**************************************************************************
+**************************Datenschutzauditor*******************************
+**************************************************************************/
+// Alles initialisieren
+let Frage			= "text"; // Frage
+let Antwort			= [];	// Antwort 
+let Loesung			= [];	// Lösung False, true, Wert!
+let Checkbox		= [];	// Checkbox angekreuzt!
+let Versteck		= [];	// Felder verstecken
+let refListe		= [];	// refListe für alle Fragen
+let arrSort			= [];	// Unsortierte Liste von 0 bis Max
+let flagListe		= false;// Listenerstellung umgeht Maskenerstellung
+var flagPruefung	= false;// Karte nicht auf Eingabefehler geprüft
+
+//initialize the numbers:
+let maxAntwortfelder= 8;	// Max 10 Antwortfelder
+let maxAntworten	= 8;	// Maximale Anzahl Antworten
+let anzAntworten	= 0;	// Anzahl Antworten und Lösungen
+let anzKarten		= 0;	// Anzahl Elemente im Array von 0 - x
+let maxKarten		= 0;	// Anzahl Elemente im Array = x + 1
+var aktKarte		= 0;	// Aktuelle Karte
+var jumpDB			= 0;	// Sprung in die richtige DB und initialisierung
+let switcher		= 0;	// Schaltet die Tasten 
+let check			= 0; 
+
+let refErgebnis		= null; // Ergebnisausgabe in Fenster  
+let refHinweis		= null;
+let refProzent		= null;
+let przErgebnis		= 0;	// Ergebnissumme in % für alle Karten
+let reflfdKarte		= null;
+var aktProzent		= 0;	// Prozent Ergebnis für 1 Karte
+var sumProzent		= [];	// Werte für die einzelnen Karten
+
+
+const arrKarten = [0,33,9,144,24,50,14];	// Anzahl Fragen im Array von NULL bis X	
+
+function initDB(jumpDB) {				// In Liste und in Flash duplizieren
+
+	anzKarten	= arrKarten[jumpDB];	// Anzahl Elemente im Array = (von 0 bis x)
+	maxKarten	= anzKarten + 1;		// Anzahl Elemente im Array = (von 1 bis x+1)
+	flagListe	= false;				// Flag
+	switcher = jumpDB;
+	dsaFragen(switcher);	
+}
+
+function dsaFragen(switcher) {
+
+	switch (switcher) {
+		case 1:			// alleFragen	AUDITOR 1
+		jumpDB = 1;
+		break;
+		case 2:			// alleFragen1	BEAUFTRAGTE 1
+		jumpDB = 2;
+		break;
+		case 3:			// alleFragen2	AUDITOR 2
+		jumpDB = 3;
+		break;
+		case 4:			// alleFragen3	AUDITOR 3
+		jumpDB = 4;
+		break;
+		case 5:			// alleFragen4	BEAUFTRAGTE 2
+		jumpDB = 5;
+		break;
+		case 6:			// alleFragen5	IT-FRAGEN 1
+		jumpDB = 6;
+		break;
+		case 7:
+			pruefeKarte();
+		return;
+		case 8:
+			zurueck();
+		return;
+		case 9:
+			weiter();
+		return;
+		case 10:
+			initnext(); // Einsprung von dsaMaske(aktKarte)
+		return;
+	}
+	
+//	dsaFragenStart = true;	// Flag kann weg
+	findrefsdsa();    		// Aufbereitung des Bildschirms
+	vorbereitung();			// Alles initialisieren
+
+// -- Zur Initialisierung Referenzen auf Felder zuordnen (getElementById)
+
+	function findrefsdsa() { 
+	let y;	
+	let	ladeGesamt  = "";     // Leer und initialisiert
+
+// -- Frage in Lernkarten initialisieren----------------------------------------	
+
+	    Frage = document.getElementById("dsaFrage");
+
+// -- Antwortzeilen erstellen und initialisieren	
+// -- Original: <tr><td	id="versteck0" ><input id="check0" type="checkbox" onClick="toggle(0)"/></td><td class="antwort" id="antwort0"></td></tr>
+
+		ladeGesamt = "<div id='dsaTab1out'>\r\n"; // Anfang
+
+		for(y=0;y < maxAntwortfelder;y++){ // Checkbox und Antwort erstellen
+			ladeGesamt  = ladeGesamt + '<tr><td	id="versteck' + y + '" >' + '<input id="check' + y + '" type="checkbox" onClick="toggle(' + y + ')"/>' + '</td><td class="antwort" id="antwort' + y + '"></td></tr> \r\n'	
+		}
+
+		ladeGesamt = ladeGesamt + "</div>\r\n"; // Abschluss
+		
+		dsaTab1.innerHTML = ladeGesamt; // Ab in die Maske
+		
+		for(y=0;y < maxAntwortfelder;y++){ // Checkbox und Versteck aus Tab1 initialisieren
+			Checkbox[y] = document.getElementById("check" + y); 
+			Versteck[y] = document.getElementById("versteck" + y);
+		}
+
+// -- Ereigniskarten initialisieren ----------------------------------------------		
+
+		ladeGesamt  = "";     // Leer und initialisiert
+		ladeGesamt  = '<input type="button" class="butknopf" id="Hinweis"  disabled readonly value="Hinweis"/>\r\n' 
+					+ '<input type="button" class="butknopf" id="lfdKarte" disabled readonly value="Karte"/>\r\n'   
+					+ '<input type="button" class="butknopf" id="Prozent"  disabled readonly value="Prozent"/>\r\n'   
+					+ '<input type="button" class="butknopf" id="Ergebnis" disabled readonly value="Gesamtergebnis"/>\r\n'    
+					+ '<input type="button" class="butknopf" id="dsaUhr1"  disabled readonly value="Uhrzeit"/>\r\n'
+		dsaTab3.innerHTML = ladeGesamt; // Ab in die Maske
+		
+		refErgebnis = document.getElementById("Ergebnis");
+		reflfdKarte = document.getElementById("lfdKarte");
+		refHinweis  = document.getElementById("Hinweis");
+		refProzent  = document.getElementById("Prozent");
+		
+		uhrzeit();
+
+		
+// -- Masken-Sprungreferenzen von 0 bis anzKarten erstellen ----------------------
+// -- Original: <a href="javascript:dsaMaske(0)"  id="f0" >0</a>
+		
+		ladeGesamt = "<div id='dsaTab4out'>\r\n"; // Anfang
+
+		for (y = 0; y <= anzKarten; y++) ladeGesamt = ladeGesamt + "<a href="  + "javascript:dsaMaske(" + y + ") id = f" + y + " >" + y + "</a>\r\n";			
+
+		ladeGesamt = ladeGesamt + "</div>\r\n"; // Abschluss
+		
+		dsaTab4.innerHTML = ladeGesamt; // Ab in die Maske
+		
+		for (y = 0; y <= anzKarten; y++) { // Sprungpunkt zuordnen und verstecken
+			refListe[y] = document.getElementById("f"+y);	
+			refListe[y].style.visibility = "hidden";
+		}
+	} // Ende findrefsdsa
+
+// -- Alle Daten vorbereiten. Wird nur einmal aufgerufen
+
+	function vorbereitung(){ 
+	let y;
+
+	// Initialisierung zum Start und Wiederholung  
+		aktProzent  = 0;
+		aktKarte    = 0; 
+
+	// 1. Benutzerhinweis	
+		refHinweis.value = 'Bei Fragen fragen!';   // Hinweisfeld füttern
+		
+	// Liste von 0 bis Max erstellen
+		for (y = 0; y <= anzKarten; y++) arrSort[y] = y;
+
+	// Liste umsortieren
+		arrSort.sort(function(a, b){return 0.5 - Math.random()});
+
+	// erster Aufruf Shownext
+		shownext();
+	} // Ende vorbereitung
+
+	function shownext(){// Überprüft das Ergebnis
+		
+		initnext();
+		
+		switch (jumpDB) { // in DB passenden Eintrag aufrufen
+			case 1:
+				alleFragen(arrSort[aktKarte]);	
+			return;
+			case 2:
+				alleFragen1(arrSort[aktKarte]);
+			return;
+			case 3:
+				alleFragen2(arrSort[aktKarte]);	
+			return;
+			case 4:
+				alleFragen3(arrSort[aktKarte]);	
+			return;
+			case 5:
+				alleFragen4(arrSort[aktKarte]);	
+			return;
+			case 6:
+				alleFragen5(arrSort[aktKarte]);	
+			return;			
+		} // Ende Switch
+	} // Ende shownext
+
+	function initnext(){// Initialisiert die Maske
+	let y = 0;
+	let anzAnt = "";
+	let anzVer = "";
+
+// -- Antworten und Checkboxex zurücksetzen, Farben wieder auf Standard
+	
+		for(y = 0;y < maxAntworten; y++) {
+			anzAnt = "antwort"+y;
+			Checkbox[y].checked                                = false;				// Angekreuztes löschen
+			document.getElementById(anzAnt).innerHTML          = [''];				// Feld leeren
+			document.getElementById(anzAnt).style.color        = "black";			// Zurück von Blau/Grün auf Schwarz 
+			document.getElementById(anzAnt).style.visibility   = "visible";			// mögliche Unsichtbarkeit aufheben  
+			document.getElementById(anzAnt).style.borderBottom = "1px solid blue";	//zurück zur blauen Linie
+			Versteck[y].style.visibility                       = "visible";			// mögliche Unsichtbarkeit aufheben aus flash01-dsa-data
+			Versteck[y].style.borderBottom                     = "1px solid blue";	// Zurück zur Blauen Grotte
+		}
+
+		refProzent.value  = 'Karte 0%';														// Hinweisfeld füttern
+		reflfdKarte.value = 'Aktuelle Karte ist #' + (aktKarte+1) + ' von ' + maxKarten;	// Hinweisfeld füttern
+	} // Ende initnext
+
+	function zurueck(){ // Zurück und shownext()
+		scroll(0,0);   // Position korrigieren, falls nötig
+		flagPruefung = true;
+		aktKarte--; 
+		if(aktKarte < 0){
+			aktKarte = 0;
+			refHinweis.value  = 'Vor der 1. Karte ist nichts';   // Hinweisfeld füttern
+		}
+		
+		shownext();
+	}
+	
+	function weiter(){ // Vorwärts und shownext()
+		scroll(0,0);   // Position korrigieren
+	 	if (flagPruefung == false) pruefeKarte();
+		flagPruefung = false;
+		refListe[arrSort[aktKarte]].style.visibility = "visible";
+		aktKarte++;
+		if(aktKarte > anzKarten){
+			aktKarte = anzKarten;
+			refHinweis.value  = 'Neustart anklicken zum Neubeginn';   // Hinweisfeld füttern
+		}
+		
+		shownext();
+	}
+
+// -- Karte überprüfen und zukünftig Ergebnisse zwischenspeichern
+
+	function pruefeKarte(){// Überprüfen 
+	let y = 0;
+	let prozZaehler = 0;
+	let prozKarte   = 0;
+		aktProzent  = 0;
+		flagPruefung = true;
+	let anzAnt 		= "";
+	let anzVer 		= "";
+
+		const iterator = Loesung.values(); //https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array/values
+
+		for(const value of iterator) {
+			anzAnt = "antwort"+y;
+			
+			if((Checkbox[y].checked && value) || (!Checkbox[y].checked && !value)){ // Alles richtig: Richtig angekreuzt und nicht-Richtig nicht angekreuzt
+				document.getElementById(anzAnt).style.color = "green";
+				prozZaehler++
+		}
+			
+			if((!Checkbox[y].checked && value) || (Checkbox[y].checked && !value)){ // Falsch: Richtig nicht angekreuzt und Falsch angekreuzt
+				document.getElementById(anzAnt).style.color = "blue";
+//				Checkbox[y].checked = false;    // Angekreuztes löschen
+				prozZaehler--
+		}
+			y++	
+		}
+		
+		if(prozZaehler < 0)prozZaehler = 0;
+
+		aktProzent = Math.round(100 / y * prozZaehler);		// Aktuelle Karte in % 
+		refProzent.value = "Erfolg: " + aktProzent + "%";	// Ausgabe aktueller Wert in  %
+		
+		sumProzent[aktKarte] = aktProzent; //Zwischenspeichern im Array 0 - 33
+				
+		const reducer = (accumulator, currentValue) => accumulator + currentValue;//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce	
+				
+		przErgebnis = sumProzent.reduce(reducer)/(aktKarte+1); // Aufsummieren und Division durch aktuelle Karte +1 
+		
+		refErgebnis.value = "Gesamt: " + Math.round(przErgebnis) + "%" // Hinweisfeld füttern
+	} // Ende pruefekarte
+	
+	function uhrzeit() {
+    var jetzt = new Date(),
+        h = jetzt.getHours(),
+        m = jetzt.getMinutes(),
+        s = jetzt.getSeconds();
+    m = fuehrendeNull(m);
+    s = fuehrendeNull(s);
+    document.getElementById('dsaUhr1').value = h + ':' + m + ':' + s;
+    setTimeout(uhrzeit, 500);
+    }
+  
+    function fuehrendeNull(zahl) {
+    	zahl = (zahl < 10 ? '0' : '' )+ zahl;  
+    return zahl;
+  	}
+} // Ende dsaFragen
+
+// Ausserhalb der Kapselung
+	
+function dsaMaske(aktKarte){
+
+	flagPruefung = true;
+
+	switch (jumpDB) { // in DB passenden Eintrag aufrufen
+			case 1:
+				alleFragen(aktKarte);	
+			break;
+			case 2:
+				alleFragen1(aktKarte);
+			break;
+			case 3:
+				alleFragen2(aktKarte);	
+			break;
+			case 4:
+				alleFragen3(aktKarte);	
+			break;
+			case 5:
+				alleFragen4(aktKarte);	
+			break;
+			case 6:
+				alleFragen5(aktKarte);	
+			break;
+		}
+	return;
+} // Ende dsaMaske   
+
+// Alles aus Maske initialisieren siehe flash dsb js
+
+function dsaListen(jumpDB) {
+let y;
+let x;
+let z; 	
+let	ladeGesamt  = "";					// Leer und initialisiert
+	
+	ladeFrage   = [];
+	ladeAntwort = [];
+	anzKarten	= arrKarten[jumpDB];	// Anzahl Elemente im Array = (von 0 bis x)
+	maxKarten	= anzKarten + 1;		// Anzahl Elemente im Array = (von 1 bis x+1)	
+	flagListe	= true;					// Flag 
+	
+	for (y = 0; y <= anzKarten; y++) {	// Liste von 0 bis Max erstellen
+				
+		switch (jumpDB) {
+		case 1: // Felder und Menge initialisieren
+			alleFragen(y);
+		break;
+		case 2: // Felder und Menge initialisieren
+			alleFragen1(y);
+		break;
+		case 3: // Felder und Menge initialisieren
+			alleFragen2(y);
+		break;
+		case 4: // Felder und Menge initialisieren
+			alleFragen3(y);
+		break;
+		case 5: // Felder und Menge initialisieren
+			alleFragen4(y);
+		break;
+		case 6: // Felder und Menge initialisieren
+			alleFragen5(y);
+		break;
+	}
+		ladeFrage[y]   = "<p><thead>" + "(" + (y+1) + ") " + Frage  + "</thead></p>\r\n"; // Frage wird richtig hochgeladen
+
+		ladeAntwort[y] =""; // Initialisiert und leer
+			
+		for (x = 0; x < anzAntworten; x++) {  // anzAntworten = Loesung.length; wird in data generiert
+			ladeAntwort[y] = ladeAntwort[y] + '<tr><td class="cboxListe"><input type="checkbox"/></td><td class="antwListe">' + Antwort[x] + '\r\n' + '</td></tr>\r\n';
+		}
+			
+		ladeGesamt = ladeGesamt + ladeFrage[y] + ladeAntwort[y];
+			
+		for (x = anzAntworten; x < maxAntworten; x++){ // Löschen überprüfen, sollte eigentlich nicht definiert sein
+			Antwort[x] = ""; 	
+		}	
+	}
+
+	dsaListe.innerHTML = ladeGesamt; // Ab in die Maske
+	
+	return // dsaListe.innerHTML;
+	
+} // Ende dsaListen
+
+
+// -- toggle ist nicht mehr gekapselt
+
+function toggle(angekreuzt){
+//	
+}

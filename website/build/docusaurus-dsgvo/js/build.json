@@ -1,0 +1,8 @@
+{
+"employees":[
+  {"Frage":"Welche wesentlichen Voraussetzungen müssen entsprechend der DSGVO vorliegen, damit eine Person zum Datenschutzbeauftragten benannt werden kann?", 
+  	"Art. 37 Abs. 5 DSGVO: Fachwissen auf dem Gebiet des Datenschutzes und der DatenschutzpraxisastName":true, 
+	"Fähigkeit Aufgaben gem. Art. 39 DSGVO zu erfüllen.":true,
+	"Art. 38 Abs. 6 S. 2 DSGVO: Nichtvorliegen eines Interessenkonflikts":true}
+]
+}
