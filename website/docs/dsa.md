@@ -3,6 +3,17 @@ id: dsa
 title: Datenschutz-Auditor
 sidebar_label: Datenschutz-Auditor (DSA)
 ---
+<div hidden>
+
+## [DSGVO](dsgvo)
+
+### [[01](dsgvo#art-1)] [[02](dsgvo#art-2)] [[03](dsgvo#art-3)] [[04](dsgvo#art-4)] [[05](dsgvo#art-5)] [[06](dsgvo#art-6)] [[07](dsgvo#art-7)] [[08](dsgvo#art-8)] [[09](dsgvo#art-9)] [[10](dsgvo#art-10)] [[11](dsgvo#art-11)] [[12](dsgvo#art-12)] [[13](dsgvo#art-13)] [[14](dsgvo#art-14)] [[15](dsgvo#art-15)] [[16](dsgvo#art-16)] [[17](dsgvo#art-17)] [[18](dsgvo#art-18)] [[19](dsgvo#art-19)] [[20](dsgvo#art-20)] [[21](dsgvo#art-21)] [[22](dsgvo#art-22)] [[23](dsgvo#art-23)] [[24](dsgvo#art-24)] [[25](dsgvo#art-25)] [[26](dsgvo#art-26)] [[27](dsgvo#art-27)] [[28](dsgvo#art-28)] [[29](dsgvo#art-29)] [[30](dsgvo#art-30)] [[31](dsgvo#art-31)] [[32](dsgvo#art-32)] [[33](dsgvo#art-33)] [[34](dsgvo#art-34)] [[35](dsgvo#art-35)] [[36](dsgvo#art-36)] [[37](dsgvo#art-37)] [[38](dsgvo#art-38)] [[39](dsgvo#art-39)] [[40](dsgvo#art-40)] [[41](dsgvo#art-41)] [[42](dsgvo#art-42)] [[43](dsgvo#art-43)] [[44](dsgvo#art-44)] [[45](dsgvo#art-45)] [[46](dsgvo#art-46)] [[47](dsgvo#art-47)] [[48](dsgvo#art-48)] [[49](dsgvo#art-49)] [[50](dsgvo#art-50)] [[51](dsgvo#art-51)] [[52](dsgvo#art-52)] [[53](dsgvo#art-53)] [[54](dsgvo#art-54)] [[55](dsgvo#art-55)] [[56](dsgvo#art-56)] [[57](dsgvo#art-57)] [[58](dsgvo#art-58)] [[59](dsgvo#art-59)] [[60](dsgvo#art-60)] [[61](dsgvo#art-61)] [[62](dsgvo#art-62)] [[63](dsgvo#art-63)] [[64](dsgvo#art-64)] [[65](dsgvo#art-65)] [[66](dsgvo#art-66)] [[67](dsgvo#art-67)] [[68](dsgvo#art-68)] [[69](dsgvo#art-69)] [[70](dsgvo#art-70)] [[71](dsgvo#art-71)] [[72](dsgvo#art-72)] [[73](dsgvo#art-73)] [[74](dsgvo#art-74)] [[75](dsgvo#art-75)] [[76](dsgvo#art-76)] [[77](dsgvo#art-77)] [[78](dsgvo#art-78)] [[79](dsgvo#art-79)] [[80](dsgvo#art-80)] [[81](dsgvo#art-81)] [[82](dsgvo#art-82)] [[83](dsgvo#art-83)] [[84](dsgvo#art-84)] [[85](dsgvo#art-85)] [[86](dsgvo#art-86)] [[87](dsgvo#art-87)] [[88](dsgvo#art-88)] [[89](dsgvo#art-89)] [[90](dsgvo#art-90)] [[91](dsgvo#art-91)] [[92](dsgvo#art-92)] [[93](dsgvo#art-93)] [[94](dsgvo#art-94)] [[95](dsgvo#art-95)] [[96](dsgvo#art-96)] [[97](dsgvo#art-97)] [[98](dsgvo#art-98)]
+
+### [Erwägungsgründe](ewg)
+
+### [Bundesdatenschutzgesetz](bdsg)
+
+</div>
 
 > Nachfolgend eine Zusammenfassung der Aufgaben eines Datenschutz-Auditors. Der Auditor prüft und entwickelt normalerweise nach der Prüfung eine Strategie, die Hilft die Risiken, die im Datenschutz liegen zu minimieren.
 
@@ -41,10 +52,8 @@ Die Vorgehensweise bzw. Mindestinhalt eines Datenschutzaudits wird wie folgt fes
 
 **Strafrahmen bei Nichtbeachtung der EU-Datenschutz Verordnung**:
 
-Die Höchststrafe für Vergehen bei administrativen Tätigkeiten beläuft sich auf
-10 Millionen Euro (oder 2% Prozent des globalen Umsatzes). Bei grundsätzlichen
-ethischen Vergehen können bis zu 20 Millionen Euro (oder 4% des globalen
-Umsatzes) Strafe verhängt werden. Die höhere Summe bestimmt das Strafmaß. 
+Die Höchststrafe für Vergehen bei administrativen Tätigkeiten beläuft sich auf 10 Millionen Euro (oder 2% Prozent des globalen Umsatzes). Bei grundsätzlichen
+ethischen Vergehen können bis zu 20 Millionen Euro (oder 4% des globalen Umsatzes) Strafe verhängt werden. Die höhere Summe bestimmt das Strafmaß. 
 
 ### Geplante Abhilfemaßnahmen zur Bewältigung der Risiken
 

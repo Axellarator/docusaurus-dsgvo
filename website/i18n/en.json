@@ -58,8 +58,8 @@
         "sidebar_label": "Datenschutz-Auditor (DSA)"
       },
       "dsb": {
-        "title": "Datenschutzbeauftragter",
-        "sidebar_label": "Datenschutzbeauftragter (DSB)"
+        "title": "Datenschutzbeauftragte",
+        "sidebar_label": "Datenschutzbeauftragte (DSB)"
       },
       "dsgvo": {
         "title": "Datenschutzgrundverordnung",
@@ -71,19 +71,27 @@
       },
       "flash01-dsa": {
         "title": "flash01-dsa",
-        "sidebar_label": "Lernkarten DSA"
+        "sidebar_label": "DSA Lernkarten 1"
       },
       "flash01-dsb": {
         "title": "flash01-dsb",
-        "sidebar_label": "Lernkarten DSB"
+        "sidebar_label": "DSB Lernkarten 1"
       },
       "flash02-dsa": {
         "title": "flash02-dsa",
-        "sidebar_label": "Lernkarten DSA"
+        "sidebar_label": "DSA Lernkarten 2"
       },
-      "flashcards": {
-        "title": "Lernkarten",
-        "sidebar_label": "Lernkarten"
+      "flash02-dsb": {
+        "title": "flash02-dsb",
+        "sidebar_label": "DSB Lernkarten 2"
+      },
+      "flash03-dsa": {
+        "title": "flash03-dsa",
+        "sidebar_label": "DSA Lernkarten 3"
+      },
+      "flash03-dsb": {
+        "title": "flash03-dsb",
+        "sidebar_label": "DSB Lernkarten IT 1"
       },
       "foerderung": {
         "title": "Bundesmittel zur Förderung des Datenschutzes",
@@ -103,7 +111,7 @@
       },
       "gesetze": {
         "title": "Datenschutz basiert auf Gesetzen",
-        "sidebar_label": "Gesetze und Datenschutz"
+        "sidebar_label": "Einleitung Gesetze und Datenschutz"
       },
       "ifg": {
         "title": "Informationsfreiheitsgesetz",
@@ -130,20 +138,32 @@
         "sidebar_label": "Kunst-Urheberrecht KunstUrhG"
       },
       "liste01-dsa": {
-        "title": "DSA 34 Fragen",
-        "sidebar_label": "Checkliste DSA [34]"
+        "title": "DSA Liste 1",
+        "sidebar_label": "DSA Liste 1"
       },
       "liste01-dsb": {
-        "title": "DSB Fragen",
-        "sidebar_label": "Checkliste DSB"
+        "title": "DSB Liste 1",
+        "sidebar_label": "DSB Liste 1"
       },
       "liste02-dsa": {
-        "title": "DSA Fragen",
-        "sidebar_label": "Checkliste DSA"
+        "title": "DSA Liste 2",
+        "sidebar_label": "DSA Liste 2"
+      },
+      "liste02-dsb": {
+        "title": "DSB Liste 2",
+        "sidebar_label": "DSB Liste 2"
+      },
+      "liste03-dsa": {
+        "title": "DSA Liste 3",
+        "sidebar_label": "DSA Liste 3"
+      },
+      "liste03-dsb": {
+        "title": "DSB Liste IT 1",
+        "sidebar_label": "DSB Liste IT 1"
       },
       "material": {
         "title": "Gesammelte Werke",
-        "sidebar_label": "Material"
+        "sidebar_label": "Gesammelte Werke - LINKS"
       },
       "playground": {
         "title": "Playground",
@@ -173,14 +193,6 @@
         "title": "Bewertung Audit",
         "sidebar_label": "Bewertung Audit"
       },
-      "readme-2": {
-        "title": "Docusaurus",
-        "sidebar_label": "Docusaurus Vorstellung"
-      },
-      "readme-3": {
-        "title": "Docusaurus Know How",
-        "sidebar_label": "Docusaurus Know How"
-      },
       "readme": {
         "title": "Installation",
         "sidebar_label": "Installation und Dokumentation"
@@ -205,6 +217,13 @@
         "title": "SDM Standard-Datenschutz-Modell",
         "sidebar_label": "SDM Modell"
       },
+      "splan": {
+        "title": "Stundenplan",
+        "sidebar_label": "Stundenplan"
+      },
+      "Sprungmarken": {
+        "title": "Sprungmarken"
+      },
       "tmg": {
         "title": "Telemediengesetz (TMG)",
         "sidebar_label": "Telemediengesetz (TMG)"
@@ -213,22 +232,21 @@
     "links": {
       "News": "News",
       "Gesetze": "Gesetze",
-      "Lernen": "Lernen",
+      "DSA": "DSA",
+      "DSB": "DSB",
       "Förderung": "Förderung",
-      "AUDIT": "AUDIT",
       "Projekte": "Projekte",
       "Kino": "Kino",
+      "Stundenplan": "Stundenplan",
       "Hilfe": "Hilfe",
       "Github": "Github"
     },
     "categories": {
       "Datenschutz": "Datenschutz",
-      "Lernkarten": "Lernkarten",
       "Fördermittel": "Fördermittel",
       "Datenschutz-Beauftragte": "Datenschutz-Beauftragte",
       "Datenschutz-Auditor": "Datenschutz-Auditor",
       "Präsentationen": "Präsentationen",
-      "Audit Fragenkataloge": "Audit Fragenkataloge",
       "Projekte": "Projekte",
       "Lokales Material": "Lokales Material",
       "Playground": "Playground",

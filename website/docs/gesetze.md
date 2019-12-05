@@ -1,7 +1,7 @@
 ---
 id: gesetze
 title: Datenschutz basiert auf Gesetzen
-sidebar_label: Gesetze und Datenschutz
+sidebar_label: Einleitung Gesetze und Datenschutz
 ---
 ___
 

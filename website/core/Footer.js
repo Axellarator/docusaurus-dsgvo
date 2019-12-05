@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2017-present, Facebook, Inc.
  *
- * This source code is licensed under the MIT license found in the
+ * FOOTER.js This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
 
@@ -12,13 +12,13 @@ class Footer extends React.Component {
     const baseUrl = this.props.config.baseUrl;
     const docsUrl = this.props.config.docsUrl;
     const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
-    const langPart = `${language ? `${language}/` : ''}`;
+    const langPart = `${language ? `${language}/` : 'en/'}`;
     return `${baseUrl}${docsPart}${langPart}${doc}`;
   }
 
   pageUrl(doc, language) {
     const baseUrl = this.props.config.baseUrl;
-    return baseUrl + (language ? `${language}/` : '') + doc; // doc
+    return baseUrl + (language ? `${language}/` : '') + doc;
   }
 
   render() {
@@ -35,21 +35,6 @@ class Footer extends React.Component {
               />
             )}
           </a>
-          <div>
-            <h5>Docs</h5>
-            <a href={this.docUrl('doc1.html', this.props.language)}>
-              Dokumente
-            </a>
-            <a href={this.docUrl('readme.html', this.props.language)}>
-              Liesmich
-            </a>
-			<a href={this.docUrl('readme-2.html', this.props.language)}>
-              Liesmich-auch
-            </a>
-			<a href={this.docUrl('readme-3', this.props.language)}>
-              Liesmich-erst-recht
-            </a>
-		  </div>
 		  <div>
             <h5>Wichtiges</h5>
 			<a href={this.docUrl('datenschutz.html', this.props.language)}>
@@ -76,16 +61,8 @@ class Footer extends React.Component {
             <h5>Mehr</h5>
             <a href={`${this.props.config.baseUrl}blog`}>News</a>
             <a href="https://github.com/">GitHub</a>
-            <a
-              className="github-button"
-             href={this.props.config.repoUrl}
-              data-icon="octicon-star"
-              data-count-href="/facebook/docusaurus/stargazers"
-             data-show-count="true"
-              data-count-aria-label="# stargazers on GitHub"
-              aria-label="Star this project on GitHub">
-              Star
-            </a>
+            <a className="github-button"
+               href={this.props.config.repoUrl} ></a>
        </div>
         </section>
 

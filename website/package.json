@@ -9,6 +9,11 @@
     "rename-version": "docusaurus-rename-version"
   },
   "devDependencies": {
-    "docusaurus": "^1.14.0"
-  }
+    "docusaurus": "^1.14.3"
+  },
+  "dependencies": {
+    "algoliasearch": "^3.35.1",
+    "instantsearch.js": "^4.0.0"
+  },
+  "version": "0.0.0"
 }

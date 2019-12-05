@@ -34,6 +34,9 @@ const siteConfig = {
 
   baseUrl: '/', // Base URL for your project
   
+  useEnglishUrl: true,
+  
+  
 // Used for publishing and more
 
 projectName: 'docusaurus-dsgvo',
@@ -45,15 +48,16 @@ organizationName: 'axellarator',
 headerLinks: [
   {blog: true, label: 'News'},
   {doc: 'gesetze', label: 'Gesetze'},
-  {doc: 'flashcards', label: 'Lernen'},
+  {doc: 'dsa', label: 'DSA'},
+  {doc: 'dsb', label: 'DSB'},
   {doc: 'foerderung', label: 'Förderung'},
-  {doc: 'doc1', label: 'AUDIT'},
   {doc: 'projekt', label: 'Projekte'},
   {doc: 'kino', label: 'Kino'},
+  {doc: 'splan', label: 'Stundenplan'},
   {page: 'help', label: 'Hilfe'},
   { search: true },
   // {page: 'users', label: 'User'},
-  {href : "https://github.com/axellarator/docusaurus-dsgvo", label : "Github"},
+  {href : "https://github.com/axellarator/docusaurus-dsgvo", label : "Github"}, // GitHub Zugang
 ],
 
 // Pfad zum editieren - Klappt noch nicht
@@ -66,10 +70,10 @@ algolia: {
   apiKey: 'a8381e4143dc1499f2a45c07148a2462',
   indexName: 'prod_VG',
   placeholder: 'Frag mich mal was',
-  algoliaOptions: {
-      autofocus: true,
-      showReset: false,
-    }
+//  algoliaOptions: {
+//      autofocus: true,
+//      showReset: false,
+//    }
 },
 
 // path to images for header/footer
@@ -79,6 +83,7 @@ algolia: {
   footerIcon: 'img/favicon.ico',
 
   favicon: 'img/favicon.ico',
+  
 
 // Colors for website
 
@@ -116,7 +121,6 @@ scripts: [
   '/js/code-block-buttons.js',
   {src: '/js/flash01-dsa.js', type: 'text/javascript',},
   {src: '/js/flash01-dsa-data.js', type: 'text/javascript',},
-  {src: '/js/liste01-dsa.js', type: 'text/javascript',},
 ],
 stylesheets: [
   'https://docusaurus.io/style.css',
@@ -135,14 +139,12 @@ cleanUrl: true,
 
 // Markdown Sub und Sup
 
-markdownPlugins: [
-  function foo(md) { md.inline.ruler.enable(['sub', 'sup']); },
-],
+markdownPlugins: [ function foo(md) { md.inline.ruler.enable(['sub', 'sup']); }, ],
  
 // Open Graph and Twitter card images.
-  ogImage: 'img/undraw_online.svg',
+  ogImage: 'img/undraw_gdpr_3xfb.svg',
   
-  twitterImage: 'img/undraw_tweetstorm.svg',
+  twitterImage: 'img/undraw_gdpr_3xfb.svg',
 
 // Set this to true if you want to enable the scroll to top button at the bottom of your site.
 
@@ -165,7 +167,7 @@ enableUpdateTime: true,
 /* Boolean flag to indicate whether HTML files in /pages should be wrapped with Docusaurus site styles, header and footer. This feature is experimental and relies on the files being HTML fragments instead of complete pages. It inserts the contents of your HTML file with no extra processing. Defaults to false. */ 
   
 wrapPagesHTML: true,
-  
+
 // Übernommen aus Example Siteconfigjs
 scrollToTop: true,
 
@@ -175,7 +177,7 @@ scrollToTopOptions: {
   
 // You may provide arbitrary config keys to be used as needed by your
 // template. For example, if you need your repo's URL...
-//   repoUrl: 'https://github.com/facebook/test-site',
+repoUrl: 'https://github.com/axellarator/docusaurus-dsgvo',
 };
 
 module.exports = siteConfig;

@@ -21,10 +21,8 @@ function Help(props) {
 
   const supportLinks = [
     {
-      content: `Learn more using the [documentation on this site.](${docUrl(
-        'ddsgvo.html',
-      )})`,
-      title: 'Browse Docs',
+      content: `Mehr erfahren zur [Installation dieser Seiten und dem Aufbau.](${docUrl( 'readme.html', )}). Dem Original auf dem alles basiert mit vollständiger Dokumentation und vielen Tips und Tricks [Docusaurus.](https://docusaurus.io/)`,
+      title: 'Dokumentationen anschauen zum Weitermachen',
     },
     {
       content: 'Ask questions about the documentation and project',
@@ -41,9 +39,9 @@ function Help(props) {
       <Container className="mainContainer documentContainer postContainer">
         <div className="post">
           <header className="postHeader">
-            <h1>Need help?</h1>
+            <h1>Unterstützung benötigt?</h1>
           </header>
-          <p>This project is maintained by a dedicated group of people.</p>
+          <p>Bei Fragen immer fragen!</p>
           <GridBlock contents={supportLinks} layout="threeColumn" />
         </div>
       </Container>
