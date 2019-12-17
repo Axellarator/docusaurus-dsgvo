@@ -85,7 +85,7 @@ class Index extends React.Component {
         id={props.id}
         background={props.background}>
         <GridBlock
-          align="center"
+          align="justify"
           contents={props.children}
           layout={props.layout}
         />
@@ -94,20 +94,20 @@ class Index extends React.Component {
 
     const FeatureCallout = () => (
       <div
-        className="productShowcaseSection paddingBottom"
+        className="productShowcaseSection "
         style={{textAlign: 'center'}}>
-        
+
 		<h1>Der Datenschutz</h1>
         
       </div>
     );
 
     const TryOut = () => (
-      <Block id="try">
+      <Block id="try" style={{textAlign: 'justify'}}> 
         {[
           {
             content:
-              'und attraktiv präsentieren und vermitteln. Datenschutz betrifft jeden Einzelnen in Europa und praktisch alle Unternehmen mit Kundenkontakten. Jetzt, mit der Datenschutzgrundverordnung und der europaweiten Gültigkeit, wird der Datenschutz auch in rechtlicher Hinsicht verbindlich und erzwingt mit hohen Bussgeldern auch die entsprechenden Akzeptanz.',
+              'Hi Everyone,\r\nDie Lernkarten (DSA, DSB) arbeiten nach Regeln und können beliebig modifiziert werden.\r\nDie zu erzielenden Punkte/Prozente sind wie folgt aufgebaut: Richtige Antworten werden `GRÜN` dargestellt, falsche Antworten `BLAU`. Richtig ist: `RICHTIGE Antworten` werden angekreuzt UND `FALSCHE Antworten` werden nicht angekreuzt. Korrekte Antworten/Nicht-Antworten werden mit jeweils einem `Plus-Punkt` versehen. Eine korrekte ausgefüllte Karte bekommt `100 Prozent`. Für falsche Antworten oder fehlendes Ankreuzen gibt es einen Minus-Punkt. Plus- und Minus-Punkte werden gegeneinander verrechnet. Beispiel: bei vier möglichen Antworten werden bei **einem Fehler** drei Plus- und ein Minus-Punkt vergeben, so dass die Karte nur einen 50% Erfolg aufweist, bei zwei Fragen, eine richtig eine falsch, bekäme die Karte `NULL Prozent`.\r\nDie Struktur der Karten kann angepasst werden: z.B. mit Zeitlimit gegen die Uhr ausfüllen, nur vorwärts ausfüllen ohne zurück, Die Reihenfolge der Lernkarten ist grundsätzlich zufällig. Die Listen zeigen den vollständigen Fragensatz an.\r\nKarten und Listen für Auditoren und Beauftragte sind hier zu finden: [DSA](/docs/dsa.html) und [DSB](/docs/dsb.html)',  
             image: `${baseUrl}img/undraw_personal_data_29co.svg`,
             imageAlign: 'left',
             title: 'Datenschutz lernen',
@@ -121,7 +121,7 @@ class Index extends React.Component {
         {[
           {
             content:
-              '### Die Tücken der Datenschutz-Grundverordnung oder „Das Projekt Datenschutz“\n\nAuch hier könnte noch mehr nützliches stehen',
+              '### Die Tücken der Datenschutz-Grundverordnung'+'\n\n oder \n\n'+'### „Das Projekt Datenschutz“\n\nAuch hier könnte noch mehr nützliches stehen. Attraktiv präsentiert und vermittelt. Datenschutz betrifft jeden Einzelnen in Europa und praktisch alle Unternehmen mit Kundenkontakten. Jetzt, mit der Datenschutzgrundverordnung und der europaweiten Gültigkeit, wird der Datenschutz auch in rechtlicher Hinsicht verbindlich und erzwingt mit hohen Bussgeldern auch die entsprechenden Akzeptanz.',
             image: `${baseUrl}img/undraw_gdpr_3xfb.svg`,
             imageAlign: 'right',
             title: 'Beschreibung',
@@ -131,7 +131,7 @@ class Index extends React.Component {
     );
 
     const LearnHow = () => (
-      <Block background="light"> 
+      <Block background="light" > 
         {[
           {
             content:
@@ -148,22 +148,22 @@ class Index extends React.Component {
       <Block layout="threeColumn">
         {[
           {
-            content: 'Der Datenschutz-Auditor ist von der zu untersuchenden Firma unabhängig und überprüft im Auftrag im Rahmen der fortlaufenden Zertifizierung regelmäßig, meist jährlich, den aktuellen Stand des Datenschutzes. Die Haupttätigkeit besteht darin, systematisch zu beurteilen, ob das bestehende Datenschutzniveau eines Unternehmens ausreichend ist und überprüft und bewertet die umgesetzten technischen und organisatorischen Maßnahmen im Rahmen der gesetzlichen Grundlagen. Der Datenschutz-Auditor ist für die Entwicklung und Steuerung des Auditprogramms und die Erstellung der Checklisten für Stichprobenprüfungen und Interviews verantwortlich.',
             image: `${baseUrl}img/undraw_setup_wizard_r6mr.svg`,
-            imageAlign: 'top',
+            imageAlign: 'left',
             title: 'Datenschutz-Auditoren',
+            content: 'Der Datenschutz-Auditor ist von der zu untersuchenden Firma unabhängig und überprüft im Auftrag im Rahmen der fortlaufenden Zertifizierung regelmäßig, meist jährlich, den aktuellen Stand des Datenschutzes. Die Haupttätigkeit besteht darin, systematisch zu beurteilen, ob das bestehende Datenschutzniveau eines Unternehmens ausreichend ist und überprüft und bewertet die umgesetzten technischen und organisatorischen Maßnahmen im Rahmen der gesetzlichen Grundlagen. Der Datenschutz-Auditor ist für die Entwicklung und Steuerung des Auditprogramms und die Erstellung der Checklisten für Stichprobenprüfungen und Interviews verantwortlich.',
           },
 		  {
-            content: 'Erläuterungen zum Datenschutz anhand einer fiktiven Datenschutzerklärung weiter unten',
             image: `${baseUrl}img/undraw_light_the_fire_gt58.svg`,
             imageAlign: 'bottom',
             title: 'Datenschutz Informationen',
+            content: 'Erläuterungen zum Datenschutz anhand einer fiktiven Datenschutzerklärung weiter unten',
           },
           {
-            content: 'Wikipedia: Ein Datenschutzbeauftragter (DSB) wirkt in einer Organisation auf die Einhaltung des Datenschutzes hin. Die Person kann Mitarbeiter dieser Organisation sein oder als externer Datenschutzbeauftragter bestellt werden. Der Datenschutzbeauftragte muss die notwendige Fachkunde für die Ausübung besitzen und darf nicht in einen Konflikt oder in die Gefahr der Selbstkontrolle geraten.<br />[Wikipedia DSB](https://de.wikipedia.org/wiki/Datenschutzbeauftragter)<br />      Seit Mai 2018 gelten die Datenschutzgrundverordnung (DSGVO) und das neue BundesdatenschutzGesetz (BDSG). Seit dem ist der Einsatz eines externen oder internen Datenschutzbeauftragten für Unternehmen die personalisierte Daten verarbeiten praktisch zwingend.',
             image: `${baseUrl}img/undraw_personal_settings_kihd.svg`,
-            imageAlign: 'top',
+            imageAlign: 'right',
             title: 'Datenschutz-Beauftragte',
+            content: 'Wikipedia: Ein Datenschutzbeauftragter (DSB) wirkt in einer Organisation auf die Einhaltung des Datenschutzes hin. Die Person kann Mitarbeiter dieser Organisation sein oder als externer Datenschutzbeauftragter bestellt werden. Der Datenschutzbeauftragte muss die notwendige Fachkunde für die Ausübung besitzen und darf nicht in einen Konflikt oder in die Gefahr der Selbstkontrolle geraten.<br />[Wikipedia DSB](https://de.wikipedia.org/wiki/Datenschutzbeauftragter)<br />      Seit Mai 2018 gelten die Datenschutzgrundverordnung (DSGVO) und das neue BundesdatenschutzGesetz (BDSG). Seit dem ist der Einsatz eines externen oder internen Datenschutzbeauftragten für Unternehmen die personalisierte Daten verarbeiten praktisch zwingend.',  
           },
         ]}
       </Block>
@@ -186,8 +186,7 @@ class Index extends React.Component {
 
       return (
         <div className="productShowcaseSection paddingBottom">
-          <h2>Wer ist noch dabei ?</h2>
-          <p>Datenschutz ist bitter nötig</p>
+          <h2>Wer ist noch dabei ? Datenschutz ist bitter nötig</h2>
           <div className="logos">{showcase}</div>
           <div className="more-users">
             <a className="button" href={pageUrl('users.html')}>
@@ -195,7 +194,7 @@ class Index extends React.Component {
             </a>
           </div>
         </div>
-      );
+      ); 
     };
 
     return (

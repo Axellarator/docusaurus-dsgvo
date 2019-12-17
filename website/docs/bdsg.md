@@ -1,9 +1,8 @@
 ---
 id: bdsg
 title: Bundesdatenschutzgesetz
-sidebar_label: Bundesdatenschutzgesetz BDSG
+sidebar_label: BDSG BundesdatenschutzG
 ---
-
 <div class="dsa" id="ds-oben"></div>
 
 <div hidden>
@@ -11,6 +10,9 @@ sidebar_label: Bundesdatenschutzgesetz BDSG
 
 ##  [[01](#para-1)] [[02](#para-2)] [[03](#para-3)] [[04](#para-4)] [[05](#para-5)] [[06](#para-6)] [[07](#para-7)] [[08](#para-8)] [[09](#para-9)] [[10](#para-10)] [[11](#para-11)] [[12](#para-12)] [[13](#para-13)] [[14](#para-14)] [[15](#para-15)] [[16](#para-16)] [[17](#para-17)] [[18](#para-18)] [[19](#para-19)] [[20](#para-20)] [[21](#para-21)] [[22](#para-22)] [[23](#para-23)] [[24](#para-24)] [[25](#para-25)] [[26](#para-26)] [[27](#para-27)] [[28](#para-28)] [[29](#para-29)] [[30](#para-30)] [[31](#para-31)] [[32](#para-32)] [[33](#para-33)] [[34](#para-34)] [[35](#para-35)] [[36](#para-36)] [[37](#para-37)] [[38](#para-38)] [[39](#para-39)] [[40](#para-40)] [[41](#para-41)] [[42](#para-42)] [[43](#para-43)] [[44](#para-44)] [[45](#para-45)] [[46](#para-46)] [[47](#para-47)] [[48](#para-48)] [[49](#para-49)] [[50](#para-50)] [[51](#para-51)] [[52](#para-52)] [[53](#para-53)] [[54](#para-54)] [[55](#para-55)] [[56](#para-56)] [[57](#para-57)] [[58](#para-58)] [[59](#para-59)] [[60](#para-60)] [[61](#para-61)] [[62](#para-62)] [[63](#para-63)] [[64](#para-64)] [[65](#para-65)] [[66](#para-66)] [[67](#para-67)] [[68](#para-68)] [[69](#para-69)] [[70](#para-70)] [[71](#para-71)] [[72](#para-72)] [[73](#para-73)] [[74](#para-74)] [[75](#para-75)] [[76](#para-76)] [[77](#para-77)] [[78](#para-78)] [[79](#para-79)] [[80](#para-80)] [[81](#para-81)] [[82](#para-82)] [[83](#para-83)] [[84](#para-84)] [[85](#para-85)]
 
+### [DSGVO](dsgvo)
+
+### [Erwägungsgründe](ewg)
 </div>
 
 <div hidden>

@@ -19,7 +19,7 @@
       },
       "bdsg": {
         "title": "Bundesdatenschutzgesetz",
-        "sidebar_label": "Bundesdatenschutzgesetz BDSG"
+        "sidebar_label": "BDSG BundesdatenschutzG"
       },
       "con2": {
         "title": "CON.2 Datenschutz",
@@ -58,12 +58,12 @@
         "sidebar_label": "Datenschutz-Auditor (DSA)"
       },
       "dsb": {
-        "title": "Datenschutzbeauftragter",
-        "sidebar_label": "Datenschutzbeauftragter (DSB)"
+        "title": "Datenschutzbeauftragte",
+        "sidebar_label": "Datenschutzbeauftragte (DSB)"
       },
       "dsgvo": {
         "title": "Datenschutzgrundverordnung",
-        "sidebar_label": "Datenschutzgrundverordnung DSGVO"
+        "sidebar_label": "DSGVO DatenSchutzGrundVO"
       },
       "ewg": {
         "title": "Erwägungsgründe",
@@ -71,19 +71,27 @@
       },
       "flash01-dsa": {
         "title": "flash01-dsa",
-        "sidebar_label": "Auditor 1"
+        "sidebar_label": "DSA Lernkarten 1"
       },
       "flash01-dsb": {
         "title": "flash01-dsb",
-        "sidebar_label": "Beauftragte 1"
+        "sidebar_label": "DSB Lernkarten 1"
       },
       "flash02-dsa": {
         "title": "flash02-dsa",
-        "sidebar_label": "Auditor 2"
+        "sidebar_label": "DSA Lernkarten 2"
+      },
+      "flash02-dsb": {
+        "title": "flash02-dsb",
+        "sidebar_label": "DSB Lernkarten 2"
       },
       "flash03-dsa": {
         "title": "flash03-dsa",
-        "sidebar_label": "Auditor 3"
+        "sidebar_label": "DSA Lernkarten 3"
+      },
+      "flash03-dsb": {
+        "title": "flash03-dsb",
+        "sidebar_label": "DSB Lernkarten IT 1"
       },
       "foerderung": {
         "title": "Bundesmittel zur Förderung des Datenschutzes",
@@ -129,25 +137,29 @@
         "title": "kunsturhg",
         "sidebar_label": "Kunst-Urheberrecht KunstUrhG"
       },
-      "lernkarten": {
-        "title": "Einleitung Lernkarten und Checklisten",
-        "sidebar_label": "Einleitung Lernkarten"
-      },
       "liste01-dsa": {
-        "title": "Auditor 1",
-        "sidebar_label": "Auditor 1"
+        "title": "DSA Liste 1",
+        "sidebar_label": "DSA Liste 1"
       },
       "liste01-dsb": {
-        "title": "DSB Fragen",
-        "sidebar_label": "Beauftragter 1"
+        "title": "DSB Liste 1",
+        "sidebar_label": "DSB Liste 1"
       },
       "liste02-dsa": {
-        "title": "DSA Fragen",
-        "sidebar_label": "Auditor 2"
+        "title": "DSA Liste 2",
+        "sidebar_label": "DSA Liste 2"
+      },
+      "liste02-dsb": {
+        "title": "DSB Liste 2",
+        "sidebar_label": "DSB Liste 2"
       },
       "liste03-dsa": {
-        "title": "DSA Aufgaben",
-        "sidebar_label": "Auditor 3"
+        "title": "DSA Liste 3",
+        "sidebar_label": "DSA Liste 3"
+      },
+      "liste03-dsb": {
+        "title": "DSB Liste IT 1",
+        "sidebar_label": "DSB Liste IT 1"
       },
       "material": {
         "title": "Gesammelte Werke",
@@ -181,20 +193,12 @@
         "title": "Bewertung Audit",
         "sidebar_label": "Bewertung Audit"
       },
-      "readme-2": {
-        "title": "Docusaurus",
-        "sidebar_label": "Docusaurus Vorstellung"
-      },
-      "readme-3": {
-        "title": "Docusaurus Know How",
-        "sidebar_label": "Docusaurus Know How"
-      },
       "readme": {
         "title": "Installation",
         "sidebar_label": "Installation und Dokumentation"
       },
       "reveal": {
-        "title": "Reveal",
+        "title": "Checkliste zum Auditieren von E-Commerce-Projekten",
         "sidebar_label": "Reveal"
       },
       "richtlinien-ma": {
@@ -213,6 +217,13 @@
         "title": "SDM Standard-Datenschutz-Modell",
         "sidebar_label": "SDM Modell"
       },
+      "splan": {
+        "title": "Stundenplan",
+        "sidebar_label": "Stundenplan"
+      },
+      "Sprungmarken": {
+        "title": "Sprungmarken"
+      },
       "tmg": {
         "title": "Telemediengesetz (TMG)",
         "sidebar_label": "Telemediengesetz (TMG)"
@@ -221,22 +232,21 @@
     "links": {
       "News": "News",
       "Gesetze": "Gesetze",
-      "Lernen": "Lernen",
+      "DSA": "DSA",
+      "DSB": "DSB",
       "Förderung": "Förderung",
-      "AUDIT": "AUDIT",
       "Projekte": "Projekte",
       "Kino": "Kino",
+      "Lehrplan": "Lehrplan",
       "Hilfe": "Hilfe",
       "Github": "Github"
     },
     "categories": {
       "Datenschutz": "Datenschutz",
-      "Lernkarten": "Lernkarten",
       "Fördermittel": "Fördermittel",
       "Datenschutz-Beauftragte": "Datenschutz-Beauftragte",
       "Datenschutz-Auditor": "Datenschutz-Auditor",
       "Präsentationen": "Präsentationen",
-      "Audit Fragenkataloge": "Audit Fragenkataloge",
       "Projekte": "Projekte",
       "Lokales Material": "Lokales Material",
       "Playground": "Playground",

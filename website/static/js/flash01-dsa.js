@@ -1,145 +1,147 @@
-/** FLASH01-DSA.JS
+/** 13.12.19 FLASH01-DSA.JS
  * Copyright (c) 2019-present, Value Grid
  * C:\Users\Klaus\Docusaurus\website\node_modules\docusaurus\lib\static\js
  * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
+ * LICENSE file in the root directory of this source tree. */
 
-/**************************************************************************
-**************************Datenschutzauditor*******************************
-**************************************************************************/
-// Alles initialisieren
-let Frage			= "text"; // Frage
+/******************************************************************************
+*************** Datenschutz Variablen initialisieren **************************
+******************************************************************************/
+
+'use strict';
+
+let Frage			= "";	// Frage
 let Antwort			= [];	// Antwort 
 let Loesung			= [];	// Lösung False, true, Wert!
-let Eingabe			= [[],[]];	// Eingabespeicher [aktKarte][Ergebnis, Ergebnis, Ergebnis,...]
 let Checkbox		= [];	// Checkbox angekreuzt!
 let Versteck		= [];	// Felder verstecken
 let refListe		= [];	// refListe für alle Fragen
-let anzAntworten;			// Anzahl Antworten und Lösungen
-let aktTest			= [];	// Test ob Karte richtig beantwortet
 let arrSort			= [];	// Unsortierte Liste von 0 bis Max
-let refStart		= null;	// Startknopf
-let refZurueck		= null;	// Button zurück
-let refVorwaerts	= null;	// Button weiter
-
-let flagg			= false;// Flag
+let arrEingaben		= [];	// Beinhaltet die Eingaben zu den Antworten
 let flagListe		= false;// Listenerstellung umgeht Maskenerstellung
+let flagPruefung	= false;// Karte nicht auf Eingabefehler geprüft
+let flagCBox 		= false;// Liste mit Lösungen ausgeben
 
 //initialize the numbers:
 let maxAntwortfelder= 8;	// Max 10 Antwortfelder
 let maxAntworten	= 8;	// Maximale Anzahl Antworten
+let anzAntworten	= 0;	// Anzahl Antworten und Lösungen
 let anzKarten		= 0;	// Anzahl Elemente im Array von 0 - x
 let maxKarten		= 0;	// Anzahl Elemente im Array = x + 1
-let jumpDB			= 0;	// Sprung in die richtige DB und initialisierung
+var aktKarte		= 0;	// Aktuelle Karte
+var tmpKarte		= 0;	// Zwischenspeicher für weiter -- Aktuelle Karte
+var jumpDB			= 0;	// Sprung in die richtige DB und initialisierung
+let switcher		= 0;	// Schaltet die Tasten 
 let check			= 0; 
 
-let refCheck		= [];	// Checkbox angekreuzt oder nicht
-let refKnopf		= [];	// Knöpfe einfach verschwinden lassen
-var aktKarte;				// Aktuelle Karte
-var refErgebnis;			// Ergebnisausgabe in Fenster  
-let aktErgebnis		= 0;	// Ergebnis für 1 Karte
+let refErgebnis		= null; // Ergebnisausgabe in Fenster  
+let refHinweis		= null;	// Hinweisausgabe in Fenster
+let refProzent		= null;	// Ergebnisausgabe in Fenster
 let przErgebnis		= 0;	// Ergebnissumme in % für alle Karten
-var reflfdKarte;
+let reflfdKarte		= null;	// Laufende Karte in Fenster
 var aktProzent		= 0;	// Prozent Ergebnis für 1 Karte
-var aktPruefung		= false;// Karte nicht geprüft
-var sumProzent		= [];	// Werte für die einzelnen Karten
-let refHinweis		= null;
-let refProzent		= null;
-let refLink			= null;  
-let refAnzahl		= null; 
+var arrSumProz		= [];	// Werte pro Karte
+var arrCBox		= [false,false,false,false,false,false,false,false]; // Test funktioniert, Größe gleich maxAntwortfelder
+const arrKarten = [0,33,9,144,24,50,13];// Anzahl Fragen im Array von NULL bis X	
 
-let dsb01start;
-let dsa01start;
+/******************************************************************************
+************ initDB Variablen initialisiert anhand arrKarten ******************
+******************************************************************************/
 
+function initDB(jumpDB) {			// In Liste und in Flash duplizieren
+let y = 0;
 
-function initDB(jtest) {		// In Liste und in Flash duplizieren
-	
-	switch (jtest) {
-		case 1:
-			jumpDB = 1;
-			anzKarten	= 33;	// Anzahl Elemente im Array = 34
-			maxKarten	= 34;	// Anzahl Elemente im Array = 34
-		break;
-		case 2:
-			jumpDB = 2;
-			anzKarten	= 9;	// Anzahl Elemente im Array = 9	(0=1)
-			maxKarten	= 10;	// Anzahl Elemente im Array = 9	(1=1)
-		break;
-		case 3:
-			jumpDB = 3;
-			anzKarten	= 144;	// Anzahl Elemente im Array = 144 (0=1)
-			maxKarten	= 145;	// Anzahl Elemente im Array = 145 (1=1)
-		break;
-		case 4:
-			jumpDB = 4;
-			anzKarten	= 24;	// Anzahl Elemente im Array = 24 (0=1)
-			maxKarten	= 25;	// Anzahl Elemente im Array = 25 (1=1)
-		break;		
+	anzKarten	= arrKarten[jumpDB];// Anzahl Elemente im Array = (von 0 bis x)
+	maxKarten	= anzKarten + 1;	// Anzahl Elemente im Array = (von 1 bis x+1)
+	flagListe	= false;			// Flag
+	switcher = jumpDB;				// jumpDB = 0 bei Aufruf dsaFragen, 
+	for (y=0; y < maxKarten; y++) {
+		arrEingaben[y] = arrCBox; 	// Initialisierung für Karten
+		arrSumProz[y] = 0;			// Speicher für Ergebnisse pro  Karte
 	}
-	
-	dsa01(jumpDB);
+	dsaFragen(switcher);			// übernimmt switcher den Wert aus jumpDB
 }
 
+/******************************************************************************
+*************** dsaFragen Start des Programms *********************************
+******************************************************************************/
 
-function dsa01(jump) {
-	
-	switch (jump) {
-		case 1:
-		case 2:
-		case 3:
-		case 4:
-		break;			
-		case 5:
+function dsaFragen(switcher) {
 
+	switch (switcher) {
+		case 1:			// alleFragen	AUDITOR 1
+		jumpDB = 1;
+		break;
+		case 2:			// alleFragen1	BEAUFTRAGTE 1
+		jumpDB = 2;
+		break;
+		case 3:			// alleFragen2	AUDITOR 2
+		jumpDB = 3;
+		break;
+		case 4:			// alleFragen3	AUDITOR 3
+		jumpDB = 4;
+		break;
+		case 5:			// alleFragen4	BEAUFTRAGTE 2
+		jumpDB = 5;
+		break;
+		case 6:			// alleFragen5	IT-FRAGEN 1
+		jumpDB = 6;
+		break;
+		case 10:
+			initnext(); // Einsprung von dsaMaske(aktKarte)
 		return;
-		case 6:
-			initnext();
+		case 11:
+			pruefeKarte();	// Einsprung von Masken
 		return;
-		case 7:
-			pruefeKarte();
+		case 12:
+			weiter();		// Einsprung von Masken
 		return;
-		case 8:
-			zurueck();
-		return;
-		case 9:
-			weiter();
+		case 13:
+			zurueck();		// Einsprung von Masken
 		return;
 	}
 	
-	dsa01Start = true; // Flag
-	findrefsdsa();     // Aufbereitung des Bildschirms
-	vorbereitung();    // Alles initialisieren
+	findrefsdsa();    		// Aufbereitung des Bildschirms
+	vorbereitung();			// Alles initialisieren
 
-// -- Zur Initialisierung Referenzen auf Felder zuordnen (getElementById)
+/* findrefsdsa Felder initialisieren und Referenzen anlegen (getElementById) **
+******************************************************************************/
 
 	function findrefsdsa() { 
 	let y;	
 	let	ladeGesamt  = "";     // Leer und initialisiert
 
-// -- Frage in Lernkarten initialisieren----------------------------------------	
+/* Var Frage in Lernkarten-Masken initialisieren und Referenz erstellen *******
+******************************************************************************/
 
-	    Frage = document.getElementById("dsaFrage");
+	    Frage = document.getElementById("dsaFrage"); // 1. Zeile in Maske
 
-// -- Antwortzeilen erstellen und initialisieren	
-// -- Original: <tr><td	id="versteck0" ><input id="check0" type="checkbox" onClick="toggle(0)"/></td><td class="antwort" id="antwort0"></td></tr>
+/*************** ladeGesamt enthält den Aufbau der Masken *********************
+******************************************************************************/
+/* Original: <tr><td id="versteck0" ><input id="check0" type="checkbox" *******
+** onClick="toggle(0)"/></td><td class="antwort" id="antwort0"></td></tr> *****
+******************************************************************************/
 
-		ladeGesamt = "<div id='dsaTab1out'>\r\n"; // Anfang
+		ladeGesamt = "<div id='dsaTab1out'>\r\n"; // 2. Zeile
 
-		for(y=0;y < maxAntwortfelder;y++){ // Checkbox und Antwort erstellen
+		for(y=0;y < maxAntwortfelder;y++){ // Nachfolgende Zeilen für Checkboxen und Antworten
 			ladeGesamt  = ladeGesamt + '<tr><td	id="versteck' + y + '" >' + '<input id="check' + y + '" type="checkbox" onClick="toggle(' + y + ')"/>' + '</td><td class="antwort" id="antwort' + y + '"></td></tr> \r\n'	
 		}
 
-		ladeGesamt = ladeGesamt + "</div>\r\n"; // Abschluss
+		ladeGesamt = ladeGesamt + "</div>\r\n"; // Abschlusszeile
 		
-		dsaTab1.innerHTML = ladeGesamt; // Ab in die Maske
-		
-		for(y=0;y < maxAntwortfelder;y++){ // Checkbox und Versteck aus Tab1 initialisieren
+		dsaTab1.innerHTML = ladeGesamt; // in die Maske schreiben
+
+/************ Arrays Checkbox und Versteck, siehe tab1 ************************
+******************************************************************************/		
+
+		for(y=0;y < maxAntwortfelder;y++){			// aus Tab1 initialisieren
 			Checkbox[y] = document.getElementById("check" + y); 
 			Versteck[y] = document.getElementById("versteck" + y);
 		}
 
-// -- Ereigniskarten initialisieren ----------------------------------------------		
+/************ Ereignisse initialisieren****************************************
+******************************************************************************/		
 
 		ladeGesamt  = "";     // Leer und initialisiert
 		ladeGesamt  = '<input type="button" class="butknopf" id="Hinweis"  disabled readonly value="Hinweis"/>\r\n' 
@@ -147,60 +149,65 @@ function dsa01(jump) {
 					+ '<input type="button" class="butknopf" id="Prozent"  disabled readonly value="Prozent"/>\r\n'   
 					+ '<input type="button" class="butknopf" id="Ergebnis" disabled readonly value="Gesamtergebnis"/>\r\n'    
 					+ '<input type="button" class="butknopf" id="dsaUhr1"  disabled readonly value="Uhrzeit"/>\r\n'
-		dsaTab3.innerHTML = ladeGesamt; // Ab in die Maske
+		dsaTab3.innerHTML = ladeGesamt; // in die Maske schreiben
+
+/************ Referenzen erstellen ********************************************
+******************************************************************************/		
 		
 		refErgebnis = document.getElementById("Ergebnis");
 		reflfdKarte = document.getElementById("lfdKarte");
 		refHinweis  = document.getElementById("Hinweis");
 		refProzent  = document.getElementById("Prozent");
-		uhrzeit();
+		
+		uhrzeit(); // Eintrag Uhrzeit in document.getElementById('dsaUhr1')
 
+/************ Sprungreferenzen von 0 bis anzKarten für Maske erstellen ********
+******************************************************************************/				
+/* Original: <a href="javascript:dsaMaske(0)"  id="f0" >0</a> *****************
+** Die Einsprungpunkte werden von MarkDown einwandfrei angelegt ***************
+******************************************************************************/
 		
-// -- Masken-Sprungreferenzen von 0 bis anzKarten erstellen ----------------------
-// -- Original: <a href="javascript:dsaMaske(0)"  id="f0" >0</a>
-		
-		ladeGesamt = "<div id='dsaTab4out'>\r\n"; // Anfang
+		ladeGesamt = "<div id='dsaTab4out'>\r\n";	// Anfangszeile
 
-		for (y = 0; y <= anzKarten; y++) {
-			ladeGesamt = ladeGesamt + "<a href="  + "javascript:dsaMaske(" + y + ") id = f" + y + " >" + y + "</a>\r\n";			
-		}
+		for (y = 0; y <= anzKarten; y++) ladeGesamt = ladeGesamt + "<a href="  + "javascript:dsaMaske(" + y + ") id = f" + y + " >" + y + "</a>\r\n";			
 
-		ladeGesamt = ladeGesamt + "</div>\r\n"; // Abschluss
+		ladeGesamt = ladeGesamt + "</div>\r\n";		// Abschlusszeile
 		
-		dsaTab4.innerHTML = ladeGesamt; // Ab in die Maske
+		dsaTab4.innerHTML = ladeGesamt; 			// in die Maske schreiben
 		
-		for (y = 0; y <= anzKarten; y++) { // Sprungpunkt zuordnen und verstecken
+		for (y = 0; y <= anzKarten; y++) { 			// Sprungpunkt zuordnen und verstecken
 			refListe[y] = document.getElementById("f"+y);	
 			refListe[y].style.visibility = "hidden";
 		}
 	} // Ende findrefsdsa
 
-// -- Alle Daten vorbereiten. Wird nur einmal aufgerufen
+/******************************************************************************
+***** vorbereitung bereitet das Frage Array vor und übergibt an shownext ******
+******************************************************************************/
 
 	function vorbereitung(){ 
 	let y;
 
-	// Initialisierung zum Start und Wiederholung  
-		aktErgebnis = 0;
 		aktProzent  = 0;
 		aktKarte    = 0; 
 
-	// 1. Benutzerhinweis	
-		refHinweis.value = 'Bei Fragen fragen!';   // Hinweisfeld füttern
+		refHinweis.value = 'Bei Fragen fragen!';		// Hinweisfeld
 		
-	// Liste von 0 bis Max erstellen
-		for (y = 0; y <= anzKarten; y++) arrSort[y] = y;
+		for (y = 0; y <= anzKarten; y++) arrSort[y] = y;// Liste bis Max erstellen
 
-	// Liste umsortieren
-		arrSort.sort(function(a, b){return 0.5 - Math.random()});
-
-	// erster Aufruf Shownext
-		shownext();
-	}
-
-	function shownext(){// Überprüft das Ergebnis
+		arrSort.sort(function(a, b){return 0.5 - Math.random()});// Liste umsortieren
 		
-		initnext();
+		shownext();	// erster Aufruf Shownext
+		
+	} // Ende vorbereitung
+
+/******************************************************************************
+*************** shownext bereitet die Daten/Masken vor ***********************
+******************************************************************************/
+
+	function shownext(){
+		
+		initnext(); 	// Antworten behalten !!!
 		
 		switch (jumpDB) { // in DB passenden Eintrag aufrufen
 			case 1:
@@ -215,19 +222,33 @@ function dsa01(jump) {
 			case 4:
 				alleFragen3(arrSort[aktKarte]);	
 			return;
-		}
-	}
+			case 5:
+				alleFragen4(arrSort[aktKarte]);	
+			return;
+			case 6:
+				alleFragen5(arrSort[aktKarte]);	
+			return;			
+		} // Ende Switch
+		
+		
+	} // Ende shownext
+	
+/******************************************************************************
+*************** initnext initialisiert die Masken *****************************
+******************************************************************************/
 
-	function initnext(){// Initialisiert die Maske
+	function initnext(){// 
 	let y = 0;
 	let anzAnt = "";
-	let anzVer = "";
 
-// -- Antworten und Checkboxex zurücksetzen, Farben wieder auf Standard
+/************ Antworten und Checkboxen zurücksetzen ***************************
+************* Farben wieder auf Standard **************************************
+************* Hier Überlegung, das Ganze als Array Konstante einmal anlegen ***
+******************************************************************************/
 	
 		for(y = 0;y < maxAntworten; y++) {
 			anzAnt = "antwort"+y;
-			Checkbox[y].checked                                = false;				// Angekreuztes löschen
+			Checkbox[y].checked                                = false;				// Angekreuztes löschen Änderung bei Zurück nötig
 			document.getElementById(anzAnt).innerHTML          = [''];				// Feld leeren
 			document.getElementById(anzAnt).style.color        = "black";			// Zurück von Blau/Grün auf Schwarz 
 			document.getElementById(anzAnt).style.visibility   = "visible";			// mögliche Unsichtbarkeit aufheben  
@@ -235,82 +256,110 @@ function dsa01(jump) {
 			Versteck[y].style.visibility                       = "visible";			// mögliche Unsichtbarkeit aufheben aus flash01-dsa-data
 			Versteck[y].style.borderBottom                     = "1px solid blue";	// Zurück zur Blauen Grotte
 		}
-
-		refProzent.value  = 'Karte 0%';														// Hinweisfeld füttern
-		reflfdKarte.value = 'Aktuelle Karte ist #' + (aktKarte+1) + ' von ' + maxKarten;	// Hinweisfeld füttern
+		refProzent.value  = 'Karte 0%';													// Hinweisfeld 
+		reflfdKarte.value = 'Aktuelle Karte ist #' + (aktKarte+1) + ' von ' + maxKarten;// Hinweisfeld 
 	} // Ende initnext
 
-	function zurueck(){ // Zurück und shownext()
-		scroll(0,0);   // Position korrigieren, falls nötig
-		aktPruefung = true;
+/******************************************************************************
+*************** zurueck geht eine Maske zurück und ruft shownext auf **********
+******************************************************************************/
+
+	function zurueck(){
+//		scroll(0,0);   // Position korrigieren, falls nötig
+		flagPruefung = true;
 		aktKarte--; 
 		if(aktKarte < 0){
 			aktKarte = 0;
-			refHinweis.value  = 'Vor der 1. Karte ist nichts';   // Hinweisfeld füttern
+			refHinweis.value  = 'Vor der 1. Karte ist nichts';// Hinweisfeld
 		}
-		
 		shownext();
-	}
+	} // Ende ZURUECK
+
+/******************************************************************************
+** weiter geht eine Maske vor, ruft zuerst pruefeKarte auf, danach shownext ***
+******************************************************************************/	
+
 	function weiter(){ // Vorwärts und shownext()
-		scroll(0,0);   // Position korrigieren
-	 	if (aktPruefung == false) pruefeKarte();
-		aktPruefung = false;
-		refListe[arrSort[aktKarte	]].style.visibility="visible";
+//		scroll(0,0);   // Position korrigieren
+	 	if (!flagPruefung) pruefeKarte();
+		flagPruefung = false;
+		
+
+		if (tmpKarte < aktKarte) aktKarte = tmpKarte; // Mal schauen
 		aktKarte++;
+		tmpKarte = aktKarte + 1;
 		if(aktKarte > anzKarten){
 			aktKarte = anzKarten;
 			refHinweis.value  = 'Neustart anklicken zum Neubeginn';   // Hinweisfeld füttern
-
 		}
-		
 		shownext();
-	}
+	} // Ende WEITER
 
+/******************************************************************************
+** pruefeKarte überprüft Richtig/Falsch und speichert die Ergebnisse **********
+******************************************************************************/	
 // -- Karte überprüfen und zukünftig Ergebnisse zwischenspeichern
 
 	function pruefeKarte(){// Überprüfen 
 	let y = 0;
+	let lfdKarte = 0;
 	let prozZaehler = 0;
 	let prozKarte   = 0;
 		aktProzent  = 0;
-		aktPruefung = true;
+		flagPruefung = true;
 	let anzAnt 		= "";
 	let anzVer 		= "";
+	let arrMaske	= [];
 
-		const iterator = Loesung.values(); //https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array/values
+	const iterator = Loesung.values(); //https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array/values
 
 		for(const value of iterator) {
 			anzAnt = "antwort"+y;
 			
-//			Eingabe[aktKarte][y] = Checkbox[y].checked;
-			
 			if((Checkbox[y].checked && value) || (!Checkbox[y].checked && !value)){ // Alles richtig: Richtig angekreuzt und nicht-Richtig nicht angekreuzt
 				document.getElementById(anzAnt).style.color = "green";
 				prozZaehler++
-		}
-			
+			}
 			if((!Checkbox[y].checked && value) || (Checkbox[y].checked && !value)){ // Falsch: Richtig nicht angekreuzt und Falsch angekreuzt
 				document.getElementById(anzAnt).style.color = "blue";
-//				Checkbox[y].checked = false;    // Angekreuztes löschen
 				prozZaehler--
-		}
+			}
+			arrMaske[y] = Checkbox[y].checked; // Angekreuztes oder nicht Angekreuztes in arrMaske ablegen
 			y++	
 		}
+		lfdKarte = arrSort[aktKarte];	// das Datum aus der Sort Pos an LfdKarte übergeben
+
+		arrEingaben[lfdKarte] = arrMaske; // Werte aus arrMaske an arrEingaben und	 arrSumProz an die richtige Pos übergeben
 		
 		if(prozZaehler < 0)prozZaehler = 0;
 
 		aktProzent = Math.round(100 / y * prozZaehler);		// Aktuelle Karte in % 
-		refProzent.value = "Erfolg: " + aktProzent + "%";	// Ausgabe aktueller Wert in  %
+		refProzent.value = "Erfolg: " + aktProzent + "%";	// Ausgabe aktueller Wert in %
 		
-		sumProzent[aktKarte] = aktProzent; //Zwischenspeichern im Array 0 - 33
+		arrSumProz[lfdKarte] = aktProzent;					//Zwischenspeichern im Array 
 				
 		const reducer = (accumulator, currentValue) => accumulator + currentValue;//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce	
 				
-		przErgebnis = sumProzent.reduce(reducer)/(aktKarte+1); // Aufsummieren und Division durch aktuelle Karte +1 
+		przErgebnis = arrSumProz.reduce(reducer)/(aktKarte+1); // Aufsummieren und Division durch aktuelle Karte +1 
 		
 		refErgebnis.value = "Gesamt: " + Math.round(przErgebnis) + "%" // Hinweisfeld füttern
+
+KarteAnzeigen:
+		
+		refListe[lfdKarte].style.visibility = "visible";
+		
+		if (arrSumProz[lfdKarte] != 100) {
+			refListe[lfdKarte].style.color = "orange";			
+		}
+		else {
+			refListe[lfdKarte].style.color = "blue";	
+		}			
 	} // Ende pruefekarte
-	
+
+/******************************************************************************
+************** uhrzeit übergibt aktuelle Tageszeit ****************************
+******************************************************************************/	
+
 	function uhrzeit() {
     var jetzt = new Date(),
         h = jetzt.getHours(),
@@ -325,33 +374,143 @@ function dsa01(jump) {
     function fuehrendeNull(zahl) {
     	zahl = (zahl < 10 ? '0' : '' )+ zahl;  
     return zahl;
-  	}
-} // Ende dsa01
+  	} // Ende uhrzeit
+} // Ende dsaFragen und Kapselung
 
-// Ausserhalb der Kapselung
+/******************************************************************************
+************** dsaMaske ist Einsprung für direktem Maskenaufruf ***************
+******************************************************************************/	
 	
 function dsaMaske(aktKarte){
-	dsa01(6); // initnext
-	aktPruefung = true;
-	switch (jumpDB) { // in DB passenden Eintrag aufrufen
-			case 1:
-				alleFragen(aktKarte);	
-			return;
-			case 2:
-				alleFragen1(aktKarte);
-			return;
-			case 3:
-				alleFragen2(aktKarte);	
-			return;
-			case 4:
-				alleFragen3(aktKarte);	
-			return;
-		}
-	scroll(0,0);   // Position korrigieren
-}
 
-// -- toggle ist nicht mehr gekapselt
+//	flagPruefung = true; // Don'T know yet
+
+	switch (jumpDB) { // in DB passenden Eintrag aufrufen
+		case 1:
+			alleFragen(aktKarte);	
+		break;
+		case 2:
+			alleFragen1(aktKarte);
+		break;
+		case 3:
+			alleFragen2(aktKarte);	
+		break;
+		case 4:
+			alleFragen3(aktKarte);	
+		break;
+		case 5:
+			alleFragen4(aktKarte);	
+		break;
+		case 6:
+			alleFragen5(aktKarte);	
+		break;
+	}
+	aktKarte = tmpKarte;
+} // Ende dsaMaske   
+
+/******************************************************************************
+************** dsalisten Listenerstellung für DB Einträge von 0 bis Max *******
+******************************************************************************/	
+
+function dsaListen(jumpDB) {
+let y;
+let x;
+let z; 	
+let	ladeGesamt  = "";					// Leer und initialisiert
+let ladeFrage   = [];					// Lädt Frage zum Wegschreiben in Liste
+let ladeAntwort = [];					// Lädt Antworten zum Wegschreiben in Liste
+let ladeLoesung = [];					// Lädt Lösungen zum Wegschreiben in Liste
+
+	if (jumpDB > 10) flagCBox = (flagCBox === true ? false : true); 	// On Off Switch Listen-Masken 
+
+	jumpDB 		= (jumpDB >  10 ? jumpDB-10 : jumpDB);	// JumpDB normalisieren 
+
+	anzKarten	= arrKarten[jumpDB];	// Anzahl Elemente im Array = (von 0 bis x)
+
+	maxKarten	= anzKarten + 1;		// Anzahl Elemente im Array = (von 1 bis x+1)	
+
+	flagListe	= true;					// Flag 
+	
+	for (y = 0; y <= anzKarten; y++) {	// Liste von 0 bis Max erstellen
+				
+		switch (jumpDB) {
+			case 1: // Felder und Menge initialisieren
+				alleFragen(y);
+			break;
+			case 2: // Felder und Menge initialisieren
+				alleFragen1(y);
+			break;
+			case 3: // Felder und Menge initialisieren
+				alleFragen2(y);
+			break;
+			case 4: // Felder und Menge initialisieren
+				alleFragen3(y);
+			break;
+			case 5: // Felder und Menge initialisieren
+				alleFragen4(y);
+			break;
+			case 6: // Felder und Menge initialisieren
+				alleFragen5(y);
+			break;
+		} // Ende Switch
+		
+		ladeFrage[y]   = "<p><thead>" + "(" + (y+1) + ") " + Frage  + "</thead></p>\r\n"; // Frage wird richtig hochgeladen
+
+		ladeLoesung[y] = ""; // Muss zum Anfang initialisiert werden und leer sein 
+		
+		ladeAntwort[y] = ""; // Muss zum Anfang initialisiert werden und leer sein 
+				
+		for (x = 0; x < anzAntworten; x++) {  // anzAntworten = Loesung.length; wird in data generiert
+
+			if (Loesung[x] === true && flagCBox ) ladeLoesung[x] = '<tr><td class="cboxListe"><input type="checkbox" checked /></td>';
+			else ladeLoesung[x] = '<tr><td class="cboxListe"><input type="checkbox"/></td>';			// TEST
+
+			ladeAntwort[y] = ladeAntwort[y] + ladeLoesung[x] + '<td class="antwListe">' + Antwort[x] + '\r\n' + '</td></tr>\r\n';
+		}
+		ladeGesamt = ladeGesamt + ladeFrage[y] + ladeAntwort[y];
+				
+	} // Ende Y Schleife
+
+	dsaListe.innerHTML = ladeGesamt; // Ab in die Maske
+	
+	return // dsaListe.innerHTML;
+	
+} // Ende dsaListen
+
+/******************************************************************************
+************** finishMaske füllt die Maske und löscht den Rest ****************
+******************************************************************************/	
+
+function finishMaske(aktKarte){
+
+let y = 0;
+let anzAnt = "";
+let anzVer = "";
+
+	document.getElementById("dsaFrage").innerHTML = Frage; 
+	
+	for (y = 0; y < anzAntworten; y++){
+		anzAnt = "antwort"+y;
+		document.getElementById(anzAnt).innerHTML = Antwort[y]; 
+	}	
+	for (y = 0; y < anzAntworten; y++){
+		Checkbox[y].checked = arrEingaben[aktKarte][y]; // Angekreuztes oder nicht Angekreuztes in Checkbox ablegen
+	}	
+	for (y = anzAntworten; y < maxAntworten; y++){
+		anzAnt = "antwort"+y;
+		anzVer = "versteck"+y;
+		document.getElementById(anzVer).style.visibility	= "hidden"; 
+		document.getElementById(anzVer).style.borderBottom	= "solid white";
+		document.getElementById(anzAnt).style.visibility	= "hidden"; 
+		document.getElementById(anzAnt).style.borderBottom	= "solid white";
+	}	
+} // Funktion Ende
+
+/******************************************************************************
+************** toggle macht aktuell nichts ************************************
+******************************************************************************/	
 
 function toggle(angekreuzt){
-//	if(refCheck[angekreuzt] == true)refCheck[angekreuzt] = false; else if(refCheck[angekreuzt] == false) refCheck[angekreuzt] = true; 
+//	
 }
+

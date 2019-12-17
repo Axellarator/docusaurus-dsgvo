@@ -1,40 +1,28 @@
 ---
 id: flash01-dsb
 hide_title: Beauftragte 1
-sidebar_label: Beauftragte 1
+sidebar_label: DSB Lernkarten 1
 ---
+<div id="dsaFrage"></div><!-- Die Frage --> 
 
-<!-- Die Frage --> 
+<table id="dsaTab1"></table><!-- Die Antworten -->
 
-<p id="dsaFrage"></p>
+<div id="dsaTab4"></div><!-- Links zur jeweiligen Maske -->
 
-<!-- Die Antworten -->
+<div id="dsaTab3"></div><!-- Die Ausgaben -->
 
-<table id="dsaTab1"></table> <!-- CheckBox und dann die Antworten anzeigen -->
+<div hidden><img src="/img/zur.png" width="20" onload="initDB(2)" /></div><!-- Initialisierung DB --> 
 
-<div id="dsaTab4"></div> <!-- Links zur jeweiligen Maske -->
+<div hidden><div id="dsaTab2"><!-- Dann die Knöpfe Prüfen, Weiter, Zurück und NeuStart -->
 
-<!-- Die Ausgaben -->
-
-<div id="dsaTab3"></div>
-
-<!-- Initialisierung -->
-
-<p hidden><img src="/img/zur.png" width="20" onload="initDB(2)" /></p> 
-
-<!-- Die Knöpfe -->
-
-<div id="dsaTab2"><!-- Dann die Knöpfe Start, Prüfen, Zurück und Weiter -->
-	<div hidden>
 ## LERNKARTEN Beauftragte 1 <br /><br />
 
-###	<input type="button" class="knopf trans" id="blaKnopf" value="Prüfen"   onClick="dsa01(7)"/>   
+###	<input type="button" class="knopf trans" id="blaKnopf" value="Prüfen"   onClick="dsaFragen(11)"/>   
 
-###	<input type="button" class="knopf trans" id="oraKnopf" value="Weiter"   onClick="dsa01(9)"/>   
+###	<input type="button" class="knopf trans" id="oraKnopf" value="Weiter"   onClick="dsaFragen(12)"/>   
 
-###	<input type="button" class="knopf trans" id="gruKnopf" value="Zurück"   onClick="dsa01(8)"/>   
+###	<input type="button" class="knopf trans" id="gruKnopf" value="Zurück"   onClick="dsaFragen(13)"/>   
 
 ###	<input type="button" class="knopf trans" id="rotKnopf" value="NeuStart" onClick="initDB(2)"/>   
-	</div>
-</div>
+</div></div>
 

@@ -1,4 +1,4 @@
-/**
+/** FOOTER
  * Copyright (c) 2017-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -11,8 +11,8 @@ class Footer extends React.Component {
   docUrl(doc, language) {
     const baseUrl = this.props.config.baseUrl;
     const docsUrl = this.props.config.docsUrl;
-    const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
-    const langPart = `${language ? `${language}/` : ''}`;
+    const docsPart = `${docsUrl ? `${docsUrl}/` : 'en/'}`;
+    const langPart = `${language ? `${language}/` : 'en/'}`;
     return `${baseUrl}${docsPart}${langPart}${doc}`;
   }
 
@@ -35,25 +35,10 @@ class Footer extends React.Component {
               />
             )}
           </a>
-          <div>
-            <h5>Docs</h5>
-            <a href={this.docUrl('doc1.html', this.props.language)}>
-              Dokumente
-            </a>
-            <a href={this.docUrl('readme.html', this.props.language)}>
-              Liesmich
-            </a>
-			<a href={this.docUrl('readme-2.html', this.props.language)}>
-              Liesmich-auch
-            </a>
-			<a href={this.docUrl('readme-3', this.props.language)}>
-              Liesmich-erst-recht
-            </a>
-		  </div>
 		  <div>
             <h5>Wichtiges</h5>
 			<a href={this.docUrl('datenschutz.html', this.props.language)}>
-              Unsere Datenschutz-Hinweise
+              Datenschutzerklärung
             </a>
 			<a href={this.docUrl('impressum.html', this.props.language)}>
               Impressum
@@ -71,10 +56,10 @@ class Footer extends React.Component {
               Stack Overflow
             </a>
            <a href="https://discordapp.com/">Project Chat</a>
-         </div>
+          </div>
          <div>
-            <h5>Mehr</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>News</a>
+            <h5>More</h5>
+            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
             <a href="https://github.com/">GitHub</a>
             <a
               className="github-button"
@@ -86,10 +71,9 @@ class Footer extends React.Component {
               aria-label="Star this project on GitHub">
               Star
             </a>
-       </div>
+          </div>
         </section>
-
-<section className="copyright">{this.props.config.copyright}</section>
+        <section className="copyright">{this.props.config.copyright}</section>
       </footer>
     );
   }

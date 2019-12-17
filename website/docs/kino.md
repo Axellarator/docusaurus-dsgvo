@@ -13,15 +13,21 @@ YouTube oder Google nutzen viele Möglichkeiten um den Nutzer zu identifizieren,
 
 <!--Datenschutz einfach erklärt-->
 ### [Datenschutz einfach erklärt](https://www.youtube.com/embed/VF5A2JhiJug) ``<-Direkt zu YouTube`` 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/VF5A2JhiJug" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/VF5A2JhiJug" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <!--DSGVO einfach erklärt-->
 ### [DSGVO einfach erklärt](https://www.youtube.com/embed/bPS3ojekcKw) ``<-Direkt zu YouTube`` 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/bPS3ojekcKw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/bPS3ojekcKw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <!--Social Media einfach erklärt-->
 ### [Social Media einfach erklärt](https://www.youtube.com/embed/3LZWP8m_vh8) ``<-Direkt zu YouTube`` 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/3LZWP8m_vh8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/3LZWP8m_vh8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <!--END_DOCUSAURUS_CODE_TABS-->
 
@@ -29,15 +35,21 @@ YouTube oder Google nutzen viele Möglichkeiten um den Nutzer zu identifizieren,
 
 <!--DSGVO 1 - Was sich ändert-->
 ### [DSGVO 1 - Was sich ändert](https://www.youtube.com/embed/xv-fIpbaPN0) ``<-Direkt zu YouTube`` 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/xv-fIpbaPN0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/xv-fIpbaPN0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <!--DSGVO 2 - Verstehen, was dahinter steckt-->
 ### [DSGVO 2 - Verstehen](https://www.youtube.com/embed/_yy_i3LSq-k) ``<-Direkt zu YouTube`` 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/_yy_i3LSq-k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/_yy_i3LSq-k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <!--DSGVO 3 - Fünf wichtige Dinge-->
 ### [DSGVO 2 - Fünf wichtige Dinge](https://www.youtube.com/embed/lo-0BD1dzbA) ``<-Direkt zu YouTube`` 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/lo-0BD1dzbA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/lo-0BD1dzbA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <!--END_DOCUSAURUS_CODE_TABS-->
 

@@ -1,52 +1,20 @@
 {
   "docs": {
-    "Datenschutz": [
-      "gesetze",
-      {
-        "type": "subcategory",
-        "label": "Datenschutz",
-        "ids": [ "dsgvo","ewg","bdsg" ]
-      },
-      {
-        "type": "subcategory",
-        "label": "weitere Gesetzestexte",
-        "ids": [ "tmg","geheim","ifg","iwg","kunsturhg" ]
-      },
-      {
-        "type": "subcategory",
-        "label": "einige Ergänzungen",
-        "ids": [ "links","con2","sdm" ]
-      },
-      "platzhalter-1",
-      "platzhalter-2"
-    ],
-    "Lernkarten": [
-      "lernkarten",
-      {
-        "type": "subcategory",
-        "label": "Lernkarten",
-        "ids": [ "flash01-dsb", "flash01-dsa", "flash02-dsa", "flash03-dsa" ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Checklisten",
-        "ids": [ "liste01-dsb", "liste01-dsa", "liste02-dsa", "liste03-dsa" ]
-      },
-      "platzhalter-4"
-    ],
+    "Datenschutz": [ "gesetze",
+      { "type": "subcategory", "label": "Datenschutz",              "ids": [ "dsgvo","ewg","bdsg" ]                     },
+      { "type": "subcategory", "label": "weitere Gesetzestexte",    "ids": [ "tmg","geheim","ifg","iwg","kunsturhg" ]   },
+      { "type": "subcategory", "label": "einige Ergänzungen",       "ids": [ "links","con2","sdm" ]                     },
+      "platzhalter-1", "platzhalter-2" ],    
   "Fördermittel": [ "foerderung" ],
-  "Datenschutz-Beauftragte": [ "dsb", "aufgaben-dsb", "praesentation-dsb" ],
-  "Datenschutz-Auditor": [ "dsa" ],
+  "Datenschutz-Beauftragte": [ "dsb", "praesentation-dsb",
+      { "type": "subcategory", "label": "Lernkarten und Listen",    "ids": [ "flash01-dsb", "flash02-dsb", "flash03-dsb", "liste01-dsb", "liste02-dsb", "liste03-dsb" ] } ],
+  "Datenschutz-Auditor": [ "dsa", 
+      { "type": "subcategory", "label": "Lernkarten und Listen",    "ids": [ "flash01-dsa", "flash02-dsa", "flash03-dsa", "liste01-dsa", "liste02-dsa", "liste03-dsa" ] } ],
   "Präsentationen": [ "praesentation-dsgvo", "avv", "schulung-ma-1", "schulung-ds-1", "it-itil" ],
-  "Audit Fragenkataloge": [ "doc1", "doc9", "doc10", "doc11" ],
-  "Projekte": [ "projekt","projekt01","projekt02","projekt04" ],
+  "Projekte": [ "projekt","projekt01","projekt02","projekt04", 
+      { "type": "subcategory", "label": "Abfragen",                 "ids": [  "doc1", "doc9", "doc10", "doc11" ]        } ],
   "Lokales Material": [ "fristen", "fristen-erlaeuterungen", "material", "archiv" ],
   "Playground": [ "doc12","richtlinien-ma","reveal","playground" ]
   },
-  "docs-other": {
-    "Wichtiges": ["datenschutz","impressum"]
-  },
-  "docs-liesmich": {
-    "Wichtiges": ["readme", "readme-2", "readme-3"]
-  }
+  "docs-other": { "Wichtiges": [ "datenschutz","impressum" ] }
 }

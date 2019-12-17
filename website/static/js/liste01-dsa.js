@@ -15,22 +15,17 @@ let	ladeGesamt  = ""; // Leer und initialisiert
 
 	switch (jump) {
 		case 1: // Felder und Menge initialisieren
-			anzKarten       = 33;	// Anzahl Elemente im Array = 34 (0=1)
-			maxKarten       = 34;	// Anzahl Elemente im Array = 34 (1=1)
+			anzKarten        = 33;  // Anzahl Elemente im Array = 34 (0=1)
+			maxKarten        = 34;  // Anzahl Elemente im Array = 34 (1=1)
 		break;
 		case 2: // Felder und Menge initialisieren
-			anzKarten       = 9;	// Anzahl Elemente im Array = 9	(0=1)
-			maxKarten       = 10;	// Anzahl Elemente im Array = 9	(1=1)
+			anzKarten        = 9;   // Anzahl Elemente im Array = 9	(0=1)
+			maxKarten        = 10;  // Anzahl Elemente im Array = 9	(1=1)
 		break;
 		case 3: // Felder und Menge initialisieren
-			anzKarten		= 144;	// Anzahl Elemente im Array = 144 (0=1)
-			maxKarten		= 145;	// Anzahl Elemente im Array = 145 (1=1)
+			anzKarten        = 122  // Anzahl Elemente im Array = 123 (0=1)
+			maxKarten        = 123; // Anzahl Elemente im Array = 123 (1=1)
 		break;
-		case 4: // Felder und Menge initialisieren
-			anzKarten		= 24;	// Anzahl Elemente im Array = 25 (0=1)
-			maxKarten		= 25;	// Anzahl Elemente im Array = 26 (1=1)
-		break;
-
 	}
  
 	
@@ -47,13 +42,10 @@ let	ladeGesamt  = ""; // Leer und initialisiert
 			alleFragen(y); // Daten kommen aus dsa-data
 		break;
 		case 2: // Felder und Menge initialisieren
-			alleFragen1(y);
+			DSBFragen(y);
 		break;
 		case 3: // Felder und Menge initialisieren
 			alleFragen2(y);
-		break;
-		case 4: // Felder und Menge initialisieren
-			alleFragen3(y);
 		break;
 	}
 		ladeFrage[y]   = "<p><thead>" + "(" + (y+1) + ") " + Frage  + "</thead></p>\r\n"; // Frage wird richtig hochgeladen

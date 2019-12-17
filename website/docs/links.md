@@ -68,6 +68,23 @@ sidebar_label: Datenschutz im Internet
 [IAPP - International Association of Privacy Professionals](https://www.privacyassociation.org)  
 [NGFG - Nederlands Genootschap Functionarissen Gegevensbescherming}](https://www.ngfg.nl)  
 
+## Competent suppliers of reference materials 
+
+### Accredited Reference Material Providers
+
+| Country |Akkreditierungsstelle                            | Telefon          | Email                    |
+|:--:|:--:|:--:|:--:|
+| Germany | DAkkS Deutsche Akkreditierungsstelle GmbH       | +49 30 670591-0  | contact@dakks.de         |
+| Italy   | ACCREDIA The Italian Accreditation Body         | +39 06 8440991   | info@accredia.it         |
+| Spain   | ENAC Entidad Nacional de Acreditación           | +34 91 457 32 89 | mjcotarelo@enac.es       |
+| UK      | UKAS United Kingdom Accreditation Service       | +44 17 8442 8817 | lorraine.turner@ukas.com |
+| USA     | A2LA American Association for Lab Accreditation | +1 301 644 3223  | tmcinturff@A2LA.org      |
+
+[DAkkS - Deutsche Akkreditierungsstelle](https://www.dakks.de)   
+[ILAC - International organisation for accreditation bodies](https://ilac.org/)   
+[IAF - World association of Conformity Assessment Accreditation Bodies](https://www.iaf.nu/)   
+[EA - European cooperation for accreditation](https://european-accreditation.org/)   
+
 ## Sonstige
 
 [Arbeitsgemeinschaft für Sicherheit der Wirtschaft e.V. ASW](https://www.asw-online.de/)  
